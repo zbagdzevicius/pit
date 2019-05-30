@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
 import { NgxsModule } from '@ngxs/store';
 import { LangState } from './core/state/lang.state';
-import { ContentState } from './core/state/content.state';
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { ContentState } from './core/state/content.state';
     LayoutModule,
     HttpClientModule,
     NgxsModule.forRoot([
-      LangState,
-      ContentState
+      LangState
     ])
   ],
   providers: [],

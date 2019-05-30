@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ContentModel } from '../models/translate/content.model';
-import { SetContent } from '../actions/content.actions';
+import { SetContent } from '../actions/lang.actions';
 import { Store } from '@ngxs/store';
 
 @Injectable({
@@ -16,6 +16,7 @@ export class ContentService {
     this.http.get(`assets/${language}.json`)
       .subscribe((content: ContentModel) => {
         this.store.dispatch(new SetContent(content));
+        console.log(content);
       }
       );
   }

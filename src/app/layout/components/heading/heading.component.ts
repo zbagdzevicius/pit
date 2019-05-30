@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Select } from '@ngxs/store';
-import { ContentState } from 'src/app/core/state/content.state';
 import { Observable } from 'rxjs';
+import { LangState } from 'src/app/core/state/lang.state';
 
 @Component({
   selector: 'app-heading',
@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class HeadingComponent implements OnInit {
 
-  @Select(ContentState.getHeading) heading$: Observable<string>;
+  @Select(LangState.getHeading) heading$: Observable<string>;
   heading: string;
 
   constructor() {

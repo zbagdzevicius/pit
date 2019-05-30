@@ -15,4 +15,17 @@ export class ContentModel {
   contact: Contact;
   footer: Footer;
   footerAbsolute: string;
+
+  constructor() {
+    this.heading = null;
+    this.menu = null;
+    this.contactButton = null;
+    this.heroes = null;
+    this.cardsImage = null;
+    this.cards = null;
+    this.cardsLocation = null;
+    this.contact = null;
+    this.footer = null;
+    this.footerAbsolute = null;
+  }
 }
