@@ -1,0 +1,32 @@
+// Variables
+// colors
+$grey: #f6f6f6;
+$yellow: #fed646;
+$yellow-link: #ffc800;
+$black: #282828;
+// font sizes
+$big: 32px;
+$medium: 22px;
+$small: 16px;
+// font weight
+$regular: 400;
+$bold: 700;
+// font family
+$font-family: "Titillium Web";
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
+body {
+  font-family: $font-family, sans-serif;
+}
+
+// default font size
+* {font-size: $small;}
+
+
+// layout
+
+.container {
+  display: flex;
+  &.justify {
+    justify-content: space-between;
+  }
+}
