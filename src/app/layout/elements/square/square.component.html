@@ -1,7 +1,4 @@
-<div class="container">
-  <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-    exercitationem amet, eligendi unde autem non, optio molestias delectus soluta
-    harum at eos voluptatum rem error quasi impedit corrupti! Nobis, explicabo.
-  </p>
+<div>
+  <h1 *ngIf="title"></h1>
+  <p *ngFor="let text of texts">{{text}}</p>
 </div>

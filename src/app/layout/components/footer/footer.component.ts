@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { LangState } from 'src/app/core/state/lang.state';
+import { Select } from '@ngxs/store';
+import { Observable } from 'rxjs';
+import { Footer } from 'src/app/core/models/translate/footer.model';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  @Select(LangState.getFooter) footer$: Observable<Footer>;
+  footer: Footer;
+
+  constructor() {
+    this.footer$
+      .subscribe(footer => this.footer = footer);
+  }
 
   ngOnInit() {
   }

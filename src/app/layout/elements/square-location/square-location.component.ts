@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-square-location',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./square-location.component.scss']
 })
 export class SquareLocationComponent implements OnInit {
+  @Input() title: string;
+  @Input() text: string;
+  @Input() location: Location;
 
   constructor() { }
 

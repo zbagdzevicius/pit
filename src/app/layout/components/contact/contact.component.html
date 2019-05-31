@@ -1,0 +1,8 @@
+<div *ngIf="contact" class="container">
+  <div class="item">
+    <app-contact-info [questions]="contact.questions" [contactBy]="contact.contactBy"></app-contact-info>
+  </div>
+  <div class="item">
+    <app-form [form]="contact.form"></app-form>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-square-image',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./square-image.component.scss']
 })
 export class SquareImageComponent implements OnInit {
+  @Input() image: string;
 
   constructor() { }
 

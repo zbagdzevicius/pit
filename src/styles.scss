@@ -29,4 +29,7 @@ body {
   &.justify {
     justify-content: space-between;
   }
+  .item{
+    flex-grow: 1;
+  }
 }

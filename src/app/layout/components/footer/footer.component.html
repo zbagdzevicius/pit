@@ -1,3 +1,4 @@
-<p>
-  footer works!
-</p>
+<div class="container" *ngIf="footer">
+  <app-footer-first-column [leftColumn]="footer.leftColumn" [socialLinks]="footer.socialLinks" class="item"></app-footer-first-column>
+  <app-footer-second-column [rightColumn]="footer.rightColumn" class="item"></app-footer-second-column>
+</div>

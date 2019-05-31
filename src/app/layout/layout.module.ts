@@ -13,6 +13,16 @@ import { CardsImageComponent } from './components/cards-image/cards-image.compon
 import { CardsComponent } from './components/cards/cards.component';
 import { HeadingComponent } from './components/heading/heading.component';
 import { MenuComponent } from './elements/menu/menu.component';
+import { ButtonComponent } from './elements/button/button.component';
+import { LogoComponent } from './elements/logo/logo.component';
+import { CardImageRowComponent } from './rows/card-image-row/card-image-row.component';
+import { CardRowComponent } from './rows/card-row/card-row.component';
+import { CardLocationRowComponent } from './rows/card-location-row/card-location-row.component';
+import { FormComponent } from './elements/form/form.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ContactInfoComponent } from './elements/contact-info/contact-info.component';
+import { FooterFirstColumnComponent } from './rows/footer-first-column/footer-first-column.component';
+import { FooterSecondColumnComponent } from './rows/footer-second-column/footer-second-column.component';
 
 const COMPONENTS = [
   HeaderComponent, FooterComponent,
@@ -21,6 +31,10 @@ const COMPONENTS = [
   CardsImageComponent,
   CardsComponent,
   HeadingComponent,
+  ContactComponent,
+  CardImageRowComponent,
+  CardRowComponent,
+  CardLocationRowComponent,
 ];
 
 const ELEMENTS = [
@@ -28,13 +42,19 @@ const ELEMENTS = [
   SquareLocationComponent,
   SquareComponent,
   LanguagePickerComponent,
-  MenuComponent
+  MenuComponent,
+  FormComponent,
+  ContactInfoComponent,
+  ButtonComponent,
+  LogoComponent,
 ];
 
 @NgModule({
   declarations: [
     ...COMPONENTS,
-    ...ELEMENTS
+    ...ELEMENTS,
+    FooterFirstColumnComponent,
+    FooterSecondColumnComponent,
   ],
   imports: [
     CommonModule

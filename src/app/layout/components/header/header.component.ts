@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { LangState } from 'src/app/core/state/lang.state';
+import { Select } from '@ngxs/store';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  @Select(LangState.getContactButton) contactButton$: Observable<string>;
+  contactButton: string;
+
+  constructor() {
+    this.contactButton$
+      .subscribe(contactButton => this.contactButton = contactButton);
+  }
 
   ngOnInit() {
   }

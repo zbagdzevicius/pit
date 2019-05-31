@@ -1,7 +1,12 @@
 <nav>
   <ul class="container justify">
-    <li>logo</li>
+    <li><app-logo></app-logo></li>
     <li><app-menu></app-menu></li>
-    <li>change_language</li>
+    <li>
+      <span *ngIf="contactButton">
+        <app-button [text]="contactButton"></app-button>
+      </span>
+      <span>change_language</span>
+    </li>
   </ul>
 </nav>

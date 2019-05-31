@@ -1,0 +1,8 @@
+<div *ngIf="rightColumn" class="item">
+  <span>{{rightColumn.number}}</span>
+  <h2>
+    <span *ngFor="let company of rightColumn.companies">
+      {{company}}
+    </span>
+  </h2>
+</div>

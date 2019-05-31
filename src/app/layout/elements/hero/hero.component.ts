@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { LangState } from 'src/app/core/state/lang.state';
+import { Select } from '@ngxs/store';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-hero',
@@ -7,7 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroComponent implements OnInit {
 
-  constructor() { }
+  @Select(LangState.getHeroes) heroes$: Observable<string[]>;
+  heroes: string[];
+  @Input() index: number;
+
+  constructor() {
+    this.heroes$
+      .subscribe(heroes => this.heroes = heroes);
+  }
 
   ngOnInit() {
   }

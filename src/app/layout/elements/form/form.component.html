@@ -1,0 +1,14 @@
+<form *ngIf="form">
+  <div class="container">
+    <input [placeholder]="form.name">
+    <input [placeholder]="form.email">
+  </div>
+  <div class="container">
+    <input [placeholder]="form.phoneNumber">
+    <input [placeholder]="form.company">
+  </div>
+  <div class="container">
+    <input [placeholder]="form.message">
+  </div>
+  <button type="submit">{{form.send}}</button>
+</form>
