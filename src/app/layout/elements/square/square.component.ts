@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Card } from 'src/app/core/models/translate/card.model';
 
 @Component({
   selector: 'app-square',
@@ -6,8 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./square.component.scss']
 })
 export class SquareComponent implements OnInit {
-  @Input() title: string;
-  @Input() texts: string[];
+  @Input() card: Card;
 
   constructor() { }
 

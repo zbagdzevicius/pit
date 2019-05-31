@@ -1,4 +1,10 @@
-<div>
-  <h1 *ngIf="title"></h1>
-  <p *ngFor="let text of texts">{{text}}</p>
+<div *ngIf="card; else emptyCard">
+  <h2 *ngIf="card.title">
+    {{card.title}}
+  </h2>
+  <p *ngFor="let text of card.texts">
+    {{text}}
+  </p>
 </div>
+<ng-template #emptyCard>
+</ng-template>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Card } from 'src/app/core/models/translate/card.model';
 
 @Component({
   selector: 'app-card-row',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-row.component.scss']
 })
 export class CardRowComponent implements OnInit {
+  @Input() cardsRow: Card[];
 
   constructor() { }
 
