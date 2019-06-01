@@ -1,152 +1,235 @@
 {
-  "heading": "Wettbewerb: Global.Qualitat:Deautsch.",
   "menu": [
-    "UBERN UNS",
+    "ÜBER UNS",
+    "PRODUKTIONSSTANDORTE",
     "DIENSTLEISTUNGEN",
-    "UNDERNEHMEN",
-    "GALERIE"
+    "UNTERNEHMEN"
   ],
   "contactButton": "KONTAKTIEREN SIE UNS",
-  "heroes": [
-    "PRODUKTIONSSTANDORTE",
-    "DIENSTLEISTUNGEN"
-  ],
-  "cardsImage": [
-    {
-      "title": "Moderne",
-      "texts": [
-        "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-        "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-        "Sprechen Sie uns an!"
-      ],
-      "image": "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit."
-    },
-    {
-      "title": "",
-      "texts": [
-        "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-        "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-        "Sprechen Sie uns an!"
-      ],
-      "image": "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit."
-    },
-    {
-      "title": "Moderne",
-      "texts": [
-        "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-        "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-        "Sprechen Sie uns an!"
-      ],
-      "image": "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit."
-    }
-  ],
-  "cards": [
-    {
-      "title": "Moderne",
-      "texts": [
-        "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-        "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-        "Sprechen Sie uns an!"
-      ]
-    },
-    {
-      "title": "",
-      "texts": [
-        "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-        "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-        "Sprechen Sie uns an!"
-      ]
-    },
-    {
-      "title": "",
-      "texts": [
-        "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-        "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-        "Sprechen Sie uns an!"
-      ]
-    }
-  ],
-  "cardsLocation": [
-    {
-      "title": "Moderne",
-      "text": "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-      "image": "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-      "location": {
-        "coordinate": "55 42 11.8692 N 21 8 39.4044 E",
-        "name": "Klaipėda, vilnius"
-      }
-    },
-    {
-      "title": "Moderne",
-      "text": "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-      "image": "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-      "location": {
-        "coordinate": "55 42 11.8692 N 21 8 39.4044 E",
-        "name": "Klaipėda, vilnius"
-      }
-    },
-    {
-      "title": "Moderne",
-      "text": "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-      "image": "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-      "location": {
-        "coordinate": "55 42 11.8692 N 21 8 39.4044 E",
-        "name": "Klaipėda, vilnius"
+  "heading": "Wettbewerb: Global. Qualität: Deutsch.",
+  "aboutUs": {
+    "rowTexts": {
+      "columnSpecial": {
+        "boldText": "Die PIT Group",
+        "texts": [
+          "ist Ihr Partner für ganzheitliche Lösungen im Bereich der Kabelkonfektionierung und Lohnfertigung. PIT steht dabei für Produktion, Innovation und Technologie. Unsere Kabelkonfektionierungen kommen bereits in den verschiedensten Branchen zum Einsatz – von der Automobilindustrie über die Sicherheitstechnik und Windenergie bis zum Schaltschrank- und Pipelinebau. Auch die Herstellung von EMV-Filtern zählt zu unserem vielfältigen Portfolio.",
+          "PIT bietet Full Service aus einer Hand: Unsere UAB Lithutec Tochterfirmen in Litauen und der Ukraine bieten höchste Qualitätsstandards bei niedrigen Produktionskosten und guter logistischer Anbindung an den EU-Markt. Wir beliefern Sie wöchentlich mit eigenen LKW unseres Logistikunternehmens UAB Dolinera."
+        ]
+      },
+      "columnContact": {
+        "texts": [
+          "Bei uns erhalten Sie professionelle Montagen und Produktionen nach dem Null-Fehler-Prinzip. Wir begleiten Ihre Projekte von der Anforderungsanalyse, über den Prototypenbau bis zur individuellen Konfektionierung und Serienproduktion. Profitieren Sie außerdem von deutschen Ansprechpartnern – im Büro genauso wie in den Produktionsstätten vor Ort.",
+          "Gerne stellen wir Ihnen ein unverbindliches und genau auf Ihre Bedürfnisse zugeschnittenes Angebot zusammen. Testen Sie uns! Wir nehmen gerne neue Herausforderungen an!"
+        ],
+        "contactButton": true
       }
     }
-  ],
-  "contact": {
-    "questions": [
+  },
+  "services": {
+    "rowCards": [
       {
-        "title": "Sie interessieren sich fur unsere Dienstleistungen?",
-        "content": "In unserer Galerie finden Sie ihren passenden Ansprechpartner"
+        "title": "Kabelkonfektionierung",
+        "text": "Die PIT Group ist spezialisiert auf ganzheitliche Lösungen in den Bereichen der Kabelkonfektionierung und des Schaltschrankbaus.",
+        "location": "Litauen, Ukraine"
       },
       {
-        "title": "Sie interessieren sich fur unsere Dienstleistungen?",
-        "content": "In unserer Galerie finden Sie ihren passenden Ansprechpartner"
+        "title": "Lohnfertigung",
+        "text": "Sparen Sie Zeit und Geld! Wir übernehmen die Montage, Bestückung, Etikettierung, Verpackung und Lagerung sowie den termingerechten Versand Ihrer Waren.",
+        "location": "Litauen, Ukraine"
+      },
+      {
+        "title": "Transport",
+        "text": "Die Ansprechpartner für individuelle Bestückung, Montage, Verpackung und Lagerung",
+        "location": "Europe"
       }
     ],
+    "rowCardsImage": [
+      {
+        "texts": [
+          "Die PIT Group ist spezialisiert auf ganzheitliche Lösungen in den Bereichen der Kabelkonfektionierung und des Schaltschrankbaus. Wir übernehmen die Konfektion und Montage anschlussfertiger Mikroschalter, Kabelbäume, Schaltschränke und Litzen sowie diebleifreie Bestückung von Leiterplatten.",
+          "Wir konfektionieren alle Kabeltypen genau nach Ihren individuellen Anforderungen und Materialvorgaben. Auch EMV- Filter zählen zu unserem umfangreichen Produktportfolio."
+        ],
+        "image": "assets/images/1.jpg"
+      },
+      {
+        "texts": [
+          "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm2 bis 300 mm2. Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
+          "Für ein zuverlässiges Produktionsergebnis unterliegen alle unsere Produktionsprozesse einer fortlaufenden Qualitätskontrolle."
+        ],
+        "image": "assets/images/2.jpg"
+      }
+    ]
+  },
+  "site": {
+    "rowInfo": {
+      "title": "PIT DEUTSCHLAND GmbH & Co. KG",
+      "subtitle": "Ihr Ansprechpartner",
+      "location": {
+        "coordinateN": "55° 42' 11.8692''N",
+        "coordinateE": "21° 8' 39.4044'' E",
+        "name": "Großenkneten, Deutschland"
+      },
+      "text": "Bei uns erhalten Sie professionelle Montagen und Produktionen nach dem Null-Fehler-Prinzip. Wir begleiten Ihre Projekte von der Anforderungsanalyse, über den Prototypenbau bis zur individuellen Konfektionierung und Serienproduktion. Profitieren Sie außerdem von deutschen Ansprechpartnern – im Büro genauso wie in den Produktionsstätten vor Ort."
+    },
+    "cardsLocation": [
+      {
+        "title": "UAB LITHUTEC",
+        "text": "Der Spezialist für zuverlässige Kabelkonfektionierung nach Kundenwunsch",
+        "location": {
+          "coordinateN": "55° 42' 11.8692''N",
+          "coordinateE": "21° 8' 39.4044'' E",
+          "name": "Klaipėda, Litauen"
+        }
+      },
+      {
+        "title": "OOO LITHUTEC- UKRAINE",
+        "text": "Der Partner für zuverlässige und kostengünstige Kabelkonfektion außerhalb der EU",
+        "location": {
+          "coordinateN": "55° 42' 11.8692''N 21° 8'",
+          "coordinateE": "39.4044'' E",
+          "name": "Ukraine"
+        }
+      },
+      {
+        "title": "UAB LITFABRIC",
+        "text": "Die Ansprechpartner für individuelle Bestückung, Montage, Verpackung und Lagerung",
+        "location": {
+          "coordinateN": "55° 42' 11.8692''N 21° 8'",
+          "coordinateE": "39.4044'' E",
+          "name": "Klaipėda, Litauen"
+        }
+      },
+      {
+        "title": "UAB DOLINERA",
+        "text": "Die Logistik-Experten zwischen Deutschland, Litauen und der Ukraine",
+        "location": {
+          "coordinateN": "55° 42' 11.8692''N 21° 8'",
+          "coordinateE": "39.4044'' E",
+          "name": "Klaipėda, Litauen"
+        }
+      }
+    ],
+    "rowImage": {
+      "texts": [
+        "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen UAB Lithutec Firmenstandort im ukrainischen UAB Lithutec-Ukraine an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt.",
+        "Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
+      ],
+      "image": "assets/images/4.jpg"
+    }
+  },
+  "companies": {
+    "rowImage": {
+      "texts": [
+        "Die PIT Group ist ein mittelständiges Familienunternehmen mit über 140 Mitarbeitern in Deutschland, Litauen und der Ukraine. In unseren Anfangstagen 2009 firmierten wir als Gumotrade Limited & Co. KG und arbeiteten vorrangig in der Produktion und Montage für Zulieferbetriebe der Automobilindustrie.",
+        "Schon damals begleitete uns die Vision eines internationalen Unternehmenskonzepts das kostengünstige Arbeit und hohe Qualitätsstandards vereint:",
+        "Ab 2011 verlagerten wir unsere Kabelkonfektion Schritt für Schritt von unserem deutschen Standort im Metropolpark-Hansalinie in Ahlhorn auf die eigens gegründete UAB Lithutec in Litauen. Hier haben wir uns in den vergangenen Jahren als zuverlässiger, flexibler und vor allem kostengünstiger Partner im Bereich der Kabelkonfektionierung einen Namen gemacht."
+      ],
+      "image": "assets/images/3.jpg"
+    },
+    "rowTexts": {
+      "columnSpecial": {
+        "boldText": "",
+        "texts": [
+          "Das große Vertrauen unserer Kunden aus Deutschland und der EU bestärkte uns in der Entscheidung, mit der neu gegründeten UAB XXX einen weiteren Markt zu erschließen: Schwerpunkt ist hier die maschinelle wie auch manuelle Lohnfertigung inklusive Montage, Verpackung und Lagerung.",
+          "Um für die Zukunft alle Unternehmen unter einem Dach zu vereinen, erfolgte 2013 die Gründung der übergeordneten PIT Group. Unsere Philosophie: Bei uns erhalten Sie alles aus einer Hand – ohne teure Subunternehmer!",
+          "Diesem Leitgedanken folgend ergänzten wir die PIT Familie um einen weiteren zentralen Dienstleistungssektor: Mit der Gründung unseres eigenen Logistikunternehmens, der UAB Dolinera, schlossen wir Ende 2018 die Lücke zwischen Auftrag, Fertigung und Kunde und beliefern unsere Auftraggeber seither wöchentlich mit eigenen LKW."
+        ]
+      },
+      "columnContact": {
+        "texts": [
+          "Seit Januar 2019 bieten wir unseren Kunden und Interessenten mit der UAB Lithutec Ukraine außerdem einen zukunftsträchtigen und dabei kostengünstigen Produktionsstandort außerhalb der EU. Kerntätigkeit ist auch hier die hochwertige Kabelkonfektionierung für alle Kabeltypen.",
+          "Zu unseren zentralen Stärken zählen Flexibilität, Vielseitigkeit, ein effektives Zeitmanagement und eine unkomplizierte Umsetzung der Kundenaufträge. Auch außergewöhnlichen Anfragen stehen wir offen gegenüber.",
+          "Kontaktieren Sie uns und überzeugen Sie sich selbst!"
+        ],
+        "contactButton": true
+      }
+    }
+  },
+  "contact": {
+    "address": {
+      "title": "PIT Deutschland GmbH & Co. KG",
+      "subtitle": "Ihr Ansprechpartner",
+      "locations": [
+        "Vechtaer Straße 35",
+        "D-26197 Großenkneten"
+      ]
+    },
     "contactBy": [
       {
         "name": "Fon",
-        "value": "+49 4435 976403"
+        "value": "+49 44 35-9 73 64 03"
       },
       {
-        "name": "Fon",
-        "value": "+49 4435 976403"
+        "name": "Fax",
+        "value": "+49 32 12-1 48 52 23"
+      },
+      {
+        "name": "Mobile",
+        "value": "+49 176-10305752"
       }
     ],
     "form": {
-      "name": "NAME",
-      "email": "EMAIL",
-      "phoneNumber": "TELEFONNUMBER",
-      "company": "UNTERNEHMEN",
-      "message": "BOTSCHAFT",
-      "send": "NARCHRICHTSENDEN"
+      "name": "Name",
+      "email": "E-Mail Addresse",
+      "message": "Ihre Nachchricht",
+      "texts": [
+        "Beim benutzen dieses Forumulars stimmen Sie unserer",
+        "zu."
+      ],
+      "textLink": "Datenschutzerklärung",
+      "send": "SENDEN"
     }
   },
   "footer": {
-    "rightColumn": {
+    "footerInfo": {
       "number": "+49 (0) 4435 9736403",
-      "companies": [
-        "UAB Lithutec",
-        "OOO Lithutec-Ukraine",
-        "Uab Litfabrik",
-        "UAB Dolinera"
+      "infoLinks": [
+        {
+          "text": "UAB Lithutec",
+          "link": "https://#"
+        },
+        {
+          "text": "OOO Lithutec-Ukraine",
+          "link": "https://#"
+        },
+        {
+          "text": "Uab Litfabrik",
+          "link": "https://#"
+        },
+        {
+          "text": "UAB Dolinera",
+          "link": "https://#"
+        }
       ]
     },
-    "leftColumn": {
-      "title": "PITDeutschland GbH & Co. Kg",
-      "subtitle": "ihr Ansprechpartner",
+    "address": {
+      "title": "PIT Deutschland GmbH & Co. KG",
+      "subtitle": "Ihr Ansprechpartner",
       "locations": [
-        "Vechtaer StraBe 35",
-        "D-26197 GriBebjbeten"
+        "Vechtaer Straße 35",
+        "D-26197 Großenkneten"
       ]
     },
     "socialLinks": {
-      "facebook": "https://link",
-      "linkedin": "https://link"
+      "facebook": "https://#",
+      "linkedin": "https://#"
     }
   },
-  "footerAbsolute":  "2019 PIT Deautschland GmbH Ų Co. KG. All rights reserved."
+  "footerAbsolute": {
+    "copyright": "© 2019 PIT Deutschland GmbH & Co. KG. All rights reserved.",
+    "infoLinks": [
+      {
+        "text": "Datenschutzerklärung",
+        "link": "https://#"
+      },
+      {
+        "text": "Impressum",
+        "link": "https://#"
+      },
+      {
+        "text": "Webmaster",
+        "link": "https://#"
+      }
+    ]
+  }
 }

@@ -1,29 +1,37 @@
-import { CardsImage } from './cards-image.model';
-import { Card } from './card.model';
-import { CardsLocation } from './cards-location.model';
+import { AboutUs } from './about-us.model';
+
+import { Services } from '@angular/core/src/view';
+
+import { Site } from './site.model';
+
+import { Companies } from './companies.model';
+
 import { Contact } from './contact.model';
+
 import { Footer } from './footer.model';
 
+import { FooterAbsolute } from './footer-absolute.model';
+
 export class ContentModel {
-  heading: string;
   menu: string[];
   contactButton: string;
-  heroes: string[];
-  cardsImage: CardsImage[];
-  cards: Card[];
-  cardsLocation: CardsLocation[];
+  heading: string;
+  aboutUs: AboutUs;
+  services: Services;
+  site: Site;
+  companies: Companies;
   contact: Contact;
   footer: Footer;
-  footerAbsolute: string;
+  footerAbsolute: FooterAbsolute;
 
-  constructor() {
-    this.heading = null;
+  constructor(){
     this.menu = null;
     this.contactButton = null;
-    this.heroes = null;
-    this.cardsImage = null;
-    this.cards = null;
-    this.cardsLocation = null;
+    this.heading = null;
+    this.aboutUs = null;
+    this.services = null;
+    this.site = null;
+    this.companies = null;
     this.contact = null;
     this.footer = null;
     this.footerAbsolute = null;

@@ -3,7 +3,9 @@
 $grey: #f6f6f6;
 $yellow: #fed646;
 $yellow-link: #ffc800;
+$white: rgba(255, 255, 255, 0.8);
 $black: #282828;
+$dark-grey: grey;
 // font sizes
 $big: 32px;
 $medium: 22px;
@@ -16,28 +18,124 @@ $font-family: "Titillium Web";
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
 body {
   font-family: $font-family, sans-serif;
+  body {
+    font-size: $small;
+  }
 }
 
-// default font size
-* {font-size: $small;}
+h1 {
+  font-size: $big;
+}
+h2, input {
+  font-size: $medium;
+  font-weight: $regular;
+}
+h2{
+ margin: 0;
+}
 
+a:not(.coordinates),
+h1,
+h2,
+p,
+input {
+  color: $black;
+}
 
+a:not(.coordinates,.a-special) {
+  font-size: $medium;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.coordinates {
+  color: $dark-grey;
+}
 // layout
-.max-width{
-    max-width: 1200px;
+.max-width {
+  max-width: 1200px;
 }
 .container {
   display: flex;
   &.justify {
     justify-content: space-between;
   }
-  &.center {
-    justify-content:center;
+  &.justify-vertical {
+    justify-items: stretch;
   }
-  .item{
+  &.center {
+    justify-content: center;
+  }
+  &.center-vertical {
+    align-items: center;
+  }
+  .item {
     flex: 1 1 auto;
-    width:100%;
+    width: 100%;
+  }
+
+  &.reverse {
+    flex-direction: row-reverse;
   }
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+  &.inline {
+    list-style: none;
+  }
+}
 
+.heading {
+  font-size: $big;
+  font-weight: $bold;
+}
+
+button {
+  background: $yellow;
+  border: none;
+  font-weight: $bold;
+  font-size: $small;
+}
+
+.card {
+  background: $grey;
+  &:hover {
+    background: $yellow;
+  }
+  &:nth-of-type(1) {
+    background: $yellow;
+  }
+}
+
+.marginless {
+  margin: 0;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1200px;
+  background-attachment: fixed;
+}
+
+nav {
+  a:hover {
+    border-bottom: 5px solid $yellow;
+  }
+}
+
+.grey {
+  background-color: $grey;
+}
+.white {
+  background-color: $white;
+}
+
+.font-medium {
+  font-size: $medium;
+}
+.bold {
+  font-weight: $bold;
+}

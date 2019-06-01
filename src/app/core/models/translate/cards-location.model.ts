@@ -1,6 +1,7 @@
+import { Location } from './location.model';
+
 export class CardsLocation {
   title: string;
   text: string;
-  image: string;
   location: Location;
 }

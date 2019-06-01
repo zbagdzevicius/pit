@@ -1,0 +1,8 @@
+<div class="container" [ngClass]="{ 'reverse': isReversed }">
+  <div class="item">
+    <img [src]="rowImage.image" />
+  </div>
+  <div class="item white">
+    <p *ngFor="let text of rowImage.texts">{{ text }}</p>
+  </div>
+</div>

@@ -1,4 +1,27 @@
-<div class="container" *ngIf="footer">
-  <app-footer-first-column [leftColumn]="footer.leftColumn" [socialLinks]="footer.socialLinks" class="item"></app-footer-first-column>
-  <app-footer-second-column [rightColumn]="footer.rightColumn" class="item"></app-footer-second-column>
+<div class="container grey" *ngIf="footer">
+  <div class="item  font-medium">
+    <h2 class="bold">{{ footer.address.title }}</h2>
+    <span>{{ footer.address.subtitle }}</span>
+    <ul>
+      <li *ngFor="let location of footer.address.locations">
+        {{ location }}<br />
+      </li>
+    </ul>
+    <div>
+      <span>{{ footer.socialLinks.facebook }}</span>
+      <span>{{ footer.socialLinks.linkedin }}</span>
+    </div>
+  </div>
+
+  <div class="item">
+    <h1>{{ footer.footerInfo.number }}</h1>
+    <ul>
+      <li>
+        <a *ngFor="let info of footer.footerInfo.infoLinks" [href]="info.link">
+          {{ info.text }}
+          <br />
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>

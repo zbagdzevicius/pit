@@ -1,1 +1,17 @@
-<p *ngIf="footerText">{{footerText}}</p>
+<div class="container" *ngIf="footerAbsolute">
+  <div class="item">
+    {{ footerAbsolute.copyright }}
+  </div>
+  <div class="item container center">
+    <ul class="inline">
+      <li>
+        <a
+          [href]="infoLink.link"
+          *ngFor="let infoLink of footerAbsolute.infoLinks"
+        >
+          {{ infoLink.text }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

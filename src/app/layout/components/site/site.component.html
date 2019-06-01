@@ -1,0 +1,39 @@
+<div *ngIf="site">
+  <div class="container">
+    <div class="item grey">
+      <h1>{{ site.rowInfo.title }}</h1>
+      <h2>{{ site.rowInfo.subtitle }}</h2>
+      <p>
+        <span>{{ site.rowInfo.location.name }}</span>
+        <br />
+        <a href="" class="coordinates">
+          <span>{{ site.rowInfo.location.coordinateN }}</span>
+          <span>{{ site.rowInfo.location.coordinateE }}</span>
+        </a>
+      </p>
+    </div>
+    <div class="item white">
+      <p>{{ site.rowInfo.text }}</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="item card" *ngFor="let card of site.cardsLocation">
+      <h1>{{ card.title }}</h1>
+      <p>{{ card.text }}</p>
+      <p>
+        <span>{{ card.location.name }}</span>
+        <a href="" class="coordinates">
+          <br />
+          {{ card.location.coordinateN }}
+          <br />
+          {{ card.location.coordinateE }}
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <app-row-image [rowImage]="site.rowImage"></app-row-image>
+  </div>
+</div>

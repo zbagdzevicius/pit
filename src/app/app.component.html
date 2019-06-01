@@ -1,8 +1,16 @@
 <app-header></app-header>
 <app-heading></app-heading>
-<app-cards></app-cards>
-<app-hero [index]=0></app-hero>
+<div class="background" style="background-image: url(assets/images/map-regular-min.png);">
+<app-hero *ngIf="heroes" [hero]="heroes[0]"></app-hero>
+<app-about-us></app-about-us>
+<app-hero *ngIf="heroes"  [hero]="heroes[1]"></app-hero>
+<app-site></app-site>
+<app-hero *ngIf="heroes"  [hero]="heroes[2]"></app-hero>
+<app-services></app-services>
+<app-hero *ngIf="heroes"  [hero]="heroes[3]"></app-hero>
+<app-companies></app-companies>
+<app-hero *ngIf="lastHero"  [hero]="lastHero"></app-hero>
 <app-contact></app-contact>
-<app-hero [index]=1></app-hero>
 <app-footer></app-footer>
 <app-footer-absolute></app-footer-absolute>
+</div>

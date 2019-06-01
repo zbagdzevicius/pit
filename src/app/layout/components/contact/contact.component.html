@@ -1,8 +1,39 @@
-<div *ngIf="contact" class="container">
-  <div class="item">
-    <app-contact-info [questions]="contact.questions" [contactBy]="contact.contactBy"></app-contact-info>
+<div *ngIf="contact" class="container white">
+  <div class="item font-medium">
+    <h2 class="bold ">{{ contact.address.title }}</h2>
+    <span>{{ contact.address.subtitle }}</span>
+    <ul>
+      <li *ngFor="let location of contact.address.locations">
+        {{ location }}
+      </li><br>
+    </ul>
+    <div>
+      <ul>
+        <li *ngFor="let contactItem of contact.contactBy; last as isLast">
+          <span>{{ contactItem.name }}</span>
+          :
+          <a [href]="contactItem.value" class="bold">{{ contactItem.value }}</a
+          ><br *ngIf="!isLast"/>
+        </li>
+      </ul>
+    </div>
   </div>
+
   <div class="item">
-    <app-form [form]="contact.form"></app-form>
+    <form>
+      <div class="container">
+        <input class="item grey" [placeholder]="contact.form.name" />
+        <input class="item grey" [placeholder]="contact.form.email" />
+      </div>
+      <div class="container">
+        <input class="item grey" [placeholder]="contact.form.message" />
+      </div>
+      <p>
+        {{ contact.form.texts[0] }}
+        <a [href]="contact.form.textLink" class="a-special">{{ contact.form.textLink }}</a>
+        {{ contact.form.texts[1] }}
+      </p>
+      <app-button [buttonText]="contact.form.send"></app-button>
+    </form>
   </div>
 </div>

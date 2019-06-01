@@ -1,0 +1,19 @@
+.hidden{
+  display:none;
+  position: absolute;
+  z-index: 99999;
+}
+ul{
+  position: relative;
+  display: inline-block;
+  &:hover{
+    .hidden{
+      display:list-item;
+    }
+  }
+}
+img{
+  width:40px;
+  height:auto;
+}
+

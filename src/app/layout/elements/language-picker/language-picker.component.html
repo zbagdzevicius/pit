@@ -1,3 +1,8 @@
-<p>
-  language-picker works!
-</p>
+<ul *ngIf="currentFlagSrouce">
+  <span>
+    <img [src]="currentFlagSrouce"/>
+  </span>
+  <li *ngFor="let flagSource of flagSources" class="hidden">
+    <a><img [src]="flagSource"/></a>
+  </li>
+</ul>

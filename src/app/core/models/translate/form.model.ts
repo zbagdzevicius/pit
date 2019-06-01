@@ -1,8 +1,8 @@
 export class Form {
   name: string;
   email: string;
-  phoneNumber: string;
-  company: string;
   message: string;
+  texts: string[];
+  textLink: string;
   send: string;
 }

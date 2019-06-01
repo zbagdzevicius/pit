@@ -26,20 +26,20 @@ export class LangState {
     return content.contactButton;
   }
   @Selector()
-  static getHeroes(content: ContentModel) {
-    return content.heroes;
+  static getAboutUs(content: ContentModel) {
+    return content.aboutUs;
   }
   @Selector()
-  static getCardsImage(content: ContentModel) {
-    return content.cardsImage;
+  static getServices(content: ContentModel) {
+    return content.services;
   }
   @Selector()
-  static getCardsLocation(content: ContentModel) {
-    return content.cardsLocation;
+  static getSite(content: ContentModel) {
+    return content.site;
   }
   @Selector()
-  static getCards(content: ContentModel) {
-    return content.cards;
+  static getCompanies(content: ContentModel) {
+    return content.companies;
   }
   @Selector()
   static getContact(content: ContentModel) {
@@ -53,7 +53,6 @@ export class LangState {
   static getFooterAbsolute(content: ContentModel) {
     return content.footerAbsolute;
   }
-
   @Selector()
   static getLanguage(lang: Lang) {
     return lang.language;

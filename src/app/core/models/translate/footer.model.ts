@@ -1,9 +1,11 @@
+import { FooterInfo } from './footer-info.model';
+
+
 import { SocialLinks } from './social-links.model';
-import { LeftColumn } from './left-column.model';
-import { RightColumn } from './right-clumn.model';
+import { Address } from './address.model';
 
 export class Footer {
-  rightColumn: RightColumn;
-  leftColumn: LeftColumn;
+  footerInfo: FooterInfo;
+  address: Address;
   socialLinks: SocialLinks;
 }

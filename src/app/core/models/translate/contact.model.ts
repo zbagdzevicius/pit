@@ -1,9 +1,9 @@
-import { Question } from './question.model';
+import { Address } from './address.model';
 import { ContactBy } from './contact-by.model';
 import { Form } from './form.model';
 
 export class Contact {
-  questions: Question[];
+  address: Address;
   contactBy: ContactBy[];
   form: Form;
 }

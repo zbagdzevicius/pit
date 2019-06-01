@@ -1,1 +1,3 @@
-<button>{{text}}</button>
+<button *ngIf="buttonText; else contactButtonText">{{buttonText}}</button>
+<ng-template #contactButtonText><button>{{contactButton}}</button></ng-template>
+

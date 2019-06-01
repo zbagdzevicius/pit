@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Select } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { LangState } from 'src/app/core/state/lang.state';
+import { FooterAbsolute } from 'src/app/core/models/translate/footer-absolute.model';
 
 @Component({
   selector: 'app-footer-absolute',
@@ -10,12 +11,12 @@ import { LangState } from 'src/app/core/state/lang.state';
 })
 export class FooterAbsoluteComponent implements OnInit {
 
-  @Select(LangState.getFooterAbsolute) footer$: Observable<string>;
-  footerText: string;
+  @Select(LangState.getFooterAbsolute) footerAbsolute$: Observable<FooterAbsolute>;
+  footerAbsolute: FooterAbsolute;
 
   constructor() {
-    this.footer$
-    .subscribe(footer => this.footerText = footer);
+    this.footerAbsolute$
+      .subscribe(footerAbsolute => this.footerAbsolute = footerAbsolute);
   }
 
   ngOnInit() {

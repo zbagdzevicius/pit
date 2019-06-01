@@ -1,0 +1,25 @@
+<div *ngIf="services">
+  <div class="container justify-vertical">
+    <div class="item card" *ngFor="let card of services.rowCards">
+      <h1>{{card.title}}</h1>
+      <p>{{card.text}}</p>
+      <div class="container justify center-vertical">
+        <div class="item">
+            <p>{{card.location}}</p>
+        </div>
+        <div class="item arrow">
+            <img src="assets/images/arrow-right-min.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" *ngFor="let rowImage of services.rowCardsImage; odd as isOdd">
+    <div class="container" *ngIf="isOdd; else even">
+      <app-row-image [rowImage]="rowImage" [isReversed]=true></app-row-image>
+    </div>
+    <ng-template #even>
+      <app-row-image [rowImage]="rowImage"></app-row-image>
+    </ng-template>
+  </div>
+</div>

@@ -1,4 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { LangState } from 'src/app/core/state/lang.state';
+import { Observable } from 'rxjs';
+import { Select } from '@ngxs/store';
 
 @Component({
   selector: 'app-button',
@@ -6,9 +9,14 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnInit {
-  @Input() text: string;
+  @Select(LangState.getContactButton) contactButton$: Observable<string>;
+  contactButton: string;
+  @Input() buttonText: string;
 
-  constructor() { }
+  constructor() {
+    this.contactButton$
+      .subscribe(contactButton => this.contactButton = contactButton);
+  }
 
   ngOnInit() {
   }
