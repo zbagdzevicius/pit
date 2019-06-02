@@ -1,6 +1,13 @@
 .arrow{
   width:auto;
+  display:none;
   img{
     width: 25px;
+  }
+}
+
+.card:hover, .card:nth-of-type(1){
+  .arrow{
+    display:block;
   }
 }

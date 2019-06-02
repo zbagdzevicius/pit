@@ -1,22 +1,27 @@
-<div class="container grey" *ngIf="footer">
-  <div class="item  font-medium">
-    <h2 class="bold">{{ footer.address.title }}</h2>
-    <span>{{ footer.address.subtitle }}</span>
-    <ul>
+<div class="container footer grey" *ngIf="footer">
+  <div class="item font-medium container updown justified">
+    <div class="item">
+      <h2 class="bold">{{ footer.address.title }}</h2>
+      <span>{{ footer.address.subtitle }}</span>
+    </div>
+    <br>
+    <ul class="item">
       <li *ngFor="let location of footer.address.locations">
         {{ location }}<br />
       </li>
     </ul>
-    <div>
-      <span>{{ footer.socialLinks.facebook }}</span>
-      <span>{{ footer.socialLinks.linkedin }}</span>
+    <br>
+    <div class="item">
+      <span class="social-link"><a [href]="footer.socialLinks.facebook"><img src="assets/images/facebook-min.png"></a> </span>
+      <span class="social-link"><a [href]="footer.socialLinks.linkedin"><img src="assets/images/linkedin-min.png"></a> </span>
     </div>
   </div>
 
   <div class="item">
-    <h1>{{ footer.footerInfo.number }}</h1>
+    <h1><a href="">{{ footer.footerInfo.number }}</a></h1>
+    <br>
     <ul>
-      <li>
+      <li class="font-medium">
         <a *ngFor="let info of footer.footerInfo.infoLinks" [href]="info.link">
           {{ info.text }}
           <br />

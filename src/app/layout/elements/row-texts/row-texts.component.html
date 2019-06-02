@@ -1,17 +1,22 @@
-<div *ngIf="rowTexts" class="container">
-  <div class="item white">
-    <p *ngFor="let text of rowTexts.columnSpecial.texts; first as isFirst">
-      <b *ngIf="rowTexts.columnSpecial.boldText !== '' && isFirst">
-        {{ rowTexts.columnSpecial.boldText }}
-      </b>
-      {{ text }}
-    </p>
+<div *ngIf="rowTexts" class="container cards">
+  <div class="item row-texts card-left" [ngClass]="isYellow ? 'yellow': 'white' ">
+    <div>
+      <p *ngFor="let text of rowTexts.columnSpecial.texts; first as isFirst">
+        <b *ngIf="rowTexts.columnSpecial.boldText !== '' && isFirst">
+          {{ rowTexts.columnSpecial.boldText }}
+        </b>
+        {{ text }}
+      </p>
+    </div>
   </div>
 
-  <div class="item white">
-    <p *ngFor="let text of rowTexts.columnContact.texts">
-      {{ text }}
-    </p>
-    <app-button></app-button>
+  <div class="item white row-texts card-right">
+    <div>
+      <p *ngFor="let text of rowTexts.columnContact.texts">
+        {{ text }}
+      </p>
+      <br>
+      <app-button></app-button>
+    </div>
   </div>
 </div>

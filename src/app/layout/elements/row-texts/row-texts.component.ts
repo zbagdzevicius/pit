@@ -8,6 +8,7 @@ import { RowTexts } from 'src/app/core/models/translate/row-texts.model';
 })
 export class RowTextsComponent implements OnInit {
   @Input() rowTexts: RowTexts;
+  @Input() isYellow: boolean;
 
   constructor() {}
 

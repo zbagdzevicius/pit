@@ -5,7 +5,7 @@ $yellow: #fed646;
 $yellow-link: #ffc800;
 $white: rgba(255, 255, 255, 0.8);
 $black: #282828;
-$dark-grey: grey;
+$dark-grey: #A9A9A9;
 // font sizes
 $big: 32px;
 $medium: 22px;
@@ -22,11 +22,20 @@ body {
     font-size: $small;
   }
 }
+// paddings
+$p0: 120px;
+$p1: 60px;
+$p11: 80px;
+$p2: 45px;
+$p22: 60px;
+$p3: 30px;
+$p4: 10px;
 
 h1 {
   font-size: $big;
+  margin: 0;
 }
-h2, input {
+h2, input, textarea {
   font-size: $medium;
   font-weight: $regular;
 }
@@ -38,7 +47,7 @@ a:not(.coordinates),
 h1,
 h2,
 p,
-input {
+input, textarea {
   color: $black;
 }
 
@@ -53,7 +62,7 @@ a:not(.coordinates,.a-special) {
 }
 // layout
 .max-width {
-  max-width: 1200px;
+  max-width: 1400px;
 }
 .container {
   display: flex;
@@ -73,18 +82,22 @@ a:not(.coordinates,.a-special) {
     flex: 1 1 auto;
     width: 100%;
   }
+  .updown {
+    flex-direction: column;
+  }
 
   &.reverse {
     flex-direction: row-reverse;
   }
 }
 
-ul {
+dl, ul {
   padding: 0;
+  margin:0;
   list-style-type: none;
-  &.inline {
-    list-style: none;
-  }
+}
+dt {
+  text-decoration: none;
 }
 
 .heading {
@@ -107,6 +120,9 @@ button {
   &:nth-of-type(1) {
     background: $yellow;
   }
+  > * {
+    margin: $p2;
+  }
 }
 
 .marginless {
@@ -116,13 +132,20 @@ button {
 .background {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 1200px;
+  background-size: 1400px;
   background-attachment: fixed;
 }
 
 nav {
+  font-size: $medium;
   a:hover {
     border-bottom: 5px solid $yellow;
+  }
+  a{
+    padding-bottom: $p4;
+  }
+  a:not(:last-of-type){
+    margin-right: $p4;
   }
 }
 
@@ -132,10 +155,68 @@ nav {
 .white {
   background-color: $white;
 }
+.yellow {
+  background-color: $yellow;
+}
 
 .font-medium {
   font-size: $medium;
 }
+.font-small {
+  font-size: $small;
+}
 .bold {
   font-weight: $bold;
+}
+
+
+.card-regular > *{
+  margin: $p1 $p1;
+  font-size: $medium;
+}
+.footer > * {
+  margin: $p0 $p1;
+}
+
+.card-big > * {
+  margin: $p1 $p1;
+}
+
+.footer-absolute > * {
+  margin: $p3 $p1;
+}
+.contact > .item:nth-of-type(1) > * {
+  margin: $p3 $p1 $p0 $p1;
+}
+.contact > *:nth-of-type(2){
+  margin: $p3 0 $p0 0;
+}
+.card-small{
+  padding: $p1;
+}
+.card-text{
+  padding: $p2;
+
+}
+
+.section {
+  padding-bottom: $p4;
+}
+
+.margin-rigth{
+  margin-right: $p4;
+}
+
+.row-texts > *{
+  margin: $p1 $p2;
+}
+
+.cards > .card:not(:last-of-type){
+  margin-right:$p4;
+}
+.cards > .card-right{
+  margin-right: 5px;
+}
+.cards > .card-left{
+  margin-left: 5px;
 }

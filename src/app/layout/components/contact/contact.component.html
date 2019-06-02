@@ -1,19 +1,22 @@
-<div *ngIf="contact" class="container white">
-  <div class="item font-medium">
-    <h2 class="bold ">{{ contact.address.title }}</h2>
-    <span>{{ contact.address.subtitle }}</span>
-    <ul>
-      <li *ngFor="let location of contact.address.locations">
-        {{ location }}
-      </li><br>
-    </ul>
+<div *ngIf="contact" class="container white contact">
+  <div class="item font-medium container updown center">
     <div>
+      <div>
+        <h2 class="bold ">{{ contact.address.title }}</h2>
+        <span>{{ contact.address.subtitle }}</span>
+      </div>
+      <br>
+      <ul>
+        <li *ngFor="let location of contact.address.locations; last as isLast">
+          {{ location }}
+        </li><br *ngIf="isLast">
+      </ul>
+      <br>
       <ul>
         <li *ngFor="let contactItem of contact.contactBy; last as isLast">
           <span>{{ contactItem.name }}</span>
           :
-          <a [href]="contactItem.value" class="bold">{{ contactItem.value }}</a
-          ><br *ngIf="!isLast"/>
+          <a [href]="contactItem.value" class="bold">{{ contactItem.value }}</a><br *ngIf="!isLast" />
         </li>
       </ul>
     </div>
@@ -21,12 +24,12 @@
 
   <div class="item">
     <form>
-      <div class="container">
+      <div class="container input1">
         <input class="item grey" [placeholder]="contact.form.name" />
         <input class="item grey" [placeholder]="contact.form.email" />
       </div>
       <div class="container">
-        <input class="item grey" [placeholder]="contact.form.message" />
+        <textarea class="item grey message" [placeholder]="contact.form.message"></textarea>
       </div>
       <p>
         {{ contact.form.texts[0] }}

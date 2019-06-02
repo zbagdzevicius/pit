@@ -9,6 +9,7 @@ import { RowCardsImage } from 'src/app/core/models/translate/row-cards-image.mod
 export class RowImageComponent implements OnInit {
   @Input() rowImage: RowCardsImage;
   @Input() isReversed: boolean;
+  @Input() smallFont: boolean;
 
   constructor() { }
 
