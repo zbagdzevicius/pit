@@ -1,19 +1,23 @@
 .hidden{
   display:none;
   position: absolute;
-  z-index: 99999;
+  z-index: 3;
 }
-ul{
+.flag{
   position: relative;
   display: inline-block;
+  width:30px;
+  height:21px;
   &:hover{
     .hidden{
       display:list-item;
     }
   }
 }
+ul.hidden:hover li{
+  display:list-item;
+}
 img{
-  width:40px;
+  width:30px;
   height:auto;
 }
-

@@ -4,7 +4,7 @@
   </div>
   <div class="item container font-medium">
     <dl>
-      <dt class="container coordinates" *ngFor="let infoLink of footerAbsolute.infoLinks; last as isLast">
+      <dt class="container" *ngFor="let infoLink of footerAbsolute.infoLinks; last as isLast">
         <a [href]="infoLink.link" class="coordinates">
           {{infoLink.text}}
         </a>

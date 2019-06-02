@@ -79,6 +79,13 @@
           "coordinateN": "55° 42' 11.8692''N",
           "coordinateE": "21° 8' 39.4044'' E",
           "name": "Klaipėda, Litauen"
+        },
+        "rowImage": {
+          "texts": [
+            "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen UAB Lithutec Firmenstandort im ukrainischen UAB Lithutec-Ukraine an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt.",
+            "Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
+          ],
+          "image": "assets/images/4.jpg"
         }
       },
       {
@@ -88,6 +95,13 @@
           "coordinateN": "55° 42' 11.8692''N 21° 8'",
           "coordinateE": "39.4044'' E",
           "name": "Ukraine"
+        },
+        "rowImage": {
+          "texts": [
+            "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen UAB Lithutec Firmenstandort im ukrainischen UAB Lithutec-Ukraine an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt.",
+            "Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
+          ],
+          "image": "assets/images/4.jpg"
         }
       },
       {
@@ -97,6 +111,13 @@
           "coordinateN": "55° 42' 11.8692''N 21° 8'",
           "coordinateE": "39.4044'' E",
           "name": "Klaipėda, Litauen"
+        },
+        "rowImage": {
+          "texts": [
+            "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen UAB Lithutec Firmenstandort im ukrainischen UAB Lithutec-Ukraine an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt.",
+            "Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
+          ],
+          "image": "assets/images/4.jpg"
         }
       },
       {
@@ -106,16 +127,16 @@
           "coordinateN": "55° 42' 11.8692''N 21° 8'",
           "coordinateE": "39.4044'' E",
           "name": "Klaipėda, Litauen"
+        },
+        "rowImage": {
+          "texts": [
+            "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen UAB Lithutec Firmenstandort im ukrainischen UAB Lithutec-Ukraine an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt.",
+            "Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
+          ],
+          "image": "assets/images/3.jpg"
         }
       }
-    ],
-    "rowImage": {
-      "texts": [
-        "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen UAB Lithutec Firmenstandort im ukrainischen UAB Lithutec-Ukraine an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt.",
-        "Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
-      ],
-      "image": "assets/images/4.jpg"
-    }
+    ]
   },
   "companies": {
     "rowImage": {

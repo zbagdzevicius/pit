@@ -24,7 +24,7 @@ export class ContentModel {
   footer: Footer;
   footerAbsolute: FooterAbsolute;
 
-  constructor(){
+  constructor() {
     this.menu = null;
     this.contactButton = null;
     this.heading = null;
