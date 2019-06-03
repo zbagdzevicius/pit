@@ -13,9 +13,9 @@ export class AppComponent {
   title = 'pit';
 
   @Select(LangState.getLanguage) language$: Observable<string>;
-  @Select(LangState.getMenu) heroes$: Observable<string[]>;
+  // @Select(LangState.getMenu) heroes$: Observable<string[]>;
   @Select(LangState.getContactButton) contactHero$: Observable<string>;
-  heroes: string[];
+  // heroes: string[];
   lastHero: string;
 
   constructor(
@@ -27,8 +27,8 @@ export class AppComponent {
           this.contentService.getContent(language);
         }
       });
-    this.heroes$
-      .subscribe(heroes => this.heroes = heroes);
+    // this.heroes$
+    //   .subscribe(heroes => this.heroes = heroes);
     this.contactHero$
       .subscribe(lastHero => this.lastHero = lastHero);
   }

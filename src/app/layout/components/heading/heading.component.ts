@@ -12,6 +12,8 @@ export class HeadingComponent implements OnInit {
 
   @Select(LangState.getHeading) heading$: Observable<string>;
   heading: string;
+  isModalActive = false;
+  imgSources = ['assets/images/play.png','assets/images/close.png'];
 
   constructor() {
     this.heading$

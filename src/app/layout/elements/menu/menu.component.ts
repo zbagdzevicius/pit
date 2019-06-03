@@ -12,15 +12,25 @@ export class MenuComponent implements OnInit {
 
   @Select(LangState.getMenu) menu$: Observable<string[]>;
   menu: string[];
+  activeMenuItem: string;
 
   constructor() {
     this.menu$
-      .subscribe(menu => this.menu = menu
+      .subscribe(menu => {
+        if (menu) {
+          this.menu = menu;
+          this.activeMenuItem = menu[0];
+        }
+      }
       );
   }
 
   ngOnInit() {
 
+  }
+
+  changeActive(menuItem) {
+    this.activeMenuItem = menuItem;
   }
 
 }

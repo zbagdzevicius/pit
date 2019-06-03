@@ -1,3 +1,7 @@
-<a *ngFor="let menuItem of menu" [ngx-scroll-to]="menuItem">
-  {{menuItem}}
+<a *ngFor="let menuItem of menu" [ngx-scroll-to]="menuItem" [routerLink]="['/']" >
+  <span
+    [ngClass]="{ 'a-active': (activeMenuItem === menuItem) }"
+    (click)="changeActive(menuItem)"
+    >{{ menuItem }}</span
+  >
 </a>

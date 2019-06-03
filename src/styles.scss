@@ -1,4 +1,3 @@
-// Variables
 // colors
 $grey: #f6f6f6;
 $yellow: #fed646;
@@ -11,18 +10,13 @@ $big: 44px;
 $large: 32px;
 $medium: 22px;
 $small: 16px;
+// borders
+$border-radius: 4px;
 // font weight
 $regular: 400;
 $bold: 700;
 // font family
-$font-family: "Titillium Web";
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
-body {
-  font-family: $font-family, sans-serif;
-  body {
-    font-size: $small;
-  }
-}
+
 // paddings
 $p0: 120px;
 $p1: 60px;
@@ -32,32 +26,33 @@ $p22: 60px;
 $p3: 30px;
 $p4: 10px;
 
+h1,h2,h3,dl, ul, .marginless{
+  padding:0;
+  margin:0;
+}
 h1 {
   font-size: $big;
-  margin: 0;
 }
 h2 {
   font-size: $medium;
   font-weight: $bold;
   line-height: 1.2;
 }
-h2{
- margin: 0;
-}
 
 a:not(.coordinates),
 h1,
 h2,
+h3,
+span,
 p,
 input, textarea {
   color: $black;
 }
-input, textarea{
+input, textarea, .font-small{
   font-size: $small;
 }
 h3{
   font-size:$large;
-  margin:0;
 }
 
 a:not(.coordinates,.a-special) {
@@ -69,9 +64,108 @@ a:not(.coordinates,.a-special) {
 .coordinates {
   color: $dark-grey;
 }
+
+dl, ul {
+  list-style-type: none;
+}
+
+button {
+  background: $yellow;
+  border: none;
+  font-weight: $bold;
+  font-size: $small;
+}
+
+.card {
+  background: $grey;
+  &:hover {
+    background: $yellow;
+  }
+  &.active {
+    background: $yellow;
+  }
+  > * {
+    margin: $p2;
+  }
+}
+
+
+.grey {
+  background-color: $grey;
+}
+.white {
+  background-color: $white;
+}
+.yellow {
+  background-color: $yellow;
+}
+
+.font-medium {
+  font-size: $medium;
+}
+.bold {
+  font-weight: $bold;
+}
+
+.card-regular > *, .row-texts > *{
+  margin: $p1 $p1;
+}
+.footer > * {
+  margin: $p0 $p1;
+}
+.card-big > * {
+  margin: $p1 $p1;
+}
+.footer-absolute > * {
+  margin: $p3 $p1;
+}
+.contact > .item:nth-of-type(1) > * {
+  margin: $p0 $p1 $p0 $p1;
+}
+.contact > *:nth-of-type(2){
+  margin: $p0 0 $p0 0;
+}
+.card-small{
+  padding: $p1;
+}
+.card-text{
+  padding: $p2;
+}
+.section {
+  padding-bottom: $p4;
+}
+.cards > .card:not(:last-of-type){
+  margin-right:$p4;
+}
+
+*:not(img, .dl){
+  border-radius: $border-radius;
+}
+
+
+
+$font-family: "Titillium Web";
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
+body {
+  font-family: $font-family, sans-serif;
+}
+
+
+$max-width: 1200px;
+$background-width: 1400px;
+.background {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: $background-width;
+  margin-right: -100px;
+  padding-right: 100px;
+  margin-left: -100px;
+  padding-left: 100px;
+}
 // layout
 .wrapper *{
-  max-width: 1200px;
+  max-width: $max-width;
 }
 .container {
   display: flex;
@@ -100,138 +194,21 @@ a:not(.coordinates,.a-special) {
   }
 }
 
-dl, ul {
-  padding: 0;
-  margin:0;
-  list-style-type: none;
-}
-dt {
-  text-decoration: none;
-}
-
-.heading {
-  font-size: $big;
-  font-weight: $bold;
-}
-
-button {
-  background: $yellow;
-  border: none;
-  font-weight: $bold;
-  font-size: $small;
-}
-
-.card {
-  background: $grey;
-  &:hover {
-    background: $yellow;
-  }
-  &.active {
-    background: $yellow;
-  }
-  > * {
-    margin: $p2;
-  }
-}
-
-.marginless {
-  margin: 0;
-}
-
-.background {
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 1400px;
-  background-attachment: fixed;
-  padding-left: 100px;
-  margin-left: -100px;
-  margin-right: -100px;
-  padding-right: 100px;
-}
-
 nav {
-  font-size: $small;
+  background-color: rgba(255,255,255,0.95);
+  position: fixed;
+  top: 0;
+  width: $max-width;
+  padding:$p4;
   .menu{
-    a:hover {
+    a:hover, .a-active {
       border-bottom: 5px solid $yellow;
     }
   }
-  a{
+  a, .a-active{
     padding-bottom: $p4;
   }
   a:not(:last-of-type){
     margin-right: $p4;
   }
-}
-
-.grey {
-  background-color: $grey;
-}
-.white {
-  background-color: $white;
-}
-.yellow {
-  background-color: $yellow;
-}
-
-.font-medium {
-  font-size: $medium;
-}
-.font-small {
-  font-size: $small;
-}
-.bold {
-  font-weight: $bold;
-}
-
-
-.card-regular > *{
-  margin: $p1 $p1;
-  font-size: $small;
-}
-.footer > * {
-  margin: $p0 $p1;
-}
-
-.card-big > * {
-  margin: $p1 $p1;
-}
-
-.footer-absolute > * {
-  margin: $p3 $p1;
-}
-.contact > .item:nth-of-type(1) > * {
-  margin: $p0 $p1 $p0 $p1;
-}
-.contact > *:nth-of-type(2){
-  margin: $p0 0 $p0 0;
-}
-.card-small{
-  padding: $p1;
-}
-.card-text{
-  padding: $p2;
-
-}
-
-.section {
-  padding-bottom: $p4;
-}
-
-.margin-rigth{
-  margin-right: $p4;
-}
-
-.row-texts > *{
-  margin: $p1 $p2;
-}
-
-.cards > .card:not(:last-of-type){
-  margin-right:$p4;
-}
-.cards > .card-right{
-  margin-right: 5px;
-}
-.cards > .card-left{
-  margin-left: 5px;
 }

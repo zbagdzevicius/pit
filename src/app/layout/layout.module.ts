@@ -10,7 +10,6 @@ import { HeadingComponent } from './components/heading/heading.component';
 import { MenuComponent } from './elements/menu/menu.component';
 import { ButtonComponent } from './elements/button/button.component';
 import { LogoComponent } from './elements/logo/logo.component';
-import { FormComponent } from './elements/form/form.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { CompaniesComponent } from './components/companies/companies.component';
@@ -18,6 +17,8 @@ import { SiteComponent } from './components/site/site.component';
 import { ServicesComponent } from './components/services/services.component';
 import { RowTextsComponent } from './elements/row-texts/row-texts.component';
 import { RowImageComponent } from './elements/row-image/row-image.component';
+import { VideoComponent } from './elements/video/video.component';
+import { RouterModule } from '@angular/router';
 
 const COMPONENTS = [
   HeaderComponent, FooterComponent,
@@ -33,20 +34,21 @@ const COMPONENTS = [
 const ELEMENTS = [
   LanguagePickerComponent,
   MenuComponent,
-  FormComponent,
   ButtonComponent,
   LogoComponent,
-  RowTextsComponent
+  RowTextsComponent,
+  RowImageComponent,
+  VideoComponent
 ];
 
 @NgModule({
   declarations: [
     ...COMPONENTS,
-    ...ELEMENTS,
-    RowImageComponent
+    ...ELEMENTS
   ],
   imports: [
     CommonModule,
+    RouterModule,
     ScrollToModule.forRoot()
   ],
   exports: [

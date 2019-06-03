@@ -1,23 +1,25 @@
-.hidden{
-  display:none;
+.hidden {
+  display: none;
   position: absolute;
   z-index: 3;
 }
-.flag{
+.flag {
   position: relative;
   display: inline-block;
-  width:30px;
-  height:21px;
-  &:hover{
-    .hidden{
-      display:list-item;
+  width: 30px;
+  height: 21px;
+  &:hover {
+    .hidden {
+      display: list-item;
     }
   }
+  ul:hover{
+
+    display: list-item;
+  }
 }
-ul.hidden:hover li{
-  display:list-item;
-}
+
 img{
-  width:30px;
-  height:auto;
+  width:32px;
+  padding-top:8px;
 }

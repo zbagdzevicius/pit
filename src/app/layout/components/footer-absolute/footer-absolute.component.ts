@@ -13,6 +13,7 @@ export class FooterAbsoluteComponent implements OnInit {
 
   @Select(LangState.getFooterAbsolute) footerAbsolute$: Observable<FooterAbsolute>;
   footerAbsolute: FooterAbsolute;
+  links = ['/policy','/impress','/webmaster'];
 
   constructor() {
     this.footerAbsolute$

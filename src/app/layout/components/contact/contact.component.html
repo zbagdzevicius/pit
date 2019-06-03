@@ -7,16 +7,16 @@
       </div>
       <br>
       <ul>
-        <li *ngFor="let location of contact.address.locations; last as isLast">
+        <li *ngFor="let location of contact.address.locations">
           {{ location }}
-        </li><br *ngIf="isLast">
+        </li>
       </ul>
       <br>
       <ul>
-        <li *ngFor="let contactItem of contact.contactBy; last as isLast">
+        <li *ngFor="let contactItem of contact.contactBy">
           <span>{{ contactItem.name }}</span>
           :
-          <a [href]="contactItem.value" class="bold">{{ contactItem.value }}</a><br *ngIf="!isLast" />
+          <a [href]="contactItem.value" class="bold">{{ contactItem.value }}</a>
         </li>
       </ul>
     </div>
@@ -33,7 +33,7 @@
       </div>
       <p>
         {{ contact.form.texts[0] }}
-        <a [href]="contact.form.textLink" class="a-special">{{ contact.form.textLink }}</a>
+        <a [href]="contact.form.textLink" class="a-special" [routerLink]="['/policy']">{{ contact.form.textLink }}</a>
         {{ contact.form.texts[1] }}
       </p>
       <app-button [buttonText]="contact.form.send"></app-button>

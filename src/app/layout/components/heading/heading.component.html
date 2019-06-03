@@ -1,6 +1,7 @@
-<div
-  class="container center center-vertical updown heading"
->
+<div class="container center-vertical updown heading">
   <h1 *ngIf="heading">{{ heading }}</h1>
-  <a><img src="assets/images/play.png"/></a>
+  <a (click)="isModalActive = !isModalActive; imgSources = imgSources.reverse()"
+    ><img [src]="imgSources[0]"
+  /></a>
+  <app-video *ngIf="isModalActive"></app-video>
 </div>

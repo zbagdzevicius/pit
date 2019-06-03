@@ -1,8 +1,8 @@
-<div class="container cards" [ngClass]="{ 'reverse': isReversed }">
-  <div class="item card-left">
+<div class="container" [ngClass]="{ 'reverse': isReversed }">
+  <div class="item">
     <img [src]="rowImage.image" />
   </div>
-  <div class="item card-regular card-right" [ngClass]="smallFont ? 'grey': 'white' ">
+  <div class="item card-regular" [ngClass]="smallFont ? 'grey': 'white' ">
     <div>
       <p class="font-small" *ngFor="let text of rowImage.texts">{{ text }}</p>
     </div>
