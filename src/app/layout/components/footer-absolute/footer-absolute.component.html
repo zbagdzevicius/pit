@@ -1,8 +1,8 @@
-<div class="container center-vertical footer-absolute" *ngIf="footerAbsolute">
+<div class="container center-vertical footer-absolute font-small" *ngIf="footerAbsolute">
   <div class="item">
     {{ footerAbsolute.copyright }}
   </div>
-  <div class="item container font-medium">
+  <div class="item container">
     <dl>
       <dt class="container" *ngFor="let infoLink of footerAbsolute.infoLinks; last as isLast">
         <a [href]="infoLink.link" class="coordinates">

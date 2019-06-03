@@ -16,6 +16,7 @@ export class SiteComponent implements OnInit {
   @Select(LangState.getSite) site$: Observable<Site>;
   site: Site;
   currentRow: RowCardsImage;
+  index = 0;
 
   constructor() {
     this.site$
@@ -31,8 +32,8 @@ export class SiteComponent implements OnInit {
   }
 
   changeCard(card: CardsLocation) {
-    const index = this.site.cardsLocation.indexOf(card);
-    this.currentRow = this.site.cardsLocation[index].rowImage;
+    this.index = this.site.cardsLocation.indexOf(card);
+    this.currentRow = this.site.cardsLocation[this.index].rowImage;
   }
 
 }

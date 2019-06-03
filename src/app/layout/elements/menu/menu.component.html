@@ -1,3 +1,3 @@
-<a href="#" *ngFor="let menuItem of menu">
+<a *ngFor="let menuItem of menu" [ngx-scroll-to]="menuItem">
   {{menuItem}}
 </a>

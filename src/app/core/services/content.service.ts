@@ -16,7 +16,7 @@ export class ContentService {
     this.http.get(`assets/${language}.json`)
       .subscribe((content: ContentModel) => {
         this.store.dispatch(new SetContent(content));
-        console.log(content);
+        // console.log(content);
       }
       );
   }

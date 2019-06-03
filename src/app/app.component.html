@@ -1,21 +1,21 @@
 <div class="background" style="background-image: url(assets/images/map-flags-min.png);">
   <div class="wrapper">
     <app-header></app-header>
-    <app-heading></app-heading>
+    <app-heading #start></app-heading>
   </div>
 </div>
 <div class="background" style="background-image: url(assets/images/map-regular-min.png);">
   <div class="wrapper">
-    <app-hero *ngIf="heroes" [hero]="heroes[0]"></app-hero>
+    <app-hero *ngIf="heroes" [hero]="heroes[0]" [id]="heroes[0]"></app-hero>
     <app-about-us></app-about-us>
-    <app-hero *ngIf="heroes"  [hero]="heroes[1]"></app-hero>
+    <app-hero *ngIf="heroes"  [hero]="heroes[1]" [id]="heroes[1]"></app-hero>
     <app-site></app-site>
-    <app-hero *ngIf="heroes"  [hero]="heroes[2]"></app-hero>
+    <app-hero *ngIf="heroes"  [hero]="heroes[2]" [id]="heroes[2]"></app-hero>
     <app-services></app-services>
-    <app-hero *ngIf="heroes"  [hero]="heroes[3]"></app-hero>
+    <app-hero *ngIf="heroes"  [hero]="heroes[3]" [id]="heroes[3]"></app-hero>
     <app-companies></app-companies>
-    <app-hero *ngIf="lastHero"  [hero]="lastHero"></app-hero>
-    <app-contact></app-contact>
+    <app-hero *ngIf="lastHero"  [hero]="lastHero" [id]="lastHero"></app-hero>
+    <app-contact [id]="'contact'"></app-contact>
     <app-footer></app-footer>
     <app-footer-absolute></app-footer-absolute>
   </div>

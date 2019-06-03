@@ -56,6 +56,13 @@
           "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm2 bis 300 mm2. Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
           "Für ein zuverlässiges Produktionsergebnis unterliegen alle unsere Produktionsprozesse einer fortlaufenden Qualitätskontrolle."
         ],
+        "image": "assets/images/5.png"
+      },
+      {
+        "texts": [
+          "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm2 bis 300 mm2. Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
+          "Für ein zuverlässiges Produktionsergebnis unterliegen alle unsere Produktionsprozesse einer fortlaufenden Qualitätskontrolle."
+        ],
         "image": "assets/images/2.jpg"
       }
     ]
@@ -65,9 +72,10 @@
       "title": "PIT DEUTSCHLAND GmbH & Co. KG",
       "subtitle": "Ihr Ansprechpartner",
       "location": {
-        "coordinateN": "55° 42' 11.8692''N",
-        "coordinateE": "21° 8' 39.4044'' E",
-        "name": "Großenkneten, Deutschland"
+        "coordinateN": "52°52'41.5' N",
+        "coordinateE": "8°13'00.3' E",
+        "name": "Großenkneten, Deutschland",
+        "link":"https://www.google.com/maps/place/PIT+Deutschland+Verwaltungsgesellschaft+mbH/@52.878223,8.2161838,18z/data=!4m8!1m2!3m1!2sPIT+Deutschland+Verwaltungsgesellschaft+mbH!3m4!1s0x0:0x925245eddab67bb0!8m2!3d52.8781801!4d8.2166999"
       },
       "text": "Bei uns erhalten Sie professionelle Montagen und Produktionen nach dem Null-Fehler-Prinzip. Wir begleiten Ihre Projekte von der Anforderungsanalyse, über den Prototypenbau bis zur individuellen Konfektionierung und Serienproduktion. Profitieren Sie außerdem von deutschen Ansprechpartnern – im Büro genauso wie in den Produktionsstätten vor Ort."
     },
@@ -76,30 +84,31 @@
         "title": "UAB LITHUTEC",
         "text": "Der Spezialist für zuverlässige Kabelkonfektionierung nach Kundenwunsch",
         "location": {
-          "coordinateN": "55° 42' 11.8692''N",
-          "coordinateE": "21° 8' 39.4044'' E",
-          "name": "Klaipėda, Litauen"
+          "coordinateN": "55°41'39.6'N",
+          "coordinateE": "21°11'44.1' E",
+          "name": "Klaipėda, Litauen",
+          "link":"https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
         },
         "rowImage": {
           "texts": [
-            "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen UAB Lithutec Firmenstandort im ukrainischen UAB Lithutec-Ukraine an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt.",
-            "Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
-          ],
-          "image": "assets/images/4.jpg"
+            "Die litauische Hafenstadt Klaipėda verbindet ein dynamisches wirtschaftliches und technologisches Umfeld mit kostengünstiger Produktion im EU-Ausland. Unser UAB Lithutec Produktionsstandort im modernen Klaipėda Business Park (KVP) bietet optimale technische und logistische Voraussetzungen für die Realisierung Ihrer Projekte." ,
+            "Unsere Betriebsabläufe werden regelmäßig kontrolliert und sind nach ISO 9001:2015 zertifiziert. In unseren hellen und modernen Fertigungshallen auf mehr als 2.000 m² konfektionieren, montieren, verpacken und lagern wir Ihre Produkte bis zur fristgerechten Auslieferung."
+             ],
+          "image": "assets/images/3.jpg"
         }
       },
       {
         "title": "OOO LITHUTEC- UKRAINE",
         "text": "Der Partner für zuverlässige und kostengünstige Kabelkonfektion außerhalb der EU",
         "location": {
-          "coordinateN": "55° 42' 11.8692''N 21° 8'",
-          "coordinateE": "39.4044'' E",
-          "name": "Ukraine"
+          "coordinateN": "55°41'39.6'N ",
+          "coordinateE": "21°11'44.1' E",
+          "name": "Ukraine",
+          "link":"https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
         },
         "rowImage": {
           "texts": [
-            "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen UAB Lithutec Firmenstandort im ukrainischen UAB Lithutec-Ukraine an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt.",
-            "Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
+            "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen UAB Lithutec Firmenstandort im ukrainischen UAB Lithutec-Ukraine an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt. Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
           ],
           "image": "assets/images/4.jpg"
         }
@@ -108,14 +117,15 @@
         "title": "UAB LITFABRIC",
         "text": "Die Ansprechpartner für individuelle Bestückung, Montage, Verpackung und Lagerung",
         "location": {
-          "coordinateN": "55° 42' 11.8692''N 21° 8'",
-          "coordinateE": "39.4044'' E",
-          "name": "Klaipėda, Litauen"
+          "coordinateN": "55°41'39.6' N",
+          "coordinateE": "21°11'44.1' E",
+          "name": "Klaipėda, Litauen",
+          "link":"https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
         },
         "rowImage": {
           "texts": [
-            "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen UAB Lithutec Firmenstandort im ukrainischen UAB Lithutec-Ukraine an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt.",
-            "Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
+            "Die UAB Litfabric ist Ihre verlängerte Werkbank in Litauen: Wir übernehmen maschinelle wie manuelle Dienstleistungen von der Montage und Bestückung über die Sortierung und Etikettierung bis zur Verpackung. Durch unseren hohen Spezialisierungsgrad bearbeiten wir Auftragsarbeiten und Komplettmontagen zeitsparend und vor allem kostengünstig.",
+            "Wir begegnen jedem Auftrag mit einem Höchstmaß an Flexibilität: Die Montage Ihrer Produkte bedarf spezieller Materialien oder Maschinen? Liefern Sie uns Ihre Komponenten und wir erledigen den Rest!"
           ],
           "image": "assets/images/4.jpg"
         }
@@ -124,13 +134,14 @@
         "title": "UAB DOLINERA",
         "text": "Die Logistik-Experten zwischen Deutschland, Litauen und der Ukraine",
         "location": {
-          "coordinateN": "55° 42' 11.8692''N 21° 8'",
-          "coordinateE": "39.4044'' E",
-          "name": "Klaipėda, Litauen"
+          "coordinateN": "55°41'39.6' N",
+          "coordinateE": "21°11'44.1' E",
+          "name": "Klaipėda, Litauen",
+          "link": "https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
         },
         "rowImage": {
           "texts": [
-            "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen UAB Lithutec Firmenstandort im ukrainischen UAB Lithutec-Ukraine an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt.",
+            "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
             "Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
           ],
           "image": "assets/images/3.jpg"

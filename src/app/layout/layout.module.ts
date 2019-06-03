@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LanguagePickerComponent } from './elements/language-picker/language-picker.component';
@@ -45,7 +46,8 @@ const ELEMENTS = [
     RowImageComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ScrollToModule.forRoot()
   ],
   exports: [
     ...COMPONENTS

@@ -9,7 +9,7 @@
         <p>
           <span>{{ site.rowInfo.location.name }}</span>
           <br />
-          <a href="" class="coordinates">
+          <a [href]="site.rowInfo.location.link" class="coordinates" target="_blank">
             <span>{{ site.rowInfo.location.coordinateN }}</span>
             <span>{{ site.rowInfo.location.coordinateE }}</span>
           </a>
@@ -24,7 +24,7 @@
   </div>
 
   <div class="container section cards">
-    <a class="item card container" *ngFor="let card of site.cardsLocation" (click)="changeCard(card)">
+    <a class="item card container" *ngFor="let card of site.cardsLocation" (click)="changeCard(card)" [ngClass]="{'active' : (index === site.cardsLocation.indexOf(card))}">
       <div class="item container updown justify">
         <div>
             <h2 class="fixed">{{ card.title }}</h2>
@@ -33,7 +33,7 @@
         </div>
         <p>
           <span>{{ card.location.name }}</span>
-          <a href="" class="coordinates">
+          <a [href]="card.location.link" class="coordinates" target="_blank">
             <br />
             {{ card.location.coordinateN }}
             <br />
