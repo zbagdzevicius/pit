@@ -1,6 +1,6 @@
 <div class="container footer grey" *ngIf="footer">
-  <div class="item font-medium container updown justified">
-    <div class="item">
+  <div class="item container updown justified">
+    <div class="item font-medium">
       <h2 class="bold">{{ footer.address.title }}</h2>
       <span>{{ footer.address.subtitle }}</span>
     </div>
@@ -21,7 +21,7 @@
     <h3><a href="">{{ footer.footerInfo.number }}</a></h3>
     <br>
     <ul>
-      <li class="font-medium">
+      <li>
         <a *ngFor="let info of footer.footerInfo.infoLinks" [href]="info.link">
           {{ info.text }}
           <br />
