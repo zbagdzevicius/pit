@@ -1,14 +1,18 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
-import { SetLanguage, SetContent } from '../actions/lang.actions';
+import { SetLanguage, SetContent, SetImpress, SetPolicy } from '../actions/lang.actions';
 import { Lang } from '../models/layout/lang.model';
 import { ContentModel } from '../models/translate/content.model';
+import { PolicyRoot } from '../models/policy/policy-root.model';
+import { ImpressRoot } from '../models/impress/impress-root.model';
 
 
 @State<Lang>({
   name: 'auth',
   defaults: {
     language: 'de',
-    content: new ContentModel()
+    content: new ContentModel(),
+    policyRoot: new PolicyRoot(),
+    impressRoot: new ImpressRoot()
   }
 })
 
@@ -57,6 +61,14 @@ export class LangState {
   static getLanguage(lang: Lang) {
     return lang.language;
   }
+  @Selector()
+  static getImpress(impressRoot: ImpressRoot) {
+    return impressRoot;
+  }
+  @Selector()
+  static getPolicy(policyRoot: PolicyRoot) {
+    return policyRoot;
+  }
 
   @Action(SetLanguage)
   setLanguage(context: StateContext<Lang>, { payload }: SetLanguage) {
@@ -65,6 +77,14 @@ export class LangState {
 
   @Action(SetContent)
   setContent(context: StateContext<ContentModel>, { payload }: SetContent) {
+    context.patchState(payload);
+  }
+  @Action(SetImpress)
+  setImpress(context: StateContext<ImpressRoot>, { payload }: SetImpress) {
+    context.patchState(payload);
+  }
+  @Action(SetPolicy)
+  setPolicy(context: StateContext<PolicyRoot>, { payload }: SetPolicy) {
     context.patchState(payload);
   }
 

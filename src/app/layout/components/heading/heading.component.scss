@@ -13,3 +13,18 @@ h1{
 img{
   width: 70px;
 }
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(255,255,255,.8); /* Black w/ opacity */
+  max-width: 3900px;
+}
+.modal-content{
+  margin-top:50px;
+}

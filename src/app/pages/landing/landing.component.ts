@@ -16,7 +16,6 @@ export class LandingComponent implements OnInit {
     this.heroes$
       .subscribe(heroes => {
         this.heroes = heroes;
-        console.log(heroes);
       }
       );
   }

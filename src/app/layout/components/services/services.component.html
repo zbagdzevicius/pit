@@ -1,22 +1,27 @@
 <div *ngIf="services">
   <div class="container justify-vertical section cards">
-    <a class="item card container updown justify" *ngFor="let card of services.rowCards; index as i" (click)="changeCard(card)" [ngx-scroll-to]="i" [ngClass]="{'active' : (index === services.rowCards.indexOf(card))}">
-      <h2>{{card.title}}</h2>
-      <p>{{card.text}}</p>
+    <a
+      class="item card container updown justify"
+      *ngFor="let card of services.rowCards"
+      (click)="changeCard(card)"
+      [ngClass]="{ active: index === services.rowCards.indexOf(card) }"
+    >
+      <h2>{{ card.title }}</h2>
+      <p>{{ card.text }}</p>
       <div class="container justify center-vertical">
         <div class="item">
-            <p>{{card.location}}</p>
+          <p>{{ card.location }}</p>
         </div>
         <div class="item arrow">
-            <img src="assets/images/arrow-right-min.png">
+          <img src="assets/images/arrow-right-min.png" />
         </div>
       </div>
     </a>
   </div>
 
-  <div class="container" *ngFor="let rowImage of services.rowCardsImage; odd as isOdd; index as i" [id]="i">
+  <div class="container" *ngFor="let rowImage of currentRows; odd as isOdd">
     <div class="container" *ngIf="isOdd; else even">
-      <app-row-image [rowImage]="rowImage" [isReversed]=true></app-row-image>
+      <app-row-image [rowImage]="rowImage" [isReversed]="true"></app-row-image>
     </div>
     <ng-template #even>
       <app-row-image [rowImage]="rowImage"></app-row-image>

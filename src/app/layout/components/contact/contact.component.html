@@ -1,24 +1,24 @@
 <div *ngIf="contact" class="container white contact">
   <div class="item container updown center">
     <div>
-      <div class="font-medium">
-        <h2 class="bold ">{{ contact.address.title }}</h2>
+      <div>
+        <h4 class="marginless">{{ contact.address.title }}</h4>
         <span>{{ contact.address.subtitle }}</span>
       </div>
       <br>
-      <ul>
-        <li *ngFor="let location of contact.address.locations">
+      <dl>
+        <dt *ngFor="let location of contact.address.locations">
           {{ location }}
-        </li>
-      </ul>
+        </dt>
+      </dl>
       <br>
-      <ul>
-        <li *ngFor="let contactItem of contact.contactBy">
+      <dl>
+        <dt *ngFor="let contactItem of contact.contactBy">
           <span>{{ contactItem.name }}</span>
           :
           <a [href]="contactItem.value" class="bold">{{ contactItem.value }}</a>
-        </li>
-      </ul>
+        </dt>
+      </dl>
     </div>
   </div>
 
@@ -33,7 +33,7 @@
       </div>
       <p>
         {{ contact.form.texts[0] }}
-        <a [href]="contact.form.textLink" class="a-special" [routerLink]="['/policy']">{{ contact.form.textLink }}</a>
+        <a [href]="contact.form.textLink" class="a-special" [routerLink]="['/policy']" [ngx-scroll-to]="'#start'">{{ contact.form.textLink }}</a>
         {{ contact.form.texts[1] }}
       </p>
       <app-button [buttonText]="contact.form.send"></app-button>

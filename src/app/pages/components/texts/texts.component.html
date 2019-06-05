@@ -1,0 +1,19 @@
+<span *ngIf="text">
+  <h2 *ngIf="text.title">{{ text.title }}</h2>
+  <h4 *ngIf="text.subtitle">{{ text.subtitle }}</h4>
+  <p *ngIf="text.text">{{ text.text }}</p>
+  <dl *ngIf="text.contactBy">
+    <dt *ngFor="let contactItem of text.contactBy">
+      <span>{{ contactItem.name }}</span>
+      :
+      <a [href]="contactItem.value" class="bold">{{ contactItem.value }}</a>
+    </dt>
+  </dl>
+  <ul *ngIf="text.list">
+    <li *ngFor="let listItem of text.list">{{ listItem }}</li>
+  </ul>
+  <a [href]="text.link" *ngIf="text.link">{{ text.link }}</a>
+  <dl *ngIf="text.dList">
+    <dt *ngFor="let listItem of text.dList">{{ listItem }}</dt>
+  </dl>
+</span>

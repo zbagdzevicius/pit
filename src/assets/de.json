@@ -1,5 +1,6 @@
 {
   "menu": [
+    "STARTSEITE",
     "ÜBER UNS",
     "PRODUKTIONSSTANDORTE",
     "DIENSTLEISTUNGEN",
@@ -30,40 +31,51 @@
       {
         "title": "Kabelkonfektionierung",
         "text": "Die PIT Group ist spezialisiert auf ganzheitliche Lösungen in den Bereichen der Kabelkonfektionierung und des Schaltschrankbaus.",
-        "location": "Litauen, Ukraine"
+        "location": "Litauen, Ukraine",
+        "rowCardsImage": [
+          {
+            "texts": [
+              "Die PIT Group ist spezialisiert auf ganzheitliche Lösungen in den Bereichen der Kabelkonfektionierung und des Schaltschrankbaus. Wir übernehmen die Konfektion und Montage anschlussfertiger Mikroschalter, Kabelbäume, Schaltschränke und Litzen sowie diebleifreie Bestückung von Leiterplatten.",
+              "Wir konfektionieren alle Kabeltypen genau nach Ihren individuellen Anforderungen und Materialvorgaben. Auch EMV- Filter zählen zu unserem umfangreichen Produktportfolio."
+            ],
+            "image": "assets/images/1.jpg"
+          },
+          {
+            "texts": [
+              "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm2 bis 300 mm2. Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
+              "Für ein zuverlässiges Produktionsergebnis unterliegen alle unsere Produktionsprozesse einer fortlaufenden Qualitätskontrolle."
+            ],
+            "image": "assets/images/5.png"
+          }
+        ]
       },
       {
         "title": "Lohnfertigung",
         "text": "Sparen Sie Zeit und Geld! Wir übernehmen die Montage, Bestückung, Etikettierung, Verpackung und Lagerung sowie den termingerechten Versand Ihrer Waren.",
-        "location": "Litauen, Ukraine"
+        "location": "Litauen, Ukraine",
+        "rowCardsImage": [
+          {
+            "texts": [
+              "Sparen Sie Zeit und Geld! Wir übernehmen die Montage, Bestückung, Etikettierung, Verpackung und Lagerung sowie den termingerechten Versand Ihrer Waren.",
+              "In unseren großzügigen und hellen Fertigungsräumen mit einer Deckenhöhe von bis zu sechs Metern sind auch Sonderanforderungen nach Kundenwunsch kein Problem – maschinell wie manuell.",
+              "Sprechen Sie uns an!"
+            ],
+            "image": "assets/images/6.png"
+          }
+        ]
       },
       {
         "title": "Transport",
         "text": "Die Ansprechpartner für individuelle Bestückung, Montage, Verpackung und Lagerung",
-        "location": "Europe"
-      }
-    ],
-    "rowCardsImage": [
-      {
-        "texts": [
-          "Die PIT Group ist spezialisiert auf ganzheitliche Lösungen in den Bereichen der Kabelkonfektionierung und des Schaltschrankbaus. Wir übernehmen die Konfektion und Montage anschlussfertiger Mikroschalter, Kabelbäume, Schaltschränke und Litzen sowie diebleifreie Bestückung von Leiterplatten.",
-          "Wir konfektionieren alle Kabeltypen genau nach Ihren individuellen Anforderungen und Materialvorgaben. Auch EMV- Filter zählen zu unserem umfangreichen Produktportfolio."
-        ],
-        "image": "assets/images/1.jpg"
-      },
-      {
-        "texts": [
-          "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm2 bis 300 mm2. Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-          "Für ein zuverlässiges Produktionsergebnis unterliegen alle unsere Produktionsprozesse einer fortlaufenden Qualitätskontrolle."
-        ],
-        "image": "assets/images/5.png"
-      },
-      {
-        "texts": [
-          "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm2 bis 300 mm2. Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-          "Für ein zuverlässiges Produktionsergebnis unterliegen alle unsere Produktionsprozesse einer fortlaufenden Qualitätskontrolle."
-        ],
-        "image": "assets/images/2.jpg"
+        "location": "Europe",
+        "rowCardsImage": [
+          {
+            "texts": [
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente odit possimus ad, tempore neque quo ratione natus vero alias nostrum cum voluptatibus sed iste nesciunt aut, soluta similique odio qui."
+            ],
+            "image": "assets/images/7.png"
+          }
+        ]
       }
     ]
   },
@@ -75,7 +87,7 @@
         "coordinateN": "52°52'41.5' N",
         "coordinateE": "8°13'00.3' E",
         "name": "Großenkneten, Deutschland",
-        "link":"https://www.google.com/maps/place/PIT+Deutschland+Verwaltungsgesellschaft+mbH/@52.878223,8.2161838,18z/data=!4m8!1m2!3m1!2sPIT+Deutschland+Verwaltungsgesellschaft+mbH!3m4!1s0x0:0x925245eddab67bb0!8m2!3d52.8781801!4d8.2166999"
+        "link": "https://www.google.com/maps/place/PIT+Deutschland+Verwaltungsgesellschaft+mbH/@52.878223,8.2161838,18z/data=!4m8!1m2!3m1!2sPIT+Deutschland+Verwaltungsgesellschaft+mbH!3m4!1s0x0:0x925245eddab67bb0!8m2!3d52.8781801!4d8.2166999"
       },
       "text": "Bei uns erhalten Sie professionelle Montagen und Produktionen nach dem Null-Fehler-Prinzip. Wir begleiten Ihre Projekte von der Anforderungsanalyse, über den Prototypenbau bis zur individuellen Konfektionierung und Serienproduktion. Profitieren Sie außerdem von deutschen Ansprechpartnern – im Büro genauso wie in den Produktionsstätten vor Ort."
     },
@@ -87,14 +99,14 @@
           "coordinateN": "55°41'39.6'N",
           "coordinateE": "21°11'44.1' E",
           "name": "Klaipėda, Litauen",
-          "link":"https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
+          "link": "https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
         },
         "rowImage": {
           "texts": [
-            "Die litauische Hafenstadt Klaipėda verbindet ein dynamisches wirtschaftliches und technologisches Umfeld mit kostengünstiger Produktion im EU-Ausland. Unser UAB Lithutec Produktionsstandort im modernen Klaipėda Business Park (KVP) bietet optimale technische und logistische Voraussetzungen für die Realisierung Ihrer Projekte." ,
+            "Die litauische Hafenstadt Klaipėda verbindet ein dynamisches wirtschaftliches und technologisches Umfeld mit kostengünstiger Produktion im EU-Ausland. Unser UAB Lithutec Produktionsstandort im modernen Klaipėda Business Park (KVP) bietet optimale technische und logistische Voraussetzungen für die Realisierung Ihrer Projekte.",
             "Unsere Betriebsabläufe werden regelmäßig kontrolliert und sind nach ISO 9001:2015 zertifiziert. In unseren hellen und modernen Fertigungshallen auf mehr als 2.000 m² konfektionieren, montieren, verpacken und lagern wir Ihre Produkte bis zur fristgerechten Auslieferung."
-             ],
-          "image": "assets/images/3.jpg"
+          ],
+          "image": "assets/images/lithutec.jpg"
         }
       },
       {
@@ -104,13 +116,13 @@
           "coordinateN": "55°41'39.6'N ",
           "coordinateE": "21°11'44.1' E",
           "name": "Ukraine",
-          "link":"https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
+          "link": "https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
         },
         "rowImage": {
           "texts": [
             "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen UAB Lithutec Firmenstandort im ukrainischen UAB Lithutec-Ukraine an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt. Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
           ],
-          "image": "assets/images/4.jpg"
+          "image": "assets/images/ukraine.jpg"
         }
       },
       {
@@ -120,14 +132,14 @@
           "coordinateN": "55°41'39.6' N",
           "coordinateE": "21°11'44.1' E",
           "name": "Klaipėda, Litauen",
-          "link":"https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
+          "link": "https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
         },
         "rowImage": {
           "texts": [
             "Die UAB Litfabric ist Ihre verlängerte Werkbank in Litauen: Wir übernehmen maschinelle wie manuelle Dienstleistungen von der Montage und Bestückung über die Sortierung und Etikettierung bis zur Verpackung. Durch unseren hohen Spezialisierungsgrad bearbeiten wir Auftragsarbeiten und Komplettmontagen zeitsparend und vor allem kostengünstig.",
             "Wir begegnen jedem Auftrag mit einem Höchstmaß an Flexibilität: Die Montage Ihrer Produkte bedarf spezieller Materialien oder Maschinen? Liefern Sie uns Ihre Komponenten und wir erledigen den Rest!"
           ],
-          "image": "assets/images/4.jpg"
+          "image": "assets/images/litfabric.jpg"
         }
       },
       {
@@ -144,7 +156,7 @@
             "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
             "Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
           ],
-          "image": "assets/images/3.jpg"
+          "image": "assets/images/dolinera.jpg"
         }
       }
     ]
@@ -156,7 +168,7 @@
         "Schon damals begleitete uns die Vision eines internationalen Unternehmenskonzepts das kostengünstige Arbeit und hohe Qualitätsstandards vereint:",
         "Ab 2011 verlagerten wir unsere Kabelkonfektion Schritt für Schritt von unserem deutschen Standort im Metropolpark-Hansalinie in Ahlhorn auf die eigens gegründete UAB Lithutec in Litauen. Hier haben wir uns in den vergangenen Jahren als zuverlässiger, flexibler und vor allem kostengünstiger Partner im Bereich der Kabelkonfektionierung einen Namen gemacht."
       ],
-      "image": "assets/images/3.jpg"
+      "image": "assets/images/lithutec.jpg"
     },
     "rowTexts": {
       "columnSpecial": {

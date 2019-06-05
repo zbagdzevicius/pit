@@ -28,13 +28,13 @@ const COMPONENTS = [
   AboutUsComponent,
   CompaniesComponent,
   SiteComponent,
+  ButtonComponent,
   ServicesComponent
 ];
 
 const ELEMENTS = [
   LanguagePickerComponent,
   MenuComponent,
-  ButtonComponent,
   LogoComponent,
   RowTextsComponent,
   RowImageComponent,

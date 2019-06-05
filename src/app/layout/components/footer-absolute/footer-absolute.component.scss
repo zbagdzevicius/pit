@@ -1,6 +1,6 @@
-a{
-    text-decoration: none;
-}
 dl dt{
     display:inline;
+}
+dl dt:not(:last-of-type){
+  margin-right: 10px;
 }

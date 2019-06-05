@@ -5,12 +5,12 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { LandingComponent } from './landing/landing.component';
 import { LayoutModule } from '../layout/layout.module';
 import { CoreModule } from '../core/core.module';
-import { WebmasterComponent } from './webmaster/webmaster.component';
 import { ImpressComponent } from './impress/impress.component';
 import { PolicyComponent } from './policy/policy.component';
+import { TextsComponent } from './components/texts/texts.component';
 
 @NgModule({
-  declarations: [LandingComponent, WebmasterComponent, ImpressComponent, PolicyComponent],
+  declarations: [LandingComponent, ImpressComponent, PolicyComponent, TextsComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,

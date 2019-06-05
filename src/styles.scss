@@ -25,6 +25,7 @@ $p2: 45px;
 $p22: 60px;
 $p3: 30px;
 $p4: 10px;
+$p5: 7px;
 
 h1,h2,h3,dl, ul, .marginless{
   padding:0;
@@ -154,7 +155,7 @@ body {
 $max-width: 1200px;
 $background-width: 1400px;
 .background {
-  background-position: center bottom;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: $background-width;
@@ -181,6 +182,9 @@ $background-width: 1400px;
   &.center-vertical {
     align-items: center;
   }
+  &.spacing {
+    justify-content: space-around;
+  }
   .item {
     flex: 1 1 auto;
     width: 100%;
@@ -199,16 +203,28 @@ nav {
   position: fixed;
   top: 0;
   width: $max-width;
-  padding:$p4;
+  padding:$p5;
   .menu{
+    font-size: 14px;
     a:hover, .a-active {
       border-bottom: 5px solid $yellow;
     }
   }
   a, .a-active{
-    padding-bottom: $p4;
+    padding-bottom: $p5;
   }
   a:not(:last-of-type){
     margin-right: $p4;
   }
+}
+
+button, .item{
+  border-radius: 4px;
+}
+footer {
+	/*padding: 10px 0;*/
+	width:auto;
+	margin: 0 auto;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
 }

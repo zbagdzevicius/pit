@@ -1,7 +1,17 @@
 <div class="container center-vertical updown heading">
   <h1 *ngIf="heading">{{ heading }}</h1>
-  <a (click)="isModalActive = !isModalActive; imgSources = imgSources.reverse()"
-    ><img [src]="imgSources[0]"
-  /></a>
-  <app-video *ngIf="isModalActive"></app-video>
+  <a (click)="isModalActive = !isModalActive"><img [src]="imgSources[0]"/></a>
+  <a class="modal container center" *ngIf="isModalActive"
+      (click)="isModalActive = !isModalActive">
+    <div
+      class="modal-content container center updown"
+    >
+      <div class="item">
+        <app-video></app-video>
+      </div>
+      <div class="item container center">
+        <span class="close"><img [src]="imgSources[1]"/></span>
+      </div>
+    </div>
+  </a>
 </div>

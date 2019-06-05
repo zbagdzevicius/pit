@@ -1,7 +1,7 @@
 <div class="container footer grey" *ngIf="footer">
   <div class="item container updown justified">
-    <div class="item font-medium">
-      <h2 class="bold">{{ footer.address.title }}</h2>
+    <div class="item">
+      <h4 class="marginless">{{ footer.address.title }}</h4>
       <span>{{ footer.address.subtitle }}</span>
     </div>
     <br>
@@ -20,13 +20,13 @@
   <div class="item">
     <h3><a href="">{{ footer.footerInfo.number }}</a></h3>
     <br>
-    <ul>
-      <li>
+    <dl>
+      <dt>
         <a *ngFor="let info of footer.footerInfo.infoLinks" [href]="info.link">
           {{ info.text }}
           <br />
         </a>
-      </li>
-    </ul>
+      </dt>
+    </dl>
   </div>
 </div>

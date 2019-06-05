@@ -1,9 +1,9 @@
 <nav>
-  <dl class="container justify inline center-vertical">
+  <dl class="container justify center-vertical">
     <dt><app-logo></app-logo></dt>
     <dt><app-menu class="menu"></app-menu></dt>
-    <span><app-language-picker></app-language-picker> </span>
     <dt>
+      <span class="margin-right"><app-language-picker></app-language-picker> </span>
       <span *ngIf="contactButton">
         <app-button></app-button>
       </span>

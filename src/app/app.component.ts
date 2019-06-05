@@ -13,9 +13,7 @@ export class AppComponent {
   title = 'pit';
 
   @Select(LangState.getLanguage) language$: Observable<string>;
-  // @Select(LangState.getMenu) heroes$: Observable<string[]>;
   @Select(LangState.getContactButton) contactHero$: Observable<string>;
-  // heroes: string[];
   lastHero: string;
 
   constructor(

@@ -1,0 +1,82 @@
+{
+  "pageTitle": "IMPRESSUM",
+  "impress": {
+    "columnLeft": {
+      "texts": [
+        {
+          "subtitle": "Herausgegeben von:"
+        },
+        {
+          "dList": [
+            "PIT Deutschland GmbH & Co. KG",
+            "Vechtaer Straße 35",
+            "D-26197 Großenkneten"
+          ]
+        },
+        {
+          "contactBy": [
+            {
+              "name": "Fon",
+              "value": "+49 44 35-9 73 64 03"
+            },
+            {
+              "name": "Fax",
+              "value": "+49 32 12-1 48 52 23"
+            },
+            {
+              "name": "E-Mail",
+              "value": "info@pit-deutschland.eu"
+            }
+          ]
+        },
+        {
+          "subtitle": "Vertreten durch die Geschäftsführung:"
+        },
+        {
+          "text": "Neringa Stanke"
+        },
+        {
+          "subtitle": "Handelsregister:"
+        },
+        {
+          "text": "Amtsgericht Oldenburg HRA 203875"
+        },
+        {
+          "subtitle": "Umsatzsteuer-Identifikationsnummer:"
+        },
+        {
+          "text": "DE 291991163"
+        },
+        {
+          "subtitle": "Redaktion:"
+        },
+        {
+          "text": "PIT Deutschland GmbH & Co. KG"
+        }
+      ]
+    },
+    "columnRight": {
+      "webmaster": [
+        {
+          "subtitle": "Webmaster:"
+        },
+        {
+          "text": "Motiejus Benetis"
+        },
+        {
+          "contactBy": [
+            {
+              "name": "Mobile",
+              "value": "+370 611 44223"
+            },
+            {
+              "name": "E-Mail",
+              "value": "hello@woohoolab.com"
+            }
+          ]
+        }
+      ],
+      "image": "assets/images/impress.png"
+    }
+  }
+}

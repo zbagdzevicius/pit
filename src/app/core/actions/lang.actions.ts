@@ -1,5 +1,7 @@
 import { Lang } from '../models/layout/lang.model';
 import { ContentModel } from '../models/translate/content.model';
+import { PolicyRoot } from '../models/policy/policy-root.model';
+import { ImpressRoot } from '../models/impress/impress-root.model';
 
 export class SetLanguage {
   static readonly type = '[lang] set language';
@@ -8,4 +10,12 @@ export class SetLanguage {
 export class SetContent {
   static readonly type = '[content] set content';
   constructor(public payload: ContentModel) { }
+}
+export class SetPolicy {
+  static readonly type = '[policy] set policy';
+  constructor(public payload: PolicyRoot) { }
+}
+export class SetImpress {
+  static readonly type = '[impress] set impress';
+  constructor(public payload: ImpressRoot) { }
 }
