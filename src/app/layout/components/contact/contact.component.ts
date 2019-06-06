@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Select } from '@ngxs/store';
 import { Contact } from 'src/app/core/models/translate/contact.model';
 import { LangState } from 'src/app/core/state/lang.state';

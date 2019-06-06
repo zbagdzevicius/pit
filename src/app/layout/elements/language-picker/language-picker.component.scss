@@ -4,17 +4,16 @@
   z-index: 3;
 }
 .flag {
-  position: relative;
   display: inline-block;
   width: 30px;
   height: 21px;
+  padding-top:23px;
   &:hover {
     .hidden {
       display: list-item;
     }
   }
   ul:hover{
-
     display: list-item;
   }
   img{

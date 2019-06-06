@@ -1,9 +1,10 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
-import { SetLanguage, SetContent, SetImpress, SetPolicy } from '../actions/lang.actions';
+import { SetLanguage, SetContent, SetImpress, SetPolicy, SetActiveCard } from '../actions/lang.actions';
 import { Lang } from '../models/layout/lang.model';
 import { ContentModel } from '../models/translate/content.model';
 import { PolicyRoot } from '../models/policy/policy-root.model';
 import { ImpressRoot } from '../models/impress/impress-root.model';
+import { ActiveCard } from '../models/layout/active-card.model';
 
 
 @State<Lang>({
@@ -12,7 +13,8 @@ import { ImpressRoot } from '../models/impress/impress-root.model';
     language: 'de',
     content: new ContentModel(),
     policyRoot: new PolicyRoot(),
-    impressRoot: new ImpressRoot()
+    impressRoot: new ImpressRoot(),
+    activeCard: null
   }
 })
 
@@ -42,6 +44,10 @@ export class LangState {
     return content.site;
   }
   @Selector()
+  static getSiteTitles(content: ContentModel) {
+    return content.site.cardsLocation;
+  }
+  @Selector()
   static getCompanies(content: ContentModel) {
     return content.companies;
   }
@@ -69,6 +75,10 @@ export class LangState {
   static getPolicy(policyRoot: PolicyRoot) {
     return policyRoot;
   }
+  @Selector()
+  static getActiveCard(cardLocation: string) {
+    return cardLocation;
+  }
 
   @Action(SetLanguage)
   setLanguage(context: StateContext<Lang>, { payload }: SetLanguage) {
@@ -85,6 +95,10 @@ export class LangState {
   }
   @Action(SetPolicy)
   setPolicy(context: StateContext<PolicyRoot>, { payload }: SetPolicy) {
+    context.patchState(payload);
+  }
+  @Action(SetActiveCard)
+  setActiveCard(context: StateContext<ActiveCard>, { payload }: SetActiveCard) {
     context.patchState(payload);
   }
 

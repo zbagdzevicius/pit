@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
 import { Services } from 'src/app/core/models/translate/services.model';
 import { LangState } from 'src/app/core/state/lang.state';

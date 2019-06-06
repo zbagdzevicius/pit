@@ -1,17 +1,21 @@
-<div class="container center-vertical updown heading">
-  <h1 *ngIf="heading">{{ heading }}</h1>
-  <a (click)="isModalActive = !isModalActive"><img [src]="imgSources[0]"/></a>
-  <a class="modal container center" *ngIf="isModalActive"
-      (click)="isModalActive = !isModalActive">
-    <div
-      class="modal-content container center updown"
-    >
-      <div class="item">
-        <app-video></app-video>
-      </div>
-      <div class="item container center">
-        <span class="close"><img [src]="imgSources[1]"/></span>
-      </div>
-    </div>
-  </a>
+<div class="heading">
+  <div *ngIf="!isModalActive else video" class="container center-vertical updown ">
+    <h1 *ngIf="heading">{{ heading }}</h1>
+    <a (click)="isModalActive = !isModalActive"><img [src]="imgSources[0]" /></a>
+  </div>
 </div>
+<ng-template #video>
+  <!-- <a class="modal container center" *ngIf="isModalActive"
+          (click)="isModalActive = !isModalActive">
+        <div
+          class="modal-content container center updown"
+        > -->
+  <div class="video">
+    <div class="item container center-vertical updown">
+      <app-video class="video" (valueChange)='turnOffVideo($event)'>
+      </app-video>
+    </div>
+  </div>
+  <!-- </div>
+      </a> -->
+</ng-template>

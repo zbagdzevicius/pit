@@ -1,1 +1,1 @@
-<a [routerLink]="['/']" routerLinkActive="router-link-active"  [ngx-scroll-to]="'#start'"><img src="assets/images/logo-min.png"></a>
+<a [routerLink]="['/']" routerLinkActive="router-link-active"  [ngx-scroll-to]="'#start'"><img src="assets/images/logo-min.png" class="logo" [ngClass]="{'logo-big':!resizing, 'logo-small':resizing}"></a>

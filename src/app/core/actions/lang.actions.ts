@@ -2,6 +2,7 @@ import { Lang } from '../models/layout/lang.model';
 import { ContentModel } from '../models/translate/content.model';
 import { PolicyRoot } from '../models/policy/policy-root.model';
 import { ImpressRoot } from '../models/impress/impress-root.model';
+import { ActiveCard } from '../models/layout/active-card.model';
 
 export class SetLanguage {
   static readonly type = '[lang] set language';
@@ -18,4 +19,8 @@ export class SetPolicy {
 export class SetImpress {
   static readonly type = '[impress] set impress';
   constructor(public payload: ImpressRoot) { }
+}
+export class SetActiveCard {
+  static readonly type = '[impress] set siteCard';
+  constructor(public payload: ActiveCard) { }
 }

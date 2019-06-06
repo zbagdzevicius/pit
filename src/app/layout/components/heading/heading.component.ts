@@ -13,11 +13,15 @@ export class HeadingComponent implements OnInit {
   @Select(LangState.getHeading) heading$: Observable<string>;
   heading: string;
   isModalActive = false;
-  imgSources = ['assets/images/play.png','assets/images/close.png'];
+  imgSources = ['assets/images/play.png', 'assets/images/close.png'];
 
   constructor() {
     this.heading$
-    .subscribe(heading => this.heading = heading);
+      .subscribe(heading => this.heading = heading);
+  }
+
+  turnOffVideo($event) {
+    this.isModalActive = false;
   }
 
   ngOnInit() {

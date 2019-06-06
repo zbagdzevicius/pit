@@ -7,11 +7,13 @@ export class Lang {
   content: ContentModel;
   policyRoot: PolicyRoot;
   impressRoot: ImpressRoot;
+  activeCard: string;
 
   constructor() {
     this.language = 'de';
     this.content = null;
     this.policyRoot = null;
     this.impressRoot = null;
+    this.activeCard = null;
   }
 }

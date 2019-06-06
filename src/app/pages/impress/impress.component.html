@@ -1,24 +1,29 @@
-<app-hero [hero]="pageTitle" *ngIf="pageTitle"></app-hero>
-<div class="container cards section" *ngIf="columnLeft && columnRight">
-  <div class="item yellow card">
-    <div>
-      <div *ngFor="let text of columnLeft.texts">
-        <app-texts [text]="text"></app-texts>
+<div class="background" style="background-image: url(assets/images/map-regular-min.png);">
+
+  <app-hero [hero]="pageTitle" *ngIf="pageTitle"></app-hero>
+  <div class="container cards section" *ngIf="columnLeft && columnRight">
+    <div class="item yellow card">
+      <div>
+        <div *ngFor="let text of columnLeft.texts">
+          <app-texts [text]="text"></app-texts>
+        </div>
+      </div>
+    </div>
+
+    <div class="item white card">
+      <div class="container center">
+        <img [src]="image" class="square" />
+      </div>
+      <div>
+        <div *ngFor="let text of columnRight.webmaster">
+          <app-texts [text]="text"></app-texts>
+        </div>
+      </div>
+      <div>
+        <app-button></app-button>
       </div>
     </div>
   </div>
 
-  <div class="item white card">
-    <div class="container center">
-      <img [src]="image" class="square" />
-    </div>
-    <div>
-      <div *ngFor="let text of columnRight.webmaster">
-        <app-texts [text]="text"></app-texts>
-      </div>
-    </div>
-    <div>
-      <app-button></app-button>
-    </div>
-  </div>
+
 </div>

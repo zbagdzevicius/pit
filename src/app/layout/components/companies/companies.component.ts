@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Companies } from 'src/app/core/models/translate/companies.model';
 import { Observable } from 'rxjs/internal/Observable';
 import { LangState } from 'src/app/core/state/lang.state';

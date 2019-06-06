@@ -73,7 +73,13 @@
             "texts": [
               "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente odit possimus ad, tempore neque quo ratione natus vero alias nostrum cum voluptatibus sed iste nesciunt aut, soluta similique odio qui."
             ],
-            "image": "assets/images/7.png"
+            "image": "assets/images/truck1.png"
+          },
+          {
+            "texts": [
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente odit possimus ad, tempore neque quo ratione natus vero alias nostrum cum voluptatibus sed iste nesciunt aut, soluta similique odio qui."
+            ],
+            "image": "assets/images/truck2.png"
           }
         ]
       }
@@ -96,10 +102,10 @@
         "title": "UAB LITHUTEC",
         "text": "Der Spezialist für zuverlässige Kabelkonfektionierung nach Kundenwunsch",
         "location": {
-          "coordinateN": "55°41'39.6'N",
-          "coordinateE": "21°11'44.1' E",
+          "coordinateN": "55°41'39.7'N",
+          "coordinateE": "21°11'40.6' E",
           "name": "Klaipėda, Litauen",
-          "link": "https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
+          "link": "https://beta.maps.lt/short/e639a081"
         },
         "rowImage": {
           "texts": [
@@ -113,10 +119,10 @@
         "title": "OOO LITHUTEC- UKRAINE",
         "text": "Der Partner für zuverlässige und kostengünstige Kabelkonfektion außerhalb der EU",
         "location": {
-          "coordinateN": "55°41'39.6'N ",
-          "coordinateE": "21°11'44.1' E",
+          "coordinateN": "49°26'14.0' N",
+          "coordinateE": "27°01'06.1' E",
           "name": "Ukraine",
-          "link": "https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
+          "link": "https://www.google.com/maps/@49.4372036,27.0186389,3a,75y,300.85h,96.85t/data=!3m6!1e1!3m4!1s9YuCQZOzEusAKnQCNfVkDw!2e0!7i13312!8i6656"
         },
         "rowImage": {
           "texts": [
@@ -129,10 +135,10 @@
         "title": "UAB LITFABRIC",
         "text": "Die Ansprechpartner für individuelle Bestückung, Montage, Verpackung und Lagerung",
         "location": {
-          "coordinateN": "55°41'39.6' N",
-          "coordinateE": "21°11'44.1' E",
+          "coordinateN": "55°41'39.0' N",
+          "coordinateE": "21°11'40.0' E",
           "name": "Klaipėda, Litauen",
-          "link": "https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
+          "link": "https://beta.maps.lt/short/bd51bc61"
         },
         "rowImage": {
           "texts": [
@@ -146,17 +152,17 @@
         "title": "UAB DOLINERA",
         "text": "Die Logistik-Experten zwischen Deutschland, Litauen und der Ukraine",
         "location": {
-          "coordinateN": "55°41'39.6' N",
-          "coordinateE": "21°11'44.1' E",
+          "coordinateN": "55°53'26.6' N",
+          "coordinateE": "21°15'33.4' E",
           "name": "Klaipėda, Litauen",
-          "link": "https://www.google.com/maps/place/55%C2%B041'39.6%22N+21%C2%B011'44.1%22E/@55.6935702,21.1923983,17z"
+          "link": "https://beta.maps.lt/short/6f5d3edb"
         },
         "rowImage": {
           "texts": [
             "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
             "Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
           ],
-          "image": "assets/images/dolinera.jpg"
+          "image": "assets/images/truck1.png"
         }
       }
     ]
@@ -237,7 +243,7 @@
           "link": "https://#"
         },
         {
-          "text": "Uab Litfabrik",
+          "text": "Uab Litfabric",
           "link": "https://#"
         },
         {

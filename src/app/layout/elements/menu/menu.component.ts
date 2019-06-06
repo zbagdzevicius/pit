@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Select } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { LangState } from 'src/app/core/state/lang.state';
@@ -12,7 +12,7 @@ export class MenuComponent implements OnInit {
 
   @Select(LangState.getMenu) menu$: Observable<string[]>;
   menu: string[];
-  activeMenuItem: string;
+  @Input() activeMenuItem: string;
 
   constructor() {
     this.menu$
