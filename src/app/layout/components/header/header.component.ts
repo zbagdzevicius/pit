@@ -55,7 +55,7 @@ export class HeaderComponent implements OnInit {
 
   changeActiveButton(currentScrollPosition) {
     this.pageSections.forEach((sectionPosition, index) => {
-      if (sectionPosition < currentScrollPosition) {
+      if ((sectionPosition - 50) < currentScrollPosition) {
         if (this.menu[index] === undefined) {
           return;
         }

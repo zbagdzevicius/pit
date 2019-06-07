@@ -5,7 +5,6 @@ import { Observable } from 'rxjs';
 import { Footer } from 'src/app/core/models/translate/footer.model';
 import { CardsLocation } from 'src/app/core/models/translate/cards-location.model';
 import { SetActiveCard } from 'src/app/core/actions/lang.actions';
-import { ActiveCard } from 'src/app/core/models/layout/active-card.model';
 
 @Component({
   selector: 'app-footer',
