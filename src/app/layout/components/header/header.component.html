@@ -2,11 +2,9 @@
   <dl class="container justify center-vertical">
     <dt><app-logo [resizing]="resizing"></app-logo></dt>
     <dt><app-menu class="menu" [activeMenuItem]="activeMenuItem"></app-menu></dt>
-    <dt>
-      <span class="margin-right"><app-language-picker></app-language-picker> </span>
-      <span *ngIf="contactButton">
-        <app-button></app-button>
-      </span>
+    <dt class="container center-vertical">
+          <app-language-picker></app-language-picker>
+            <app-button></app-button>
     </dt>
   </dl>
 </nav>

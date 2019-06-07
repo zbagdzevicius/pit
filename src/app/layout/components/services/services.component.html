@@ -1,5 +1,5 @@
 <div *ngIf="services">
-  <div class="container justify-vertical section cards">
+  <div class="container justify-vertical section cards" [ngx-scroll-to]="'services'">
     <a
       class="item card container updown justify"
       *ngFor="let card of services.rowCards"
@@ -19,7 +19,7 @@
     </a>
   </div>
 
-  <div class="container" *ngFor="let rowImage of currentRows; odd as isOdd">
+  <div class="container" *ngFor="let rowImage of currentRows; odd as isOdd" id="services">
     <div class="container" *ngIf="isOdd; else even">
       <app-row-image [rowImage]="rowImage" [isReversed]="true"></app-row-image>
     </div>

@@ -23,7 +23,7 @@
     <dl>
       <dt>
         <a *ngFor="let footerLink of footerLinks" [routerLink]="['/']" routerLinkActive="router-link-active"  [ngx-scroll-to]="footerLink" (click)="changeActiveCard(footerLink)">
-          {{ footerLink }}
+          {{ footerLink.toLowerCase() }}
           <br />
         </a>
       </dt>

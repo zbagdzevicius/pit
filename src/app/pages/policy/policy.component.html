@@ -5,7 +5,7 @@ style="background-image: url(assets/images/map-regular-min.png);"
 <app-hero [hero]="pageTitle" *ngIf="pageTitle" #policy></app-hero>
 <div class="white text-box" *ngIf="content">
   <div class="section" *ngFor="let section of content">
-    <h1>{{ section.section }}</h1>
+    <h2>{{ section.section }}</h2>
     <span *ngFor="let text of section.texts">
       <app-texts [text]="text"></app-texts>
     </span>

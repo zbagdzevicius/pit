@@ -24,7 +24,7 @@
   </div>
 
   <div class="container section cards">
-    <a class="item card container" *ngFor="let card of site.cardsLocation" (click)="changeCard(card)" [ngClass]="{'active' : (indexOfActiveCard === site.cardsLocation.indexOf(card))}" [id]="card.title">
+    <a class="item card container" *ngFor="let card of site.cardsLocation" (click)="changeCard(card)" [ngClass]="{'active' : (indexOfActiveCard === site.cardsLocation.indexOf(card))}" [id]="card.title" [ngx-scroll-to]="'companies'">
       <div class="item container updown justify">
         <div>
             <h2 class="fixed">{{ card.title }}</h2>
@@ -32,18 +32,17 @@
         </div>
         <p>
           <span>{{ card.location.name }}</span>
+          <br>
           <a [href]="card.location.link" class="coordinates" target="_blank">
-            <br />
-            {{ card.location.coordinateN }}
-            <br />
-            {{ card.location.coordinateE }}
+            <span>{{ card.location.coordinateN }}</span>
+            <span> {{ card.location.coordinateE }}</span>
           </a>
         </p>
       </div>
     </a>
   </div>
 
-  <div class="container section">
+  <div class="container section" id="companies">
     <app-row-image [rowImage]="currentRow"></app-row-image>
   </div>
 </div>

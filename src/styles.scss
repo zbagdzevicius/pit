@@ -62,7 +62,7 @@ a:not(.coordinates,.a-special) {
     text-decoration: none;
   }
 }
-.coordinates {
+.coordinates, .coordinates > * {
   color: $dark-grey;
 }
 
@@ -86,7 +86,7 @@ button {
     background: $yellow;
   }
   > * {
-    margin: $p2;
+    margin: $p3;
   }
 }
 
@@ -109,7 +109,7 @@ button {
 }
 
 .card-regular > *, .row-texts > *{
-  margin: $p1 $p1;
+  margin: $p2 $p2;
 }
 .footer > * {
   margin: $p0 $p1;
@@ -149,6 +149,10 @@ $font-family: "Titillium Web";
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
 body {
   font-family: $font-family, sans-serif;
+}
+html{
+  
+  padding-top: 80px;
 }
 
 
