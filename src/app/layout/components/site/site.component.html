@@ -24,7 +24,7 @@
   </div>
 
   <div class="container section cards">
-    <a class="item card container" *ngFor="let card of site.cardsLocation" (click)="changeCard(card)" [ngClass]="{'active' : (indexOfActiveCard === site.cardsLocation.indexOf(card))}" [id]="card.title" [ngx-scroll-to]="'companies'">
+    <a class="item card container" *ngFor="let card of site.cardsLocation" (click)="changeCard(card)" [ngClass]="{'active' : (indexOfActiveCard === site.cardsLocation.indexOf(card))}" [id]="card.title" [ngx-scroll-to]="'companies'" [ngx-scroll-to-offset]="-80">
       <div class="item container updown justify">
         <div>
             <h2 class="fixed">{{ card.title.toUpperCase() }}</h2>
