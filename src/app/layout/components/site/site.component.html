@@ -7,7 +7,7 @@
           <span class="font-medium">{{ site.rowInfo.subtitle }}</span>
         </div>
         <p>
-          <span>{{ site.rowInfo.location.name }}</span>
+          <span>{{ site.rowInfo.location.name.toUpperCase() }}</span>
           <br />
           <a [href]="site.rowInfo.location.link" class="coordinates" target="_blank">
             <span>{{ site.rowInfo.location.coordinateN }}</span>
@@ -27,7 +27,7 @@
     <a class="item card container" *ngFor="let card of site.cardsLocation" (click)="changeCard(card)" [ngClass]="{'active' : (indexOfActiveCard === site.cardsLocation.indexOf(card))}" [id]="card.title" [ngx-scroll-to]="'companies'">
       <div class="item container updown justify">
         <div>
-            <h2 class="fixed">{{ card.title }}</h2>
+            <h2 class="fixed">{{ card.title.toUpperCase() }}</h2>
             <p>{{ card.text }}</p>
         </div>
         <p>

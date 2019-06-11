@@ -24,12 +24,17 @@
 
   <div class="item">
     <form>
+    <!-- <form [formGroup]="contactFormGroup"> -->
       <div class="container input1">
+        <!-- <input class="item grey" formControlName="name" [placeholder]="contact.form.name" />
+        <input class="item grey" formControlName="email" [placeholder]="contact.form.email" /> -->
         <input class="item grey" [placeholder]="contact.form.name" />
         <input class="item grey" [placeholder]="contact.form.email" />
       </div>
       <div class="container">
+        <!-- <textarea class="item grey message" formControlName="message" [placeholder]="contact.form.message"></textarea> -->
         <textarea class="item grey message" [placeholder]="contact.form.message"></textarea>
+        <!-- <app-form-error-messages [control]="contactFormGroup.controls['message']"></app-form-error-messages> -->
       </div>
       <p>
         {{ contact.form.texts[0] }}

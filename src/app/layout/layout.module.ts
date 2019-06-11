@@ -19,6 +19,7 @@ import { RowTextsComponent } from './elements/row-texts/row-texts.component';
 import { RowImageComponent } from './elements/row-image/row-image.component';
 import { VideoComponent } from './elements/video/video.component';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const COMPONENTS = [
   HeaderComponent, FooterComponent,

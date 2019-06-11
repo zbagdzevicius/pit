@@ -14,6 +14,8 @@ export class HeadingComponent implements OnInit {
   heading: string;
   isModalActive = false;
   imgSources = ['assets/images/play.png', 'assets/images/close.png'];
+  videoSources = ['https://pit-deutschland.eu/PIT-production.mp4', 'https://pit-deutschland.eu/PIT-production.mp4'];
+  videoSource: string;
 
   constructor() {
     this.heading$
@@ -22,6 +24,11 @@ export class HeadingComponent implements OnInit {
 
   turnOffVideo($event) {
     this.isModalActive = false;
+    this.videoSource = null;
+  }
+  turnOnVideo(index) {
+    this.videoSource = this.videoSources[0];
+    this.isModalActive = true;
   }
 
   ngOnInit() {

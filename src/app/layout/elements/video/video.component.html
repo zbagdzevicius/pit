@@ -2,7 +2,7 @@
   <div class="box">
     <span class="close" (click)="turnOffVideo()"><img [src]="'assets/images/x.png'" /></span>
     <video controls autoplay class="video-border" width="1000">
-      <source src="https://pit-deutschland.eu/PIT-production.mp4" type="video/mp4">
+      <source [src]="videoSource" type="video/mp4">
     </video>
   </div>
 </div>

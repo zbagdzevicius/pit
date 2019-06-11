@@ -22,8 +22,8 @@
     <br>
     <dl>
       <dt>
-        <a *ngFor="let footerLink of footerLinks" [routerLink]="['/']" routerLinkActive="router-link-active"  [ngx-scroll-to]="footerLink" (click)="changeActiveCard(footerLink)">
-          {{ footerLink.toLowerCase() }}
+        <a *ngFor="let footerLink of footerLinks" [routerLink]="['/']" [ngx-scroll-to-offset]="-100" routerLinkActive="router-link-active"  [ngx-scroll-to]="footerLink" (click)="changeActiveCard(footerLink)">
+          {{ footerLink }}
           <br />
         </a>
       </dt>

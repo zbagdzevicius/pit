@@ -27,6 +27,9 @@ $p3: 30px;
 $p4: 10px;
 $p5: 7px;
 
+$max-width: 1200px;
+$background-width: 1400px;
+
 h1,h2,h3,dl, ul, .marginless{
   padding:0;
   margin:0;
@@ -155,9 +158,6 @@ html{
   padding-top: 80px;
 }
 
-
-$max-width: 1200px;
-$background-width: 1400px;
 .background {
   background-position: center center;
   background-repeat: no-repeat;
@@ -188,6 +188,12 @@ $background-width: 1400px;
   }
   &.spacing {
     justify-content: space-around;
+  }
+  &.start{
+    justify-content: flex-start;
+  &.start-vertical {
+    align-items: flex-start;
+  }
   }
   .item {
     flex: 1 1 auto;
@@ -248,4 +254,35 @@ footer {
 .logo-small {
   margin-right: 35px;
   width:125px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  $max-width: 100%;
+  $background-width: 100%;
+  nav, .wrapper, .background {
+    width: 100%;
+  }
+  nav{
+    padding:0;
+  }
+  .background{
+    margin: 0;
+    padding:0;
+    background-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 1201px) {
+  $max-width: 100%;
+  .nav, .wrapper *{
+    width: $max-width;
+  }
+  .background{
+    margin:0;
+    padding: 0;
+  background-size: $max-width;
+}
+}
+@media only screen and (min-width: 1400px) {
 }

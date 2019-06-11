@@ -1,19 +1,19 @@
 <div *ngIf="services">
-  <div class="container justify-vertical section cards" [ngx-scroll-to]="'services'">
-    <a
-      class="item card container updown justify"
-      *ngFor="let card of services.rowCards"
-      (click)="changeCard(card)"
-      [ngClass]="{ active: index === services.rowCards.indexOf(card) }"
-    >
-      <h2>{{ card.title }}</h2>
-      <p>{{ card.text }}</p>
-      <div class="container justify center-vertical">
-        <div class="item">
-          <p>{{ card.location }}</p>
+  <div class="container section cards" [ngx-scroll-to]="'services'" *ngIf="services">
+    <a class="item container card" *ngFor="let card of services.rowCards" (click)="changeCard(card)"
+      [ngClass]="{ active: index === services.rowCards.indexOf(card) }">
+      <div class="container updown justify">
+        <div>
+          <h2>{{ card.title }}</h2>
+          <p>{{ card.text }}</p>
         </div>
-        <div class="item arrow">
-          <img src="assets/images/arrow-right-min.png" />
+        <div class="container justify center-vertical">
+          <div class="item">
+            <p>{{ card.location }}</p>
+          </div>
+          <div class="item arrow">
+            <img src="assets/images/arrow-right-min.png" />
+          </div>
         </div>
       </div>
     </a>
