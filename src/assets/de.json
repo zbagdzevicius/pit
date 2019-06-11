@@ -93,7 +93,7 @@
         "coordinateN": "52°52'41.5' N",
         "coordinateE": "8°13'00.3' E",
         "name": "Großenkneten, Deutschland",
-        "link": "https://www.google.com/maps/place/PIT+Deutschland+Verwaltungsgesellschaft+mbH/@52.878223,8.2161838,18z/data=!4m8!1m2!3m1!2sPIT+Deutschland+Verwaltungsgesellschaft+mbH!3m4!1s0x0:0x925245eddab67bb0!8m2!3d52.8781801!4d8.2166999"
+        "link": "https://www.google.com/maps/place/PIT+Deutschland+Verwaltungsgesellschaft+mbH/@52.878223,8.2161838,272m/data=!3m1!1e3!4m8!1m2!3m1!2sPIT+Deutschland+Verwaltungsgesellschaft+mbH!3m4!1s0x0:0x925245eddab67bb0!8m2!3d52.8781801!4d8.2166999"
       },
       "text": "Bei uns erhalten Sie professionelle Montagen und Produktionen nach dem Null-Fehler-Prinzip. Wir begleiten Ihre Projekte von der Anforderungsanalyse, über den Prototypenbau bis zur individuellen Konfektionierung und Serienproduktion. Profitieren Sie außerdem von deutschen Ansprechpartnern – im Büro genauso wie in den Produktionsstätten vor Ort."
     },
@@ -105,7 +105,7 @@
           "coordinateN": "55°41'39.7'N",
           "coordinateE": "21°11'40.6' E",
           "name": "Klaipėda, Litauen",
-          "link": "https://www.google.de/maps/place/55%C2%B041'40.5%22N+21%C2%B011'46.4%22E/@55.694583,21.1940183,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x46e4dc30bf12b2c1:0xd0bd92253730ae7e!2sPramon%C4%97s+g.+8,+Klaip%C4%97da+94102,+Lithuania!3b1!8m2!3d55.6935672!4d21.194587!3m5!1s0x0:0x0!7e2!8m2!3d55.694583!4d21.1962072"
+          "link": "https://www.google.de/maps/place/55%C2%B041'40.5%22N+21%C2%B011'46.4%22E/@55.6945833,21.1940282,507m/data=!3m1!1e3!4m14!1m7!3m6!1s0x46e4dc30bf12b2c1:0xd0bd92253730ae7e!2sPramon%C4%97s+g.+8,+Klaip%C4%97da+94102,+Lithuania!3b1!8m2!3d55.6935672!4d21.194587!3m5!1s0x0:0x0!7e2!8m2!3d55.694583!4d21.1962072"
         },
         "rowImage": {
           "texts": [
@@ -122,7 +122,7 @@
           "coordinateN": "49°26'14.0' N",
           "coordinateE": "27°01'06.1' E",
           "name": "Ukraine",
-          "link": "https://www.google.com/maps/@49.4372036,27.0186389,3a,75y,300.85h,96.85t/data=!3m6!1e1!3m4!1s9YuCQZOzEusAKnQCNfVkDw!2e0!7i13312!8i6656"
+          "link": "https://www.google.com/maps/place/49%C2%B026'13.7%22N+27%C2%B001'04.8%22E/@49.437142,27.015806,585m/data=!3m2!1e3!4b1!4m14!1m7!3m6!1s0x473207a57b3f172f:0x5ee68325a1631321!2sStarokonstantinovskoye+shosse,+Khmel'nyts'ka+oblast,+Ukraina!3b1!8m2!3d49.4360394!4d27.018236!3m5!1s0x0:0x0!7e2!8m2!3d49.4371417!4d27.018"
         },
         "rowImage": {
           "texts": [
@@ -132,13 +132,13 @@
         }
       },
       {
-        "title": "UAB Litfabrik",
+        "title": "UAB Litfabric",
         "text": "Die Ansprechpartner für individuelle Bestückung, Montage, Verpackung und Lagerung",
         "location": {
           "coordinateN": "55°41'39.0' N",
           "coordinateE": "21°11'40.0' E",
           "name": "Klaipėda, Litauen",
-          "link": "https://www.google.de/maps/place/55%C2%B041'39.2%22N+21%C2%B011'39.5%22E/@55.694219,21.1927772,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d55.6942185!4d21.1942929"
+          "link": "https://www.google.de/maps/place/55%C2%B041'39.2%22N+21%C2%B011'39.5%22E/@55.6942222,21.1921169,507m/data=!3m1!1e3!4m6!3m5!1s0x0:0x0!7e2!8m2!3d55.6942185!4d21.1942929"
         },
         "rowImage": {
           "texts": [
@@ -155,7 +155,7 @@
           "coordinateN": "55°53'26.6' N",
           "coordinateE": "21°15'33.4' E",
           "name": "Klaipėda, Litauen",
-          "link": "https://www.google.de/maps/place/55%C2%B053'26.6%22N+21%C2%B015'33.6%22E/@55.890721,21.2571503,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d55.8907214!4d21.2593386"
+          "link": "https://www.google.de/maps/place/55%C2%B041'40.5%22N+21%C2%B011'46.4%22E/@55.6945833,21.1940282,507m/data=!3m1!1e3!4m14!1m7!3m6!1s0x46e4dc30bf12b2c1:0xd0bd92253730ae7e!2sPramon%C4%97s+g.+8,+Klaip%C4%97da+94102,+Lithuania!3b1!8m2!3d55.6935672!4d21.194587!3m5!1s0x0:0x0!7e2!8m2!3d55.694583!4d21.1962072"
         },
         "rowImage": {
           "texts": [
@@ -180,7 +180,7 @@
       "columnSpecial": {
         "boldText": "",
         "texts": [
-          "Das große Vertrauen unserer Kunden aus Deutschland und der EU bestärkte uns in der Entscheidung, mit der neu gegründeten UAB XXX einen weiteren Markt zu erschließen: Schwerpunkt ist hier die maschinelle wie auch manuelle Lohnfertigung inklusive Montage, Verpackung und Lagerung.",
+          "Das große Vertrauen unserer Kunden aus Deutschland und der EU bestärkte uns in der Entscheidung, mit der neu gegründeten UAB Litfabric einen weiteren Markt zu erschließen: Schwerpunkt ist hier die maschinelle wie auch manuelle Lohnfertigung inklusive Montage, Verpackung und Lagerung.",
           "Um für die Zukunft alle Unternehmen unter einem Dach zu vereinen, erfolgte 2013 die Gründung der übergeordneten PIT Group. Unsere Philosophie: Bei uns erhalten Sie alles aus einer Hand – ohne teure Subunternehmer!",
           "Diesem Leitgedanken folgend ergänzten wir die PIT Familie um einen weiteren zentralen Dienstleistungssektor: Mit der Gründung unseres eigenen Logistikunternehmens, der UAB Dolinera, schlossen wir Ende 2018 die Lücke zwischen Auftrag, Fertigung und Kunde und beliefern unsere Auftraggeber seither wöchentlich mit eigenen LKW."
         ]

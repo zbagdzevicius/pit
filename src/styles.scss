@@ -90,6 +90,7 @@ button {
   }
   > * {
     margin: $p3;
+    margin-bottom: $p4;
   }
 }
 
@@ -112,13 +113,13 @@ button {
 }
 
 .card-regular > *, .row-texts > *{
-  margin: $p2 $p2;
+  margin: $p3 $p3;
 }
 .footer > * {
   margin: $p0 $p1;
 }
 .card-big > * {
-  margin: $p1 $p1;
+  margin: $p3 $p3;
 }
 .footer-absolute > * {
   margin: $p3 $p1;

@@ -8,9 +8,10 @@ import { CoreModule } from '../core/core.module';
 import { ImpressComponent } from './impress/impress.component';
 import { PolicyComponent } from './policy/policy.component';
 import { TextsComponent } from './components/texts/texts.component';
+import { WebmasterComponent } from './webmaster/webmaster.component';
 
 @NgModule({
-  declarations: [LandingComponent, ImpressComponent, PolicyComponent, TextsComponent],
+  declarations: [LandingComponent, ImpressComponent, PolicyComponent, TextsComponent, WebmasterComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,

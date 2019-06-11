@@ -22,9 +22,9 @@ export class HeadingComponent implements OnInit {
       .subscribe(heading => this.heading = heading);
   }
 
-  turnOffVideo($event) {
-    this.isModalActive = false;
+  turnOffVideo() {
     this.videoSource = null;
+    this.isModalActive = false;
   }
   turnOnVideo(index) {
     this.videoSource = this.videoSources[index];

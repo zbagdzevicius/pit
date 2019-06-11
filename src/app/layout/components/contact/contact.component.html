@@ -16,7 +16,7 @@
         <dt *ngFor="let contactItem of contact.contactBy">
           <span>{{ contactItem.name }}</span>
           :
-          <a [href]="contactItem.value" class="bold">{{ contactItem.value }}</a>
+          <a href="tel:{{contactItem.value}}" class="bold">{{ contactItem.value }}</a>
         </dt>
       </dl>
     </div>
