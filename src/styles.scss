@@ -4,7 +4,7 @@ $yellow: #fed646;
 $yellow-link: #ffc800;
 $white: rgba(255, 255, 255, 0.8);
 $black: #282828;
-$dark-grey: #A9A9A9;
+$dark-grey: #a9a9a9;
 // font sizes
 $big: 44px;
 $large: 32px;
@@ -30,9 +30,14 @@ $p5: 7px;
 $max-width: 1200px;
 $background-width: 1400px;
 
-h1,h2,h3,dl, ul, .marginless{
-  padding:0;
-  margin:0;
+h1,
+h2,
+h3,
+dl,
+ul,
+.marginless {
+  padding: 0;
+  margin: 0;
 }
 h1 {
   font-size: $big;
@@ -49,27 +54,32 @@ h2,
 h3,
 span,
 p,
-input, textarea {
+input,
+textarea {
   color: $black;
 }
-input, textarea, .font-small{
+input,
+textarea,
+.font-small {
   font-size: $small;
 }
-h3{
-  font-size:$large;
+h3 {
+  font-size: $large;
 }
 
-a:not(.coordinates,.a-special) {
+a:not(.coordinates, .a-special) {
   font-size: $medium;
   &:hover {
     text-decoration: none;
   }
 }
-.coordinates, .coordinates > * {
+.coordinates,
+.coordinates > * {
   color: $dark-grey;
 }
 
-dl, ul {
+dl,
+ul {
   list-style-type: none;
 }
 
@@ -94,7 +104,6 @@ button {
   }
 }
 
-
 .grey {
   background-color: $grey;
 }
@@ -112,7 +121,8 @@ button {
   font-weight: $bold;
 }
 
-.card-regular > *, .row-texts > *{
+.card-regular > *,
+.row-texts > * {
   margin: $p3 $p3;
 }
 .footer > * {
@@ -127,35 +137,33 @@ button {
 .contact > .item:nth-of-type(1) > * {
   margin: $p0 $p1 $p0 $p1;
 }
-.contact > *:nth-of-type(2){
+.contact > *:nth-of-type(2) {
   margin: $p0 0 $p0 0;
 }
-.card-small{
+.card-small {
   padding: $p1;
 }
-.card-text{
+.card-text {
   padding: $p2;
 }
 .section {
   padding-bottom: $p4;
 }
-.cards > .card:not(:last-of-type){
-  margin-right:$p4;
+.cards > .card:not(:last-of-type) {
+  margin-right: $p4;
 }
 
-*:not(img, .dl){
+*:not(img, .dl) {
   border-radius: $border-radius;
 }
-
-
 
 $font-family: "Titillium Web";
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
 body {
   font-family: $font-family, sans-serif;
+  margin: 0;
 }
-html{
-  
+html {
   padding-top: 80px;
 }
 
@@ -168,9 +176,10 @@ html{
   padding-right: 100px;
   margin-left: -100px;
   padding-left: 100px;
+  background-image: url(assets/images/map-flag-min.png);
 }
 // layout
-.wrapper *{
+.wrapper * {
   max-width: $max-width;
 }
 .container {
@@ -190,11 +199,11 @@ html{
   &.spacing {
     justify-content: space-around;
   }
-  &.start{
+  &.start {
     justify-content: flex-start;
-  &.start-vertical {
-    align-items: flex-start;
-  }
+    &.start-vertical {
+      align-items: flex-start;
+    }
   }
   .item {
     flex: 1 1 auto;
@@ -210,41 +219,43 @@ html{
 }
 
 nav {
-  background-color: rgba(255,255,255,0.95);
+  background-color: rgba(255, 255, 255, 0.95);
   position: fixed;
   top: 0;
   width: $max-width;
-  padding:$p5;
-  .menu{
+  padding: $p5;
+  .menu {
     font-size: 14px;
-    a:hover, .a-active {
+    a:hover,
+    .a-active {
       border-bottom: 5px solid $yellow;
     }
   }
-  a, .a-active{
+  a,
+  .a-active {
     padding-bottom: $p5;
   }
-  a:not(:last-of-type){
+  a:not(:last-of-type) {
     margin-right: $p4;
   }
 }
 
-button, .item{
+button,
+.item {
   border-radius: 4px;
 }
 footer {
-	/*padding: 10px 0;*/
-	width:auto;
-	margin: 0 auto;
-	position: relative;/* this gives IE6 hasLayout to properly clear */
-	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+  /*padding: 10px 0;*/
+  width: auto;
+  margin: 0 auto;
+  position: relative; /* this gives IE6 hasLayout to properly clear */
+  clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
 }
 
-
-.logo{
-  margin:5px;
-  -webkit-transition:0.5s ease-in all;
-  -moz-transition:0.5s ease-in all;
+.logo {
+  margin: 5px;
+  -webkit-transition: 0.5s ease-in all;
+  -moz-transition: 0.5s ease-in all;
   -o-transition: 0.5s ease-in all;
   transition: 0.5s ease-in all;
 }
@@ -254,36 +265,57 @@ footer {
 }
 .logo-small {
   margin-right: 35px;
-  width:125px;
+  width: 125px;
 }
 
+.loading{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+.loading-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: $max-width;
+  margin-right: -100px;
+  padding-right: 100px;
+  margin-left: -100px;
+  padding-left: 100px;
+  background-image: url(assets/images/loading.svg);
+  width: $max-width;
+  height: 100%;
+}
 
 @media only screen and (max-width: 768px) {
   $max-width: 100%;
   $background-width: 100%;
-  nav, .wrapper, .background {
+  nav,
+  .wrapper,
+  .background {
     width: 100%;
   }
-  nav{
-    padding:0;
+  nav {
+    padding: 0;
   }
-  .background{
+  .background {
     margin: 0;
-    padding:0;
+    padding: 0;
     background-size: 100%;
   }
 }
 
 @media only screen and (max-width: 1201px) {
   $max-width: 100%;
-  .nav, .wrapper *{
+  .nav,
+  .wrapper * {
     width: $max-width;
   }
-  .background{
-    margin:0;
+  .background {
+    margin: 0;
     padding: 0;
-  background-size: $max-width;
-}
+    background-size: $max-width;
+  }
 }
 @media only screen and (min-width: 1400px) {
 }

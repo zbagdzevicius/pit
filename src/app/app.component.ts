@@ -16,6 +16,8 @@ export class AppComponent {
   @Select(LangState.getContactButton) contactHero$: Observable<string>;
   lastHero: string;
 
+  showLoading = true;
+
   constructor(
     private contentService: ContentService
   ) {
@@ -25,9 +27,11 @@ export class AppComponent {
           this.contentService.getContent(language);
         }
       });
-    // this.heroes$
-    //   .subscribe(heroes => this.heroes = heroes);
     this.contactHero$
       .subscribe(lastHero => this.lastHero = lastHero);
+
+      setInterval(() => {
+        this.showLoading = false;
+      }, 50000);
   }
 }

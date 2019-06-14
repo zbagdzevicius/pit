@@ -1,4 +1,8 @@
-<div class="container center">
+
+    <div class="loading container center">
+      <div class="loading-image"></div>
+    </div>
+<div class="container center"  *ngIf="!showLoading">
   <span id="start"></span>
   <div class="wrapper">
     <app-header></app-header>
