@@ -32,6 +32,6 @@ export class AppComponent {
 
       setInterval(() => {
         this.showLoading = false;
-      }, 50000);
+      }, 1);
   }
 }

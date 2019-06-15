@@ -271,20 +271,12 @@ footer {
 .loading{
   width: 100%;
   height: 100%;
-  position: fixed;
   top: 0;
-}
-.loading-image {
+  position: absolute;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: $max-width;
-  margin-right: -100px;
-  padding-right: 100px;
-  margin-left: -100px;
-  padding-left: 100px;
   background-image: url(assets/images/loading.svg);
-  width: $max-width;
-  height: 100%;
 }
 
 @media only screen and (max-width: 768px) {

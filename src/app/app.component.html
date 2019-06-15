@@ -1,16 +1,11 @@
-
-    <div class="loading container center">
-      <div class="loading-image"></div>
-    </div>
-<div class="container center"  *ngIf="!showLoading">
+<div class="loading " *ngIf="showLoading">
+</div>
+<div class="container center" *ngIf="!showLoading">
   <span id="start"></span>
   <div class="wrapper">
     <app-header></app-header>
     <router-outlet></router-outlet>
-    <div
-      class="background"
-      style="background-image: url(assets/images/map-regular-min.png);"
-    >
+    <div class="background" style="background-image: url(assets/images/map-regular-min.png);">
       <app-hero *ngIf="lastHero" [hero]="lastHero" [id]="lastHero"></app-hero>
       <app-contact [id]="'contact'"></app-contact>
       <app-footer></app-footer>
