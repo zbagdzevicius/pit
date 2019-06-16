@@ -1,0 +1,24 @@
+{
+    "pageTitle": "Webmaster",
+    "texts": [
+        {
+            "subtitle": "Webmaster:"
+        },
+        {
+            "text": "Motiejus Benetis"
+        },
+        {
+            "contactBy": [
+                {
+                    "name": "Mobile",
+                    "value": "+370 611 44223"
+                },
+                {
+                    "name": "E-Mail",
+                    "value": "hello@woohoolab.com"
+                }
+            ]
+        }
+    ],
+    "image": "assets/images/impress.png"
+}

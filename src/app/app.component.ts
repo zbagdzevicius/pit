@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { LangState } from './core/state/lang.state';
 import { Select } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { ContentService } from './core/services/content.service';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,7 @@ export class AppComponent {
   @Select(LangState.getContactButton) contactHero$: Observable<string>;
   lastHero: string;
 
-  showLoading = true;
+  // showLoading = true;
 
   constructor(
     private contentService: ContentService
@@ -30,8 +31,8 @@ export class AppComponent {
     this.contactHero$
       .subscribe(lastHero => this.lastHero = lastHero);
 
-      setInterval(() => {
-        this.showLoading = false;
-      }, 1);
+      // setInterval(() => {
+      //   this.showLoading = false;
+      // }, 7000);
   }
 }

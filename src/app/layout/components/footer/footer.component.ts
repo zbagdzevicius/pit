@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { Footer } from 'src/app/core/models/translate/footer.model';
 import { CardsLocation } from 'src/app/core/models/translate/cards-location.model';
 import { SetActiveCard } from 'src/app/core/actions/lang.actions';
+import { AppSettings } from 'src/app/core/settings/app.settings';
 
 @Component({
   selector: 'app-footer',
@@ -17,6 +18,7 @@ export class FooterComponent implements OnInit {
   @Select(LangState.getSiteTitles) pageSiteCards$: Observable<CardsLocation[]>;
   footer: Footer;
   footerLinks = [];
+  offset = AppSettings.SCROLL_OFFSET_CARDS;
 
   constructor(private store: Store) {
     this.footer$
@@ -24,7 +26,6 @@ export class FooterComponent implements OnInit {
     this.pageSiteCards$
       .subscribe((cards: CardsLocation[]) => {
         if (cards) {
-          console.log(cards);
           cards.forEach(card => {
             this.footerLinks.push(card.title);
           });

@@ -7,6 +7,7 @@ import { RowCardsImage } from 'src/app/core/models/translate/row-cards-image.mod
 import { CardsLocation } from 'src/app/core/models/translate/cards-location.model';
 import { SetActiveCard } from 'src/app/core/actions/lang.actions';
 import { ActiveCard } from 'src/app/core/models/layout/active-card.model';
+import { AppSettings } from 'src/app/core/settings/app.settings';
 
 @Component({
   selector: 'app-site',
@@ -20,6 +21,7 @@ export class SiteComponent implements OnInit {
   site: Site;
   currentRow: RowCardsImage;
   indexOfActiveCard = 0;
+  offset = AppSettings.SCROLL_OFFSET_CARDS;
 
   constructor(private store: Store) {
     this.site$

@@ -1,0 +1,73 @@
+a {
+  position: relative;
+  display:none;
+}
+
+.logo {
+  -webkit-transition: 0.5s ease-in all;
+  -moz-transition: 0.5s ease-in all;
+  -o-transition: 0.5s ease-in all;
+  transition: 0.5s ease-in all;
+}
+
+.screen{
+  position: fixed;
+  left: -16%;
+  top: -17%;
+  transform: translate(-16%, -17%) scale(0.6);
+  animation-name: increase;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  z-index: 0;
+  opacity: 1;
+}
+@keyframes increase {
+  from {
+    left: 20%;
+    top: 20%;
+    transform: translate(-20%, -20%) scale(3);
+    z-index: 9;
+  }
+  to {
+    z-index: 9;
+    left: -16%;
+    top: -17%;
+    transform: translate(-16%, -17%) scale(0.6);
+  }
+}
+
+.loading{
+  width: 1px; height: 1px;
+  animation-name: background;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  width: 0; height: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1400px;
+  top: 0;
+  position:fixed;
+  
+}
+
+@keyframes background {
+  from {
+    opacity: 1;
+    z-index: 8;
+    width: 1400px; height: 100%;
+  }
+  75%{
+    opacity: 0.9;
+  }
+  to {
+    z-index: 8;
+    opacity: 0;
+    display:none;
+    width: 1400px; height: 100%;
+    margin-right: -100px;
+    padding-right: 100px;
+    margin-left: -100px;
+    padding-left: 100px;
+  }
+}

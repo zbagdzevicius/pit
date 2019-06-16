@@ -1,10 +1,11 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
-import { SetLanguage, SetContent, SetImpress, SetPolicy, SetActiveCard } from '../actions/lang.actions';
+import { SetLanguage, SetContent, SetImpress, SetPolicy, SetActiveCard, SetWebmaster } from '../actions/lang.actions';
 import { Lang } from '../models/layout/lang.model';
 import { ContentModel } from '../models/translate/content.model';
 import { PolicyRoot } from '../models/policy/policy-root.model';
 import { ImpressRoot } from '../models/impress/impress-root.model';
 import { ActiveCard } from '../models/layout/active-card.model';
+import { WebmasterRoot } from '../models/webmaster/webmaster-root.model';
 
 
 @State<Lang>({
@@ -14,6 +15,7 @@ import { ActiveCard } from '../models/layout/active-card.model';
     content: new ContentModel(),
     policyRoot: new PolicyRoot(),
     impressRoot: new ImpressRoot(),
+    webmasterRoot: null,
     activeCard: null
   }
 })
@@ -76,6 +78,10 @@ export class LangState {
     return policyRoot;
   }
   @Selector()
+  static getWebmasterRoot(webmasterRoot: WebmasterRoot) {
+    return webmasterRoot;
+  }
+  @Selector()
   static getActiveCard(cardLocation: string) {
     return cardLocation;
   }
@@ -95,6 +101,10 @@ export class LangState {
   }
   @Action(SetPolicy)
   setPolicy(context: StateContext<PolicyRoot>, { payload }: SetPolicy) {
+    context.patchState(payload);
+  }
+  @Action(SetWebmaster)
+  setWebmaster(context: StateContext<WebmasterRoot>, { payload }: SetWebmaster) {
     context.patchState(payload);
   }
   @Action(SetActiveCard)

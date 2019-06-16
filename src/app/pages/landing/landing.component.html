@@ -1,18 +1,37 @@
-<div
-  class="background"
->
+<div class="background">
   <app-heading [id]="heroes[0]"></app-heading>
 </div>
 <div
-class="background"
-style="background-image: url(assets/images/map-regular-min.png);"
+  class="background"
+  style="background-image: url(assets/images/map-regular-min.png);"
 >
-<app-hero *ngIf="heroes" [hero]="heroes[1]" [id]="heroes[1]"></app-hero>
-<app-about-us></app-about-us>
-<app-hero *ngIf="heroes" [hero]="heroes[2]" [id]="heroes[2]" id="siteCardHero"></app-hero>
-<app-site></app-site>
-<app-hero *ngIf="heroes" [hero]="heroes[3]" [id]="heroes[3]" id="servicesHero"></app-hero>
-<app-services></app-services>
-<app-hero *ngIf="heroes" [hero]="heroes[4]" [id]="heroes[4]"></app-hero>
+  <app-hero *ngIf="heroes" [hero]="heroes[1]" [id]="heroes[1]"></app-hero>
+  <app-about-us></app-about-us>
+  <app-hero *ngIf="heroes" [hero]="heroes[2]" [id]="heroes[2]"></app-hero>
+  <app-site></app-site>
+  <app-hero *ngIf="heroes" [hero]="heroes[3]" [id]="heroes[3]"></app-hero>
+  <app-services></app-services>
+  <app-hero *ngIf="heroes" [hero]="heroes[4]" [id]="heroes[4]"></app-hero>
   <app-companies></app-companies>
+</div>
+
+<div class="policy-popup" *ngIf="policyPopupIsShowing">
+  <div class="container center-vertical card" style="background: #282828">
+    <p style="color:white">
+      Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern
+      zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite
+      stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu
+      Cookies erhalten Sie in unserer.
+      <a
+        style="color:white"
+        [routerLink]="['/policy']"
+        [ngx-scroll-to]="'#start'"
+        >Datenschutzerklärung</a
+      >
+    </p>
+    <app-button
+      [buttonText]="'Ajzeotuereb'"
+      (click)="policyPopupIsShowing = false"
+    ></app-button>
+  </div>
 </div>

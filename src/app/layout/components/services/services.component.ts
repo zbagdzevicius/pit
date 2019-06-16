@@ -5,6 +5,7 @@ import { LangState } from 'src/app/core/state/lang.state';
 import { Select } from '@ngxs/store';
 import { RowCard } from 'src/app/core/models/translate/row-card.model';
 import { RowCardsImage } from 'src/app/core/models/translate/row-cards-image.model';
+import { AppSettings } from 'src/app/core/settings/app.settings';
 
 @Component({
   selector: 'app-services',
@@ -16,6 +17,7 @@ export class ServicesComponent implements OnInit {
   services: Services;
   currentRows: RowCardsImage[];
   index = 0;
+  offset = AppSettings.SCROLL_OFFSET_CARDS;
 
   constructor() {
     this.services$

@@ -1,10 +1,10 @@
-import { Component, OnInit, HostListener, Inject, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, HostListener, Inject } from '@angular/core';
 import { LangState } from 'src/app/core/state/lang.state';
 import { Select } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { DOCUMENT } from '@angular/common';
-import { SiteComponent } from '../site/site.component';
 import { Router } from '@angular/router';
+import { AppSettings } from 'src/app/core/settings/app.settings';
 
 @Component({
   selector: 'app-header',
@@ -12,8 +12,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  @ViewChild(SiteComponent, { read: ElementRef }) elementView: ElementRef;
-
   @Select(LangState.getContactButton) contactButton$: Observable<string>;
   @Select(LangState.getMenu) menu$: Observable<string[]>;
   contactButton: string;
@@ -49,13 +47,12 @@ export class HeaderComponent implements OnInit {
     this.resizeLogo(currentScrollPosition);
   }
 
-
   ngOnInit() {
   }
 
   changeActiveButton(currentScrollPosition) {
     this.pageSections.forEach((sectionPosition, index) => {
-      if ((sectionPosition - 77) < currentScrollPosition) {
+      if ((sectionPosition + AppSettings.SCROLL_OFFSET) < currentScrollPosition) {
         if (this.menu[index] === undefined) {
           return;
         }

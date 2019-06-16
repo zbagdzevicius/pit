@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { LangState } from 'src/app/core/state/lang.state';
 import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
 import { DOCUMENT } from '@angular/common';
+import { AppSettings } from 'src/app/core/settings/app.settings';
 
 @Component({
   selector: 'app-menu',
@@ -15,8 +16,6 @@ export class MenuComponent implements OnInit {
   @Select(LangState.getMenu) menu$: Observable<string[]>;
   menu: string[];
   @Input() activeMenuItem: string;
-  offsets = [100, -76];
-  offset = -76;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -51,31 +50,23 @@ export class MenuComponent implements OnInit {
   }
 
   scroll(index: number) {
-    let config: ScrollToConfigOptions;
-    if ([2, 3].includes(index)) {
-      if (index === 2) {
-        const menuItemPosition = this.document.getElementById('siteCards').scrollHeight;
-        const siteItems = ['siteCards', 'siteCardHero']
-        const 'servicesCards','servicesCard','servicesHero'
-        console.log(menuItemPosition);
-        config = {
-          target: 'siteCards',
-          // offset: this.offset[1]
-        };
-      } else {
-        config = {
-          target: 'servicesCards',
-          // offset: this.offset[1]
-        };
-      }
+    if (index === 2) {
+      this.scrollIntoView('siteCards');
+    } else if (index === 3) {
+      this.scrollIntoView('servicesCards');
     } else {
-      config = {
-        target: this.menu[index]
+      const config: ScrollToConfigOptions = {
+        offset: AppSettings.SCROLL_OFFSET,
+        target: this.menu[index],
+        duration: 0
       };
+      this._scrollToService.scrollTo(config);
     }
+  }
 
-
-    // this._scrollToService.scrollTo(config);
+  scrollIntoView(elementId) {
+    const element = this.document.getElementById(elementId);
+    element.scrollIntoView(false);
   }
 
 }

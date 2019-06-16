@@ -3,6 +3,7 @@ import { Select } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { LangState } from 'src/app/core/state/lang.state';
 import { FooterAbsolute } from 'src/app/core/models/translate/footer-absolute.model';
+import { AppSettings } from 'src/app/core/settings/app.settings';
 
 @Component({
   selector: 'app-footer-absolute',
@@ -14,6 +15,7 @@ export class FooterAbsoluteComponent implements OnInit {
   @Select(LangState.getFooterAbsolute) footerAbsolute$: Observable<FooterAbsolute>;
   footerAbsolute: FooterAbsolute;
   links = ['policy','impress','impress'];
+  offset = AppSettings.SCROLL_OFFSET;
 
   constructor() {
     this.footerAbsolute$

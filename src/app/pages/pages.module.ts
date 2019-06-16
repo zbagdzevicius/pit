@@ -9,6 +9,7 @@ import { ImpressComponent } from './impress/impress.component';
 import { PolicyComponent } from './policy/policy.component';
 import { TextsComponent } from './components/texts/texts.component';
 import { WebmasterComponent } from './webmaster/webmaster.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [LandingComponent, ImpressComponent, PolicyComponent, TextsComponent, WebmasterComponent],
@@ -16,7 +17,8 @@ import { WebmasterComponent } from './webmaster/webmaster.component';
     CommonModule,
     PagesRoutingModule,
     LayoutModule,
-    CoreModule
+    CoreModule,
+    ScrollToModule
   ]
 })
 export class PagesModule { }

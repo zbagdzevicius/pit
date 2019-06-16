@@ -11,6 +11,7 @@ import { Observable } from 'rxjs';
 export class LandingComponent implements OnInit {
   @Select(LangState.getMenu) heroes$: Observable<string[]>;
   heroes: string[];
+  policyPopupIsShowing=true;
 
   constructor() {
     this.heroes$

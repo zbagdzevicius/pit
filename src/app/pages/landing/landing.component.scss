@@ -1,0 +1,13 @@
+.policy-popup{
+    position:fixed;
+    bottom: 0;
+    z-index: 58;
+    width: 100%;
+    margin-bottom: 10px;
+    .card{
+        border-radius: 5px;
+    }
+    p{
+        margin-top: 10px;
+    }
+  }

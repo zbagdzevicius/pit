@@ -4,8 +4,8 @@
   </div>
   <div class="item container">
     <dl>
-      <dt class="container" *ngFor="let infoLink of footerAbsolute.infoLinks; last as isLast; index as i">
-        <a [href]="infoLink.link" class="coordinates" [routerLink]="[links[i]]" [ngx-scroll-to]="'#start'">
+      <dt class="container" *ngFor="let infoLink of footerAbsolute.infoLinks">
+        <a [href]="infoLink.link" class="coordinates" [routerLink]="[infoLink.link]" [ngx-scroll-to]="'#start'" [ngx-scroll-to-offset]="offset">
           {{infoLink.text}}
         </a>
       </dt>

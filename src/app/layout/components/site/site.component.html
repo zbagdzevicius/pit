@@ -7,7 +7,7 @@
           <span class="font-medium">{{ site.rowInfo.subtitle }}</span>
         </div>
         <p>
-          <span>{{ site.rowInfo.location.name.toUpperCase() }}</span>
+          <span>{{ site.rowInfo.location.name }}</span>
           <br />
           <a [href]="site.rowInfo.location.link" class="coordinates" target="_blank">
             <span>{{ site.rowInfo.location.coordinateN }}</span>
@@ -16,15 +16,15 @@
         </p>
       </div>
     </div>
-    <div class="item white">
+    <!-- <div class="item white">
       <div class="card-big">
         <p>{{ site.rowInfo.text }}</p>
       </div>
-    </div>
+    </div> -->
   </div>
 
-  <div class="container section cards" id="siteCards">
-    <a class="item card container" *ngFor="let card of site.cardsLocation" (click)="changeCard(card)" [ngClass]="{'active' : (indexOfActiveCard === site.cardsLocation.indexOf(card))}" [id]="card.title" [ngx-scroll-to]="'siteCards'" [ngx-scroll-to-offset]="-90">
+  <div class="container section cards" id="siteCards" #siteCards>
+    <a class="item card container" *ngFor="let card of site.cardsLocation" (click)="changeCard(card)" [ngClass]="{'active' : (indexOfActiveCard === site.cardsLocation.indexOf(card))}" [id]="card.title" [ngx-scroll-to]="'siteCards'" [ngx-scroll-to-offset]="offset">
       <div class="item container updown justify">
         <div>
             <h2 class="fixed">{{ card.title.toUpperCase() }}</h2>

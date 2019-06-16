@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { AppSettings } from 'src/app/core/settings/app.settings';
 
 @Component({
   selector: 'app-logo',
@@ -7,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LogoComponent implements OnInit {
   @Input() resizing: boolean;
+  offset = AppSettings.SCROLL_OFFSET;
 
   constructor(
   ) {

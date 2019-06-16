@@ -35,8 +35,8 @@
         "rowCardsImage": [
           {
             "texts": [
-              "Die PIT Group ist spezialisiert auf ganzheitliche Lösungen in den Bereichen der Kabelkonfektionierung und des Schaltschrankbaus. Wir übernehmen die Konfektion und Montage anschlussfertiger Mikroschalter, Kabelbäume, Schaltschränke und Litzen sowie diebleifreie Bestückung von Leiterplatten.",
-              "Wir konfektionieren alle Kabeltypen genau nach Ihren individuellen Anforderungen und Materialvorgaben. Auch EMV- Filter zählen zu unserem umfangreichen Produktportfolio."
+              "Wir übernehmen die Konfektion und Montage anschlussfertiger Mikroschalter, Kabelbäume, Schaltschränke und Litzen sowie die bleifreie Bestückung von Leiterplatten.",
+              "Wir konfektionieren alle Kabeltypen genau nach Ihren individuellen Anforderungen und Materialvorgaben. Auch EMV-Filter zählen zu unserem umfangreichen Produktportfolio."
             ],
             "image": "assets/images/1.jpg"
           },
@@ -56,9 +56,7 @@
         "rowCardsImage": [
           {
             "texts": [
-              "Sparen Sie Zeit und Geld! Wir übernehmen die Montage, Bestückung, Etikettierung, Verpackung und Lagerung sowie den termingerechten Versand Ihrer Waren.",
-              "In unseren großzügigen und hellen Fertigungsräumen mit einer Deckenhöhe von bis zu sechs Metern sind auch Sonderanforderungen nach Kundenwunsch kein Problem – maschinell wie manuell.",
-              "Sprechen Sie uns an!"
+              "An unseren modernen Produktionsstandorten in Litauen und der Ukraine übernehmen wir maschinelle wie manuelle Dienstleistungen von der Montage und Bestückung über die Sortierung und Etikettierung bis zur Verpackung. Durch unseren hohen Spezialisierungsgrad bearbeiten wir Auftragsarbeiten und Komplettmontagen zeitsparend und vor allem kostengünstig. Wir begegnen jedem Auftrag mit einem Höchstmaß an Flexibilität: Die Montage Ihrer Produkte bedarf spezieller Materialien oder Maschinen? Liefern Sie uns Ihre Komponenten und wir erledigen den Rest! In unseren großzügigen und hellen Fertigungsräumen mit einer Deckenhöhe von bis zu sechs Metern sind auch Sonderanfertigungen nach Kundenwunsch kein Problem – maschinell wie manuell."
             ],
             "image": "assets/images/6.png"
           }
@@ -66,12 +64,12 @@
       },
       {
         "title": "Transport",
-        "text": "Die Ansprechpartner für individuelle Bestückung, Montage, Verpackung und Lagerung",
+        "text": "Die UAB Dolinera ist Ihr zuverlässiger Logistik-Partner für Transporte zwischen Deutschland, Litauen und der Ukraine.",
         "location": "Europe",
         "rowCardsImage": [
           {
             "texts": [
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente odit possimus ad, tempore neque quo ratione natus vero alias nostrum cum voluptatibus sed iste nesciunt aut, soluta similique odio qui."
+              "Alle unsere Produktionsstandorte bieten eine gute logistische Anbindung an den EU-Markt – auf dem Land- wie auch auf dem Seeweg. Mit unserem eigenen Logistikunternehmen, der UAB Dolinera, beliefern wir unsere Auftraggeber wöchentlich mit eigenen LKW. In Litauen gefertigte Produkt sind beispielsweise über die Baltikum Fähre von Kiel nach Klaipėda nach durchschnittlich 22 Stunden beim Kunden in Deutschland – auch im Winter!"
             ],
             "image": "assets/images/truck1.png"
           },
@@ -159,8 +157,8 @@
         },
         "rowImage": {
           "texts": [
-            "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
-            "Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
+            "Die UAB Dolinera ist Ihr zuverlässiger Logistik-Partner für Transporte zwischen Deutschland, Litauen und der Ukraine.",
+            "Alle unsere Produktionsstandorte bieten eine gute logistische Anbindung an den EU-Markt – auf dem Land- wie auch auf dem Seeweg. Mit unserem eigenen Logistikunternehmen, der UAB Dolinera, beliefern wir unsere Auftraggeber wöchentlich mit eigenen LKW. In Litauen gefertigte Produkt sind beispielsweise über die Baltikum Fähre von Kiel nach Klaipėda nach durchschnittlich 22 Stunden beim Kunden in Deutschland – auch im Winter!"
           ],
           "image": "assets/images/truck1.png"
         }
@@ -220,10 +218,10 @@
     ],
     "form": {
       "name": "Name",
-      "email": "E-Mail Addresse",
-      "message": "Ihre Nachchricht",
+      "email": "E-Mail-Addresse",
+      "message": "Ihre Nachricht",
       "texts": [
-        "Beim benutzen dieses Forumulars stimmen Sie unserer",
+        "Mit dem Absenden dieses Forumulars stimmen Sie unserer",
         "zu."
       ],
       "textLink": "Datenschutzerklärung",
@@ -270,15 +268,15 @@
     "infoLinks": [
       {
         "text": "Datenschutzerklärung",
-        "link": "https://#"
+        "link": "policy"
       },
       {
         "text": "Impressum",
-        "link": "https://#"
+        "link": "impress"
       },
       {
         "text": "Webmaster",
-        "link": "https://#"
+        "link": "webmaster"
       }
     ]
   }
