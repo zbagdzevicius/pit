@@ -10,4 +10,20 @@
     p{
         margin-top: 10px;
     }
+    animation-name: popup;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out; 
+  }
+
+
+  @keyframes popup {
+    from {
+      opacity: 0;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    to {
+      opacity: 1;
+    }
   }
