@@ -12,34 +12,52 @@ a {
 
 .screen{
   position: fixed;
-  left: -16%;
-  top: -17%;
-  transform: translate(-16%, -17%) scale(0.6);
+  left: -15%;
+  top: -17.5%;
+  transform: translate(-15%, -17.5%) scale(0.45);
   animation-name: increase;
-  animation-duration: 4s;
+  animation-duration: 8s;
   animation-timing-function: ease-in-out;
   z-index: 0;
   opacity: 1;
 }
 @keyframes increase {
-  from {
-    left: 20%;
-    top: 20%;
-    transform: translate(-20%, -20%) scale(3);
+  0% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
     z-index: 9;
   }
-  to {
+  25% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
     z-index: 9;
-    left: -16%;
-    top: -17%;
-    transform: translate(-16%, -17%) scale(0.6);
+  }
+  50% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+    z-index: 9;
+  }
+  75% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    z-index: 9;
+  }
+  100% {
+    left: -15%;
+    top: -17.5%;
+    transform: translate(-15%, -17.5%) scale(0.45);
+    z-index: 9;
   }
 }
 
 .loading{
   width: 1px; height: 1px;
   animation-name: background;
-  animation-duration: 4s;
+  animation-duration: 8s;
   animation-timing-function: ease-in;
   width: 0; height: 0;
   background-position: center center;
@@ -58,7 +76,7 @@ a {
     width: 1400px; height: 100%;
   }
   75%{
-    opacity: 0.9;
+    opacity: 1;
   }
   to {
     z-index: 8;

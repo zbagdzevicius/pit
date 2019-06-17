@@ -42,7 +42,7 @@
           },
           {
             "texts": [
-              "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm2 bis 300 mm2. Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
+              "Moderne voll- und halbautomatische Crimpautomaten, Lötstationen sowie Abläng- und Abisoliermaschinen sorgen für eine maßgeschneiderte und präzise Verarbeitung von Kabeln mit Querschnitten von 0,02 mm² bis 300 mm². Die gleichzeitige Kabelbedruckung verkürzt den Fertigungsprozess und spart wertvolle Zeit.",
               "Für ein zuverlässiges Produktionsergebnis unterliegen alle unsere Produktionsprozesse einer fortlaufenden Qualitätskontrolle."
             ],
             "image": "assets/images/5.png"
@@ -72,12 +72,6 @@
               "Alle unsere Produktionsstandorte bieten eine gute logistische Anbindung an den EU-Markt – auf dem Land- wie auch auf dem Seeweg. Mit unserem eigenen Logistikunternehmen, der UAB Dolinera, beliefern wir unsere Auftraggeber wöchentlich mit eigenen LKW. In Litauen gefertigte Produkt sind beispielsweise über die Baltikum Fähre von Kiel nach Klaipėda nach durchschnittlich 22 Stunden beim Kunden in Deutschland – auch im Winter!"
             ],
             "image": "assets/images/truck1.png"
-          },
-          {
-            "texts": [
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente odit possimus ad, tempore neque quo ratione natus vero alias nostrum cum voluptatibus sed iste nesciunt aut, soluta similique odio qui."
-            ],
-            "image": "assets/images/truck2.png"
           }
         ]
       }

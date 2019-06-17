@@ -1,34 +1,31 @@
 <div class="background" style="background-image: url(assets/images/map-regular-min.png);">
 
   <app-hero [hero]="pageTitle" *ngIf="pageTitle"></app-hero>
-  <div class="container cards section" *ngIf="content">
-    <div class="item grey card">
+  <div class="container cards center" *ngIf="content">
+    <div class="grey card">
       <div class="container">
-        <div class="item">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo veniam temporibus doloremque totam in corporis ducimus reprehenderit repellendus. Possimus beatae doloribus iure sapiente mollitia eaque perspiciatis magni eum minus maiores.
+        <div class="item margin-right">
+          <div *ngFor="let text of content.slice(0,2)" >
+            <app-texts [text]="text"></app-texts>
+          </div>
+        </div>
+        <div class="item padding">
+          <div *ngFor="let text of content.slice(2)" style="white-space: nowrap;">
+            <app-texts [text]="text"></app-texts>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="item white card">
+    <!-- <div class="item white card">
       <div>
         <div class="container center">
           <img [src]="image" class="square" />
         </div>
         <div class="container">
-          <div class="item">
-            <div *ngFor="let text of content.slice(0,2)">
-              <app-texts [text]="text"></app-texts>
-            </div>
-          </div>
-          <div class="item padding">
-            <div *ngFor="let text of content.slice(2)">
-              <app-texts [text]="text"></app-texts>
-            </div>
-          </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
 

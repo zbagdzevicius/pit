@@ -11,7 +11,7 @@
         margin-top: 10px;
     }
     animation-name: popup;
-    animation-duration: 7s;
+    animation-duration: 8s;
     animation-timing-function: ease-in-out; 
   }
 
@@ -21,7 +21,7 @@
       opacity: 0;
     }
     80%{
-        opacity: 0.8;
+        opacity: 0;
     }
     to {
       opacity: 1;
