@@ -1,10 +1,10 @@
 <div *ngIf="currentFlagSrouce" class="flag">
-    <div>
-      <img [src]="currentFlagSrouce" />
-    </div>
-    <ul class="hidden">
-      <li *ngFor="let flagSource of flagSources">
-        <a><img [src]="flagSource"/></a>
-      </li>
-    </ul>
+  <div>
+    <img [src]="currentFlagSrouce" />
   </div>
+  <ul class="hidden">
+    <li *ngFor="let flagSource of flagSources">
+      <a><img [src]="flagSource"/></a>
+    </li>
+  </ul>
+</div>

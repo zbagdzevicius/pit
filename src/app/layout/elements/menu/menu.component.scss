@@ -1,5 +1,17 @@
-a{
-  text-decoration: none;
-  position: relative;
-  z-index: 7;
+@import "../../../../variables.scss";
+
+.menu {
+  font-size: $smallest;
+  margin-left: 130px;
+  z-index: $z-index-menu;
+  .menu-item{
+    text-decoration: none;
+    margin-right: $p5;
+    padding-bottom: $p5;
+  }
+  .menu-item:hover,
+  .active {
+    border-bottom: 5px solid $yellow;
+    position: relative;
+  }
 }

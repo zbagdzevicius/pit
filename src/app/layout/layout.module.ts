@@ -20,6 +20,7 @@ import { RowImageComponent } from './elements/row-image/row-image.component';
 import { VideoComponent } from './elements/video/video.component';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PolicyPopupComponent } from './components/policy-popup/policy-popup.component';
 
 const COMPONENTS = [
   HeaderComponent, FooterComponent,
@@ -30,7 +31,8 @@ const COMPONENTS = [
   CompaniesComponent,
   SiteComponent,
   ButtonComponent,
-  ServicesComponent
+  ServicesComponent,
+  PolicyPopupComponent
 ];
 
 const ELEMENTS = [

@@ -1,0 +1,93 @@
+// COLORS
+$grey: #f6f6f6;
+$yellow: #fed646;
+$yellow-link: #ffc800;
+$white: rgba(255, 255, 255, 0.8);
+$white-strong: rgba(255, 255, 255, 0.95);
+$black: #282828;
+$dark-grey: #a9a9a9;
+$black-light: #666;
+
+// FONTS
+$big: 44px;
+$large: 32px;
+$medium: 22px;
+$small: 16px;
+$smallest: 14px;
+
+// BORDER RADIUS
+$border-radius: 4px;
+
+// FONT WEIGHTS
+$regular: 400;
+$bold: 700;
+
+// PADDINGS
+$p0: 120px;
+$p1: 60px;
+$p11: 80px;
+$p2: 45px;
+$p22: 60px;
+$p3: 30px;
+$p4: 10px;
+$p44: 15px;
+$p5: 7px;
+
+// WIDTHS
+$max-width: 1200px;
+$background-width: 1400px;
+
+// Z-INDEX
+$z-index-menu: 2;
+$z-index-animation-background: 3;
+$z-index-animation-logo: 4;
+
+// TRANSFORMS and SCALING
+@mixin transform-position-and-scale(
+  $scale,
+  $left: 50%,
+  $top: 50%,
+  $isInverted: false
+) {
+  transform: translate(-$left, -$top) scale($scale);
+  @if $isInverted {
+    left: -$left;
+    top: -$top;
+  } @else {
+    left: $left;
+    top: $top;
+  }
+}
+@mixin transform-position-center($left: 50%, $top: 50%) {
+  left: $left;
+  top: $top;
+  transform: translate(-$left, -$top);
+}
+
+
+// BACKGROUND
+
+%background-margins {
+  margin-right: -100px;
+  padding-right: 100px;
+  margin-left: -100px;
+  padding-left: 100px;
+}
+
+
+// COMPONENTS sizes
+
+$header-height: 76px;
+
+$hero-padding: 25px;
+
+$video-width: 900px;
+$close-button-width: 20px;
+
+$language-picker-width: 25px;
+
+$button-padding: $p4 $p44;
+
+$contact-textarea-width: 150px;
+
+$card-arrow-width: 25px;

@@ -1,7 +1,9 @@
-<a
+<span class="menu">
+  <a
   *ngFor="let menuItem of menu; index as i"
   [routerLink]="['/']"
-  [ngClass]="{ 'a-active': activeMenuItem === menuItem }"
-  (click)="changeActive(i)"
+  [ngClass]="{ 'active': activeMenuItem === menuItem }"
+  (click)="changeActive(i)" class="menu-item"
   >{{ menuItem }}
 </a>
+</span>

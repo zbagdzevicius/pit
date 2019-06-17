@@ -1,0 +1,16 @@
+<div class="policy-popup" *ngIf="policyPopup">
+  <div class="container center-vertical card" style="background: #282828">
+    <p style="color:white">
+      {{ policyPopup.text }}
+      <a
+        style="color:white"
+        [routerLink]="['/policy']"
+        [ngx-scroll-to]="'#start'"
+        >{{ policyPopup.textLink }}</a
+      >
+    </p>
+    <span (click)="accept()"
+      ><app-button [buttonText]="policyPopup.textButton"></app-button
+    ></span>
+  </div>
+</div>

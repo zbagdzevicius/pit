@@ -5,6 +5,7 @@ import { LangState } from 'src/app/core/state/lang.state';
 import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
 import { DOCUMENT } from '@angular/common';
 import { AppSettings } from 'src/app/core/settings/app.settings';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -19,7 +20,8 @@ export class MenuComponent implements OnInit {
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
-    private _scrollToService: ScrollToService
+    private _scrollToService: ScrollToService,
+    private router: Router
   ) {
     this.menu$
       .subscribe(menu => {
@@ -65,8 +67,14 @@ export class MenuComponent implements OnInit {
   }
 
   scrollIntoView(elementId) {
-    const element = this.document.getElementById(elementId);
-    element.scrollIntoView(false);
+    this.router.navigateByUrl('/');
+    const checkExist = setInterval(function () {
+      if (this.document.getElementById(elementId)) {
+        clearInterval(checkExist);
+        const element = this.document.getElementById(elementId);
+        element.scrollIntoView(false);
+      }
+    }, 100);
   }
 
 }

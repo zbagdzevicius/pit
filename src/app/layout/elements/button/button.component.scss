@@ -1,5 +1,11 @@
-button{
-  padding:10px 15px;
+@import "../../../../variables.scss";
+
+button {
+  padding: 10px 15px;
   margin-right: 15px;
-  font-size: 14px;
+  font-size: $smallest;
+  border-radius: $border-radius;
+  background: $yellow;
+  border: none;
+  font-weight: $bold;
 }

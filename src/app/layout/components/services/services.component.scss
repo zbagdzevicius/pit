@@ -1,8 +1,10 @@
+@import "../../../../variables.scss";
+
 .arrow{
   width:auto;
   display:none;
   img{
-    width: 25px;
+    width: $card-arrow-width;
   }
 }
 

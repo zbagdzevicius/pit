@@ -1,11 +1,12 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
-import { SetLanguage, SetContent, SetImpress, SetPolicy, SetActiveCard, SetWebmaster } from '../actions/lang.actions';
+import { SetLanguage, SetContent, SetImpress, SetPolicy, SetActiveCard, SetWebmaster, SetPolicyPopup } from '../actions/lang.actions';
 import { Lang } from '../models/layout/lang.model';
 import { ContentModel } from '../models/translate/content.model';
 import { PolicyRoot } from '../models/policy/policy-root.model';
 import { ImpressRoot } from '../models/impress/impress-root.model';
 import { ActiveCard } from '../models/layout/active-card.model';
 import { WebmasterRoot } from '../models/webmaster/webmaster-root.model';
+import { PolicyPopup } from '../models/popup/policy-popup.model';
 
 
 @State<Lang>({
@@ -85,6 +86,10 @@ export class LangState {
   static getActiveCard(cardLocation: string) {
     return cardLocation;
   }
+  @Selector()
+  static getPolicyPopup(policyPopup: PolicyPopup) {
+    return policyPopup;
+  }
 
   @Action(SetLanguage)
   setLanguage(context: StateContext<Lang>, { payload }: SetLanguage) {
@@ -109,6 +114,10 @@ export class LangState {
   }
   @Action(SetActiveCard)
   setActiveCard(context: StateContext<ActiveCard>, { payload }: SetActiveCard) {
+    context.patchState(payload);
+  }
+  @Action(SetPolicyPopup)
+  setPolicyPopup(context: StateContext<PolicyPopup>, { payload }: SetPolicyPopup) {
     context.patchState(payload);
   }
 

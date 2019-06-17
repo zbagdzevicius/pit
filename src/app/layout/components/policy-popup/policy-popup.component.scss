@@ -1,0 +1,27 @@
+@import "../../../../variables.scss";
+.policy-popup{
+    position:fixed;
+    bottom: $p4;
+    z-index: 58;
+    width: 100%;
+    .card{
+        border-radius: $border-radius;
+    }
+    p{
+        margin-top: $p4;
+    }
+    animation-name: popup;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out; 
+  }
+  @keyframes popup {
+    from {
+      opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

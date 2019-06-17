@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ContentModel } from '../models/translate/content.model';
-import { SetContent } from '../actions/lang.actions';
+import { SetContent, SetPolicyPopup } from '../actions/lang.actions';
 import { Store } from '@ngxs/store';
+import { PolicyPopup } from '../models/popup/policy-popup.model';
 
 @Injectable({
   providedIn: 'root'
@@ -16,6 +17,11 @@ export class ContentService {
     this.http.get(`assets/${language}.json`)
       .subscribe((content: ContentModel) => {
         this.store.dispatch(new SetContent(content));
+      }
+      );
+    this.http.get(`assets/${language}_policy_popup.json`)
+      .subscribe((policyPopup: PolicyPopup) => {
+        this.store.dispatch(new SetPolicyPopup(policyPopup));
       }
       );
   }

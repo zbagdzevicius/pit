@@ -1,91 +1,78 @@
-a {
-  position: relative;
-  display:none;
-}
+@import "../../../../variables.scss";
+
+$logo-scale: 0.45;
+$logo-left: 15%;
+$logo-top: 17.5%;
 
 .logo {
-  -webkit-transition: 0.5s ease-in all;
-  -moz-transition: 0.5s ease-in all;
-  -o-transition: 0.5s ease-in all;
-  transition: 0.5s ease-in all;
-}
-
-.screen{
   position: fixed;
-  left: -15%;
-  top: -17.5%;
-  transform: translate(-15%, -17.5%) scale(0.45);
+  @include transform-position-and-scale(
+    $scale: $logo-scale,
+    $left: $logo-left,
+    $top: $logo-top,
+    $isInverted: true
+  );
   animation-name: increase;
-  animation-duration: 8s;
+  animation-duration: 6s;
   animation-timing-function: ease-in-out;
-  z-index: 0;
+  z-index: 1;
   opacity: 1;
 }
 @keyframes increase {
   0% {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0.6);
-    z-index: 9;
-  }
-  25% {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0.6);
-    z-index: 9;
+    @include transform-position-and-scale($scale: 0.6);
+    z-index: $z-index-animation-logo;
   }
   50% {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0.6);
-    z-index: 9;
+    @include transform-position-and-scale($scale: 0.6);
+    z-index: $z-index-animation-logo;
   }
   75% {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(2);
-    z-index: 9;
+    @include transform-position-and-scale($scale: 2);
+    z-index: $z-index-animation-logo;
   }
   100% {
-    left: -15%;
-    top: -17.5%;
-    transform: translate(-15%, -17.5%) scale(0.45);
-    z-index: 9;
+    @include transform-position-and-scale(
+      $scale: $logo-scale,
+      $left: $logo-left,
+      $top: $logo-top,
+      $isInverted: true
+    );
+    z-index: $z-index-animation-logo;
   }
 }
 
-.loading{
-  width: 1px; height: 1px;
+.logo-background {
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 0;
+  height: 0;
+  z-index: $z-index-animation-background;
   animation-name: background;
-  animation-duration: 8s;
+  animation-duration: 6s;
   animation-timing-function: ease-in;
-  width: 0; height: 0;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 1400px;
-  top: 0;
-  position:fixed;
-  
+  background-size: $background-width;
 }
 
 @keyframes background {
   from {
     opacity: 1;
-    z-index: 8;
-    width: 1400px; height: 100%;
+    z-index: $z-index-animation-background;
+    width: $background-width;
+    height: 100%;
   }
-  75%{
+  75% {
     opacity: 1;
   }
   to {
-    z-index: 8;
+    width: $background-width;
+    @extend %background-margins;
+    z-index: $z-index-animation-background;
     opacity: 0;
-    display:none;
-    width: 1400px; height: 100%;
-    margin-right: -100px;
-    padding-right: 100px;
-    margin-left: -100px;
-    padding-left: 100px;
+    height: 100%;
   }
 }

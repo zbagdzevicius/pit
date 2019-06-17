@@ -4,6 +4,7 @@ import { PolicyRoot } from '../models/policy/policy-root.model';
 import { ImpressRoot } from '../models/impress/impress-root.model';
 import { ActiveCard } from '../models/layout/active-card.model';
 import { WebmasterRoot } from '../models/webmaster/webmaster-root.model';
+import { PolicyPopup } from '../models/popup/policy-popup.model';
 
 export class SetLanguage {
   static readonly type = '[lang] set language';
@@ -28,4 +29,8 @@ export class SetWebmaster {
 export class SetActiveCard {
   static readonly type = '[impress] set siteCard';
   constructor(public payload: ActiveCard) { }
+}
+export class SetPolicyPopup {
+  static readonly type = '[policyPopup] set policyPopup';
+  constructor(public payload: PolicyPopup) { }
 }

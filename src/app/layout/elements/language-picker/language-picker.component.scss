@@ -1,3 +1,5 @@
+@import "../../../../variables.scss";
+
 .hidden {
   display: none;
   position: absolute;
@@ -5,7 +7,7 @@
 }
 .flag {
   display: inline-block;
-  width: 25px;
+  width:$language-picker-width;
   height: auto;
   margin-right: 20px;
   &:hover {
@@ -17,7 +19,7 @@
     display: list-item;
   }
   img{
-    width:25px;
+    width:$language-picker-width;
   }
 }
 
