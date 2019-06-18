@@ -8,5 +8,24 @@ nav {
     position: fixed;
     top: 0;
     width: $max-width;
-    padding: $p5;
+    // padding: $p5;
   }
+.menu-block{
+  z-index: $z-index-menu;
+}
+
+@include screen-medium {
+  nav{
+    width: $width-medium;
+  }
+}
+@include screen-large {
+  nav{
+    width: $width-large;
+  }
+}
+@include screen-huge {
+  nav{
+    width: $width-huge;
+  }
+}

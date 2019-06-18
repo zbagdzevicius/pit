@@ -7,7 +7,11 @@
     "UNTERNEHMEN"
   ],
   "contactButton": "KONTAKTIEREN SIE UNS",
-  "heading": "Wettbewerb: Global. Qualität: Deutsch.",
+  "heading": {
+    "title": "Wettbewerb: Global. Qualität: Deutsch.",
+    "button1": "Runde Produktionsstätten",
+    "button2": "Produktionsclip"
+  },
   "aboutUs": {
     "rowTexts": {
       "columnSpecial": {

@@ -37,7 +37,7 @@ h3 {
   font-size: $large;
 }
 
-a{
+a {
   &:hover {
     text-decoration: none;
   }
@@ -88,15 +88,6 @@ ul {
 .row-texts > * {
   margin: $p3 $p3;
 }
-.card-big > * {
-  margin: $p3 $p3;
-}
-.card-small {
-  padding: $p1;
-}
-.card-text {
-  padding: $p2;
-}
 .section {
   padding-bottom: $p4;
 }
@@ -104,7 +95,7 @@ ul {
   margin-right: $p4;
 }
 
-*:not(img, .dl) {
+*:not(img, .menu-item, .hero *) {
   border-radius: $border-radius;
 }
 
@@ -123,10 +114,6 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: $background-width;
-  margin-right: -100px;
-  padding-right: 100px;
-  margin-left: -100px;
-  padding-left: 100px;
   background-image: url(assets/images/map-flag-min.png);
 }
 // layout
@@ -169,6 +156,42 @@ html {
   }
 }
 
-.cover-image{
-  float:left;width:100%;min-height:300px;object-fit: cover; height: 100%;
+.cover-image {
+  float: left;
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  height: 100%;
+}
+
+@include screen-medium {
+  .background {
+    background-size: $width-medium;
+    @include background-position;
+    @include background-image;
+  }
+  .wrapper * {
+    max-width: $max-width;
+  }
+}
+@include screen-large {
+  .background {
+    background-size: $width-large;
+    @include background-position;
+    @include background-image;
+  }
+  .wrapper * {
+    max-width: $width-medium;
+  }
+}
+@include screen-huge {
+  .background {
+    background-size: $width-huge;
+    @include background-position;
+    @include background-margins;
+    @include background-image;
+  }
+  .wrapper * {
+    max-width: $width-large;
+  }
 }

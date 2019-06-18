@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Select } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { LangState } from 'src/app/core/state/lang.state';
+import { Heading } from 'src/app/core/models/translate/heading.model';
 
 @Component({
   selector: 'app-heading',
@@ -10,8 +11,8 @@ import { LangState } from 'src/app/core/state/lang.state';
 })
 export class HeadingComponent implements OnInit {
 
-  @Select(LangState.getHeading) heading$: Observable<string>;
-  heading: string;
+  @Select(LangState.getHeading) heading$: Observable<Heading>;
+  heading: Heading;
   isModalActive = false;
   imgSources = ['assets/images/play.png', 'assets/images/close.png'];
   videoSources = ['https://pit-deutschland.eu/assets/pit-demo.mp4', 'https://pit-deutschland.eu/PIT-production.mp4'];

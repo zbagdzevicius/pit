@@ -2,8 +2,7 @@
 
 .menu {
   font-size: $smallest;
-  margin-left: 130px;
-  z-index: $z-index-menu;
+  margin-left: $menu-margin-left;
   .menu-item{
     text-decoration: none;
     margin-right: $p5;

@@ -1,8 +1,6 @@
 @import "../../../../variables.scss";
 
-$logo-scale: 0.45;
-$logo-left: 15%;
-$logo-top: 17.5%;
+$animation-duration: 6s;
 
 .logo {
   position: fixed;
@@ -13,7 +11,7 @@ $logo-top: 17.5%;
     $isInverted: true
   );
   animation-name: increase;
-  animation-duration: 6s;
+  animation-duration: $animation-duration;
   animation-timing-function: ease-in-out;
   z-index: 1;
   opacity: 1;
@@ -50,7 +48,7 @@ $logo-top: 17.5%;
   height: 0;
   z-index: $z-index-animation-background;
   animation-name: background;
-  animation-duration: 6s;
+  animation-duration: $animation-duration;
   animation-timing-function: ease-in;
   background-position: center center;
   background-repeat: no-repeat;
@@ -69,8 +67,8 @@ $logo-top: 17.5%;
     opacity: 1;
   }
   to {
+    @include background-margins;
     width: $background-width;
-    @extend %background-margins;
     z-index: $z-index-animation-background;
     opacity: 0;
     height: 100%;

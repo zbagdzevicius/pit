@@ -37,12 +37,46 @@ $p5: 7px;
 $max-width: 1200px;
 $background-width: 1400px;
 
+$mobile-max-width: 100%;
+$mobile-background-width: $mobile-max-width;
+
+// CONTAINER SIZES
+$width-mobile: 100%;
+$width-medium: 100%;
+$width-huge: 1400px;
+$width-large: 1200px;
+
+// RESPONSIVE WIDTH
+$screen-medium-min: 768px;
+$screen-large-min: $max-width;
+$screen-huge-min: $background-width;
+
 // Z-INDEX
 $z-index-menu: 2;
 $z-index-animation-background: 3;
 $z-index-animation-logo: 4;
 
-// TRANSFORMS and SCALING
+// COMPONENTS sizes
+
+$header-height: 76px;
+$video-width: 900px;
+$close-button-width: 20px;
+$play-button-width: 55px;
+$language-picker-width: 25px;
+$contact-textarea-width: 150px;
+$card-arrow-width: 25px;
+
+// COMPONENTS paddings
+$hero-padding: 20px;
+$button-padding: $p4 $p44;
+$menu-margin-left: 150px;
+
+// COMPONENTS positions
+$logo-scale: 0.45;
+$logo-left: 15%;
+$logo-top: 17.5%;
+
+// FUNCTIONS
 @mixin transform-position-and-scale(
   $scale,
   $left: 50%,
@@ -64,30 +98,49 @@ $z-index-animation-logo: 4;
   transform: translate(-$left, -$top);
 }
 
+// EXTENDERS
 
-// BACKGROUND
-
-%background-margins {
+@mixin background-margins {
+  margin-right: -100px;
+  padding-right: 100px;
+  margin-left: -100px;
+  padding-left: 100px;
+}
+@mixin background-margins {
   margin-right: -100px;
   padding-right: 100px;
   margin-left: -100px;
   padding-left: 100px;
 }
 
+@mixin background-position {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+@mixin background-image {
+  background-image: url(assets/images/map-flag-min.png);
+}
 
-// COMPONENTS sizes
+@mixin fullscreen {
+  width: 100%;
+  height: 100vh;
+}
 
-$header-height: 76px;
+//  MIXINS
 
-$hero-padding: 25px;
-
-$video-width: 900px;
-$close-button-width: 20px;
-
-$language-picker-width: 25px;
-
-$button-padding: $p4 $p44;
-
-$contact-textarea-width: 150px;
-
-$card-arrow-width: 25px;
+@mixin screen-medium {
+  @media (min-width: $screen-medium-min) {
+    @content;
+  }
+}
+@mixin screen-large {
+  @media (min-width: $screen-large-min ) {
+    @content;
+  }
+}
+@mixin screen-huge {
+  @media (min-width: $screen-huge-min ) {
+    @content;
+  }
+}

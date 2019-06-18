@@ -11,11 +11,12 @@ import { Contact } from './contact.model';
 import { Footer } from './footer.model';
 
 import { FooterAbsolute } from './footer-absolute.model';
+import { Heading } from './heading.model';
 
 export class ContentModel {
   menu: string[];
   contactButton: string;
-  heading: string;
+  heading: Heading;
   aboutUs: AboutUs;
   services: Services;
   site: Site;
