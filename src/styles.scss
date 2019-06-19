@@ -55,10 +55,10 @@ ul {
 
 .card {
   background: $grey;
-  &:hover {
+  &:hover:not(.no-hover) {
     background: $yellow;
   }
-  &.active {
+  &.active:not(.no-hover) {
     background: $yellow;
   }
   > * {
@@ -113,12 +113,12 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: $background-width;
+  background-size: $width-mobile;
   background-image: url(assets/images/map-flag-min.png);
 }
 // layout
 .wrapper * {
-  max-width: $max-width;
+  max-width: $width-mobile;
 }
 .container {
   display: flex;
@@ -159,11 +159,25 @@ html {
 .cover-image {
   float: left;
   width: 100%;
-  min-height: 300px;
+  min-height: 400px;
   object-fit: cover;
   height: 100%;
 }
 
+.only-desktop {
+  display: none;
+}
+.only-mobile {
+  display: block;
+}
+@include screen-small {
+  .section {
+    flex-direction: column;
+  }
+  .background{
+    background-attachment: initial;
+  }
+}
 @include screen-medium {
   .background {
     background-size: $width-medium;
@@ -172,6 +186,12 @@ html {
   }
   .wrapper * {
     max-width: $max-width;
+  }
+  .only-mobile {
+    display: none;
+  }
+  .only-desktop {
+    display: block;
   }
 }
 @include screen-large {
@@ -183,6 +203,12 @@ html {
   .wrapper * {
     max-width: $width-medium;
   }
+  .only-mobile {
+    display: none;
+  }
+  .only-desktop {
+    display: block;
+  }
 }
 @include screen-huge {
   .background {
@@ -193,5 +219,11 @@ html {
   }
   .wrapper * {
     max-width: $width-large;
+  }
+  .only-mobile {
+    display: none;
+  }
+  .only-desktop {
+    display: block;
   }
 }

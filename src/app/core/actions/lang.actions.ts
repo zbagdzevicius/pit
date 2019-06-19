@@ -5,6 +5,7 @@ import { ImpressRoot } from '../models/impress/impress-root.model';
 import { ActiveCard } from '../models/layout/active-card.model';
 import { WebmasterRoot } from '../models/webmaster/webmaster-root.model';
 import { PolicyPopup } from '../models/popup/policy-popup.model';
+import { Device } from '../models/etc/device.model';
 
 export class SetLanguage {
   static readonly type = '[lang] set language';
@@ -33,4 +34,8 @@ export class SetActiveCard {
 export class SetPolicyPopup {
   static readonly type = '[policyPopup] set policyPopup';
   constructor(public payload: PolicyPopup) { }
+}
+export class SetDevice {
+  static readonly type = '[device] set device';
+  constructor(public payload: Device) { }
 }

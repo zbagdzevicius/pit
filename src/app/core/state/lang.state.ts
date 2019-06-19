@@ -1,5 +1,7 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
-import { SetLanguage, SetContent, SetImpress, SetPolicy, SetActiveCard, SetWebmaster, SetPolicyPopup } from '../actions/lang.actions';
+import { SetLanguage,SetContent, SetImpress,
+  SetPolicy, SetActiveCard, SetWebmaster,
+  SetPolicyPopup, SetDevice } from '../actions/lang.actions';
 import { Lang } from '../models/layout/lang.model';
 import { ContentModel } from '../models/translate/content.model';
 import { PolicyRoot } from '../models/policy/policy-root.model';
@@ -7,6 +9,8 @@ import { ImpressRoot } from '../models/impress/impress-root.model';
 import { ActiveCard } from '../models/layout/active-card.model';
 import { WebmasterRoot } from '../models/webmaster/webmaster-root.model';
 import { PolicyPopup } from '../models/popup/policy-popup.model';
+import { Device } from '../models/etc/device.model';
+import { getTemplateContent } from '@angular/core/src/sanitization/html_sanitizer';
 
 
 @State<Lang>({
@@ -17,11 +21,17 @@ import { PolicyPopup } from '../models/popup/policy-popup.model';
     policyRoot: new PolicyRoot(),
     impressRoot: new ImpressRoot(),
     webmasterRoot: null,
-    activeCard: null
+    activeCard: null,
+    device: {isMobile: false}
   }
 })
 
 export class LangState {
+  @Selector()
+  static getContent(content: ContentModel){
+    return content;
+  }
+
   @Selector()
   static getHeading(content: ContentModel) {
     return content.heading;
@@ -90,6 +100,10 @@ export class LangState {
   static getPolicyPopup(policyPopup: PolicyPopup) {
     return policyPopup;
   }
+  @Selector()
+  static getDevice(device: Device) {
+    return device;
+  }
 
   @Action(SetLanguage)
   setLanguage(context: StateContext<Lang>, { payload }: SetLanguage) {
@@ -118,6 +132,10 @@ export class LangState {
   }
   @Action(SetPolicyPopup)
   setPolicyPopup(context: StateContext<PolicyPopup>, { payload }: SetPolicyPopup) {
+    context.patchState(payload);
+  }
+  @Action(SetDevice)
+  setDevice(context: StateContext<Device>, { payload }: SetDevice) {
     context.patchState(payload);
   }
 

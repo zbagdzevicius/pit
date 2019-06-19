@@ -2,7 +2,7 @@
 
   <app-hero [hero]="pageTitle" *ngIf="pageTitle"></app-hero>
   <div class="container cards section" *ngIf="columnLeft && columnRight">
-    <div class="item grey card">
+    <div class="item grey card no-hover">
       <div class="container">
         <div class="item">
           <div *ngFor="let text of columnLeft.texts.slice(0,5)" class="item">
@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div class="item white card no-margin">
+    <div class="item white card no-margin no-hover">
       <div>
         <div class="container center">
           <img [src]="image" class="cover-image" />

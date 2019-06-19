@@ -1,9 +1,21 @@
 <div class="container center">
   <span id="start"></span>
+  <div class="wrapper" *ngIf="isMobile; else isDesktop">
+    <app-header-mobile></app-header-mobile>
+    <router-outlet></router-outlet>
+    <app-contact-mobile></app-contact-mobile>
+    <app-footer-mobile></app-footer-mobile>
+    <app-footer-absolute-mobile></app-footer-absolute-mobile>
+  </div>
+</div>
+<ng-template #isDesktop>
   <div class="wrapper">
     <app-header></app-header>
     <router-outlet></router-outlet>
-    <div class="background" style="background-image: url(assets/images/map-regular-min.png);">
+    <div
+      class="background"
+      style="background-image: url(assets/images/map-regular-min.png);"
+    >
       <app-hero *ngIf="lastHero" [hero]="lastHero" [id]="lastHero"></app-hero>
       <app-contact [id]="'contact'"></app-contact>
       <app-footer></app-footer>
@@ -11,4 +23,4 @@
     </div>
     <app-policy-popup></app-policy-popup>
   </div>
-</div>
+</ng-template>

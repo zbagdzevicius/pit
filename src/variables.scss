@@ -3,7 +3,7 @@ $grey: #f6f6f6;
 $yellow: #fed646;
 $yellow-link: #ffc800;
 $white: rgba(255, 255, 255, 0.8);
-$white-strong: rgba(255, 255, 255, 0.95);
+$white-strong: white;
 $black: #282828;
 $dark-grey: #a9a9a9;
 $black-light: #666;
@@ -47,7 +47,8 @@ $width-huge: 1400px;
 $width-large: 1200px;
 
 // RESPONSIVE WIDTH
-$screen-medium-min: 768px;
+$screen-small-max: 768px;
+$screen-medium-min: 1000px;
 $screen-large-min: $max-width;
 $screen-huge-min: $background-width;
 
@@ -60,7 +61,7 @@ $z-index-animation-logo: 4;
 
 $header-height: 76px;
 $video-width: 900px;
-$close-button-width: 20px;
+$close-button-width: 30px;
 $play-button-width: 55px;
 $language-picker-width: 25px;
 $contact-textarea-width: 150px;
@@ -69,7 +70,6 @@ $card-arrow-width: 25px;
 // COMPONENTS paddings
 $hero-padding: 20px;
 $button-padding: $p4 $p44;
-$menu-margin-left: 150px;
 
 // COMPONENTS positions
 $logo-scale: 0.45;
@@ -128,6 +128,11 @@ $logo-top: 17.5%;
 }
 
 //  MIXINS
+@mixin screen-small {
+  @media (max-width: $screen-small-max) {
+    @content;
+  }
+}
 
 @mixin screen-medium {
   @media (min-width: $screen-medium-min) {

@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Input } from '@angular/core';
 import { Select } from '@ngxs/store';
 import { Contact } from 'src/app/core/models/translate/contact.model';
 import { LangState } from 'src/app/core/state/lang.state';
@@ -15,7 +15,7 @@ import { ContactService } from 'src/app/core/services/contact.service';
 export class ContactComponent implements OnInit {
 
   @Select(LangState.getContact) contact$: Observable<Contact>;
-  contact: Contact;
+  @Input() contact: Contact;
   // contactFormGroup: FormGroup;
   // contactForm: ContactForm;
 

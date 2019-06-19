@@ -9,12 +9,22 @@ import { AppSettings } from 'src/app/core/settings/app.settings';
 export class LogoComponent implements OnInit {
   @Input() resizing: boolean;
   offset = AppSettings.SCROLL_OFFSET;
+  animationDuration = 0 * 1000;
+  animationShowing = true;
 
   constructor(
   ) {
+    this.executeAnimation();
   }
 
   ngOnInit() {
+  }
+
+  executeAnimation() {
+    console.log('gg');
+    setTimeout(function () {
+      this.animationShowing = false;
+    }.bind(this), this.animationDuration);
   }
 
 }

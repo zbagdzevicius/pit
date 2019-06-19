@@ -51,19 +51,27 @@ export class MenuComponent implements OnInit {
     this._scrollToService.scrollTo(config);
   }
 
+  // scroll(index: number) {
+  //   if (index === 2) {
+  //     this.scrollIntoView('siteCards');
+  //   } else if (index === 3) {
+  //     this.scrollIntoView('servicesCards');
+  //   } else {
+  //     const config: ScrollToConfigOptions = {
+  //       offset: AppSettings.SCROLL_OFFSET,
+  //       target: this.menu[index],
+  //       duration: 0
+  //     };
+  //     this._scrollToService.scrollTo(config);
+  //   }
+  // }
   scroll(index: number) {
-    if (index === 2) {
-      this.scrollIntoView('siteCards');
-    } else if (index === 3) {
-      this.scrollIntoView('servicesCards');
-    } else {
-      const config: ScrollToConfigOptions = {
-        offset: AppSettings.SCROLL_OFFSET,
-        target: this.menu[index],
-        duration: 0
-      };
-      this._scrollToService.scrollTo(config);
-    }
+    const config: ScrollToConfigOptions = {
+      offset: AppSettings.SCROLL_OFFSET + 1,
+      target: this.menu[index],
+      duration: 0
+    };
+    this._scrollToService.scrollTo(config);
   }
 
   scrollIntoView(elementId) {

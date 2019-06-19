@@ -1,4 +1,4 @@
-<div class="policy-popup" *ngIf="policyPopup">
+<div class="policy-popup" *ngIf="policyPopup && !accepted">
   <div class="container center-vertical card" style="background: #282828">
     <p style="color:white">
       {{ policyPopup.text }}

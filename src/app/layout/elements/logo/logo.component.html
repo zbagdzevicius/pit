@@ -1,6 +1,23 @@
-<object data="assets/images/logo.svg" class="logo" 
-[ngClass]="{'logo-big':!resizing, 'logo-small':resizing}"></object>
-<div class=" logo-background"  style="background:white;">
-    <div class="logo-background" style=" background-image:url(assets/images/map-regular-min.png)">
-    </div>
+<div *ngIf="animationShowing">
+  <object data="assets/images/logo.svg" class="logo"></object>
+  <div class=" logo-background" style="background:white;">
+    <div
+      class="logo-background"
+      style=" background-image:url(assets/images/map-regular-min.png)"
+    ></div>
+  </div>
 </div>
+
+<a
+  [routerLink]="['/']"
+  routerLinkActive="router-link-active"
+  [ngx-scroll-to]="'#start'"
+  [ngx-scroll-to-offset]="offset"
+  [ngClass]="{'invisible': animationShowing}"
+>
+  <img
+    src="assets/images/logo.png"
+    class="brand"
+    [ngClass]="{ 'logo-small': resizing }"
+  />
+</a>

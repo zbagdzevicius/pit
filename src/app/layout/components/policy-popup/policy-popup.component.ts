@@ -12,9 +12,11 @@ import { Observable } from 'rxjs';
 export class PolicyPopupComponent implements OnInit {
   @Select(LangState.getPolicyPopup) policyPopup$: Observable<PolicyPopup>;
   policyPopup: PolicyPopup;
+  accepted: boolean;
 
   constructor() {
     if (!localStorage.getItem('cookiesAccepted')) {
+      this.accepted = false;
       this.policyPopup$
         .subscribe(policyPopup => {
           this.policyPopup = policyPopup;
@@ -27,6 +29,7 @@ export class PolicyPopupComponent implements OnInit {
 
   accept() {
     localStorage.setItem('cookiesAccepted', 'true');
+    this.accepted = true;
   }
 
 }

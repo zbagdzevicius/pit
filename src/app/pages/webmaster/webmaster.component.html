@@ -2,7 +2,7 @@
 
   <app-hero [hero]="pageTitle" *ngIf="pageTitle"></app-hero>
   <div class="container cards center" *ngIf="content">
-    <div class="grey card">
+    <div class="grey card no-hover">
       <div class="container">
         <div class="item margin-right">
           <div *ngFor="let text of content.slice(0,2)" >

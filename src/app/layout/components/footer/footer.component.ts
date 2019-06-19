@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { LangState } from 'src/app/core/state/lang.state';
 import { Select, Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
@@ -14,15 +14,12 @@ import { AppSettings } from 'src/app/core/settings/app.settings';
 })
 export class FooterComponent implements OnInit {
 
-  @Select(LangState.getFooter) footer$: Observable<Footer>;
   @Select(LangState.getSiteTitles) pageSiteCards$: Observable<CardsLocation[]>;
-  footer: Footer;
+  @Input() footer: Footer;
   footerLinks = [];
   offset = AppSettings.SCROLL_OFFSET_CARDS;
 
   constructor(private store: Store) {
-    this.footer$
-      .subscribe(footer => this.footer = footer);
     this.pageSiteCards$
       .subscribe((cards: CardsLocation[]) => {
         if (cards) {

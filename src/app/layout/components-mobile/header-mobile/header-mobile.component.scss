@@ -1,0 +1,14 @@
+@import "../../../../variables.scss";
+
+nav {
+    dl{
+        height: $header-height;
+    }
+    background-color: $white-strong;
+    position: fixed;
+    top: 0;
+    width: $width-mobile;
+  }
+.menu-block{
+  z-index: $z-index-menu;
+}

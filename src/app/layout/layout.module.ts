@@ -21,6 +21,15 @@ import { VideoComponent } from './elements/video/video.component';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PolicyPopupComponent } from './components/policy-popup/policy-popup.component';
+import { HeaderMobileComponent } from './components-mobile/header-mobile/header-mobile.component';
+import { FooterAbsoluteMobileComponent } from './components-mobile/footer-absolute-mobile/footer-absolute-mobile.component';
+import { FooterMobileComponent } from './components-mobile/footer-mobile/footer-mobile.component';
+import { HeadingMobileComponent } from './components-mobile/heading-mobile/heading-mobile.component';
+import { CompaniesMobileComponent } from './components-mobile/companies-mobile/companies-mobile.component';
+import { AboutUsMobileComponent } from './components-mobile/about-us-mobile/about-us-mobile.component';
+import { SiteMobileComponent } from './components-mobile/site-mobile/site-mobile.component';
+import { ServicesMobileComponent } from './components-mobile/services-mobile/services-mobile.component';
+import { ContactMobileComponent } from './components-mobile/contact-mobile/contact-mobile.component';
 
 const COMPONENTS = [
   HeaderComponent, FooterComponent,
@@ -32,8 +41,20 @@ const COMPONENTS = [
   SiteComponent,
   ButtonComponent,
   ServicesComponent,
-  PolicyPopupComponent
+  PolicyPopupComponent,
+  HeaderMobileComponent
 ];
+
+const COMPONENTS_MOBILE = [
+  FooterAbsoluteMobileComponent,
+  FooterMobileComponent,
+  HeadingMobileComponent,
+  CompaniesMobileComponent,
+  AboutUsMobileComponent,
+  SiteMobileComponent,
+  ServicesMobileComponent,
+  ContactMobileComponent
+]
 
 const ELEMENTS = [
   LanguagePickerComponent,
@@ -47,7 +68,8 @@ const ELEMENTS = [
 @NgModule({
   declarations: [
     ...COMPONENTS,
-    ...ELEMENTS
+    ...ELEMENTS,
+    ...COMPONENTS_MOBILE
   ],
   imports: [
     CommonModule,
@@ -55,7 +77,8 @@ const ELEMENTS = [
     ScrollToModule.forRoot()
   ],
   exports: [
-    ...COMPONENTS
+    ...COMPONENTS,
+    ...COMPONENTS_MOBILE
   ]
 })
 export class LayoutModule { }
