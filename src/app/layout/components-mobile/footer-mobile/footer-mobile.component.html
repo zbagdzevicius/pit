@@ -1,3 +1,32 @@
-<p>
-  footer-mobile works!
-</p>
+<div class="container footer grey" *ngIf="footer && footerLinks">
+  <div class="item container updown justified">
+    <div class="item">
+      <h4 class="marginless">{{ footer.address.title }}</h4>
+      <span>{{ footer.address.subtitle }}</span>
+    </div>
+    <br>
+    <ul class="item">
+      <li *ngFor="let location of footer.address.locations">
+        {{ location }}<br />
+      </li>
+    </ul>
+    <br>
+    <div class="item">
+      <span class="social-link"><a [href]="footer.socialLinks.facebook"><img src="assets/images/facebook-min.png"></a> </span>
+      <span class="social-link"><a [href]="footer.socialLinks.linkedin"><img src="assets/images/linkedin-min.png"></a> </span>
+    </div>
+  </div>
+
+  <div class="item">
+    <h2><a href="tel:{{footer.footerInfo.number}}">{{ footer.footerInfo.number }}</a></h2>
+    <br>
+    <dl>
+      <dt>
+        <a *ngFor="let footerLink of footerLinks" [routerLink]="['/']" [ngx-scroll-to-offset]="offset" routerLinkActive="router-link-active"  [ngx-scroll-to]="footerLink" (click)="changeActiveCard(footerLink)">
+          {{ footerLink }}
+          <br />
+        </a>
+      </dt>
+    </dl>
+  </div>
+</div>

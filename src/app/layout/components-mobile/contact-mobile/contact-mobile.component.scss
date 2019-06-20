@@ -1,0 +1,25 @@
+@import "../../../../variables.scss";
+
+input, textarea{
+  border: none;
+  padding: $p44 $p3;
+  vertical-align: middle;
+}
+.margin-right {
+  margin-bottom: $p44;
+
+  input:nth-of-type(1){
+  margin-right: $p44;
+  }
+}
+textarea{
+  height:$contact-textarea-width;
+  resize: vertical;
+}
+
+.contact > .item:nth-of-type(1) > * {
+  margin: $p2 $p1 $p0 $p1;
+}
+.contact > *:nth-of-type(2) {
+  margin: $p2 0 $p0 0;
+}

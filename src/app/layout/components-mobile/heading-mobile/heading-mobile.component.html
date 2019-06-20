@@ -1,3 +1,21 @@
-<p>
-  heading-mobile works!
-</p>
+<div class="heading">
+  <div *ngIf="!isModalActive else video" class="container center-vertical updown ">
+    <h1 *ngIf="heading">{{ heading.title }}</h1>
+    <div class="container updown">
+      <div class="item container center-vertical play section">
+        <a (click)="turnOnVideo(0)" ><img [src]="imgSources[0]" /></a>
+        <span class="coordinates">{{ heading.button1 }}</span>
+      </div>
+      <div class="item container center-vertical play">
+        <a (click)="turnOnVideo(1)" ><img [src]="imgSources[0]"/></a>
+        <span class="coordinates">{{ heading.button2 }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #video>
+  <div class="item container center-vertical updown">
+    <app-video class="video" [videoSource]="videoSource" (valueChange)='turnOffVideo($event)'>
+    </app-video>
+  </div>
+</ng-template>

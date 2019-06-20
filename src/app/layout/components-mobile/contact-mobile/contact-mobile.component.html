@@ -1,3 +1,47 @@
-<p>
-  contact-mobile works!
-</p>
+<div *ngIf="contact" class="container white contact">
+  <div class="item container updown ">
+    <div>
+      <div>
+        <h4 class="marginless">{{ contact.address.title }}</h4>
+        <span>{{ contact.address.subtitle }}</span>
+      </div>
+      <br>
+      <dl>
+        <dt *ngFor="let location of contact.address.locations">
+          {{ location }}
+        </dt>
+      </dl>
+      <br>
+      <dl>
+        <dt *ngFor="let contactItem of contact.contactBy">
+          <span>{{ contactItem.name }}</span>
+          :
+          <a href="tel:{{contactItem.value}}" class="bold">{{ contactItem.value }}</a>
+        </dt>
+      </dl>
+    </div>
+  </div>
+
+  <div class="item">
+    <form>
+    <!-- <form [formGroup]="contactFormGroup"> -->
+      <div class="container margin-right">
+        <!-- <input class="item grey" formControlName="name" [placeholder]="contact.form.name" />
+        <input class="item grey" formControlName="email" [placeholder]="contact.form.email" /> -->
+        <input class="item grey" [placeholder]="contact.form.name" />
+        <input class="item grey" [placeholder]="contact.form.email" />
+      </div>
+      <div class="container">
+        <!-- <textarea class="item grey message" formControlName="message" [placeholder]="contact.form.message"></textarea> -->
+        <textarea class="item grey message" [placeholder]="contact.form.message"></textarea>
+        <!-- <app-form-error-messages [control]="contactFormGroup.controls['message']"></app-form-error-messages> -->
+      </div>
+      <p>
+        {{ contact.form.texts[0] }}
+        <a [href]="contact.form.textLink" class="a-special" [routerLink]="['/policy']" [ngx-scroll-to]="'#start'">{{ contact.form.textLink }}</a>
+        {{ contact.form.texts[1] }}
+      </p>
+      <app-button [buttonText]="contact.form.send"></app-button>
+    </form>
+  </div>
+</div>

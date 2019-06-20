@@ -72,9 +72,17 @@ $hero-padding: 20px;
 $button-padding: $p4 $p44;
 
 // COMPONENTS positions
-$logo-scale: 0.45;
-$logo-left: 15%;
-$logo-top: 17.5%;
+// $logo-scale: 0.45;
+// $logo-animation: 0.6;
+// $logo-animation-increase: 2;
+// $logo-left: 15%;
+// $logo-top: 17.5%;
+$logo-scale: 1;
+$logo-animation: 1.2;
+$logo-animation-increase: 5;
+$logo-margin: 5px;
+$logo-left: $logo-margin;
+$logo-top: $logo-margin;
 
 // FUNCTIONS
 @mixin transform-position-and-scale(

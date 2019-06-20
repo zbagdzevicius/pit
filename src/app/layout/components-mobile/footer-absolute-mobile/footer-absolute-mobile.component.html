@@ -1,3 +1,14 @@
-<p>
-  footer-absolute-mobile works!
-</p>
+<div class="container center-vertical footer-absolute font-small" *ngIf="footerAbsolute">
+  <div class="item">
+    {{ footerAbsolute.copyright }}
+  </div>
+  <div class="item container">
+    <dl>
+      <dt class="container" *ngFor="let infoLink of footerAbsolute.infoLinks">
+        <a [href]="infoLink.link" class="coordinates" [routerLink]="[infoLink.link]" [ngx-scroll-to]="'#start'" [ngx-scroll-to-offset]="offset">
+          {{infoLink.text}}
+        </a>
+      </dt>
+    </dl>
+  </div>
+</div>

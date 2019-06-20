@@ -1,3 +1,57 @@
-<p>
-  site-mobile works!
-</p>
+<div *ngIf="site" id="siteCard">
+  <div class="container section cards">
+    <div class="item grey container card no-hover">
+      <div class="container updown justify">
+        <div>
+          <h2>{{ site.rowInfo.title }}</h2>
+          <span class="font-medium">{{ site.rowInfo.subtitle }}</span>
+        </div>
+        <p>
+          <span>{{ site.rowInfo.location.name }}</span>
+          <br />
+          <a
+            [href]="site.rowInfo.location.link"
+            class="coordinates"
+            target="_blank"
+          >
+            <span>{{ site.rowInfo.location.coordinateN }}</span>
+            <span>{{ site.rowInfo.location.coordinateE }}</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section cards" id="siteCards" #siteCards>
+    <a
+      class="item card container"
+      *ngFor="let card of site.cardsLocation"
+      (click)="changeCard(card)"
+      [ngClass]="{
+        active: indexOfActiveCard === site.cardsLocation.indexOf(card)
+      }"
+      [id]="card.title"
+      [ngx-scroll-to]="'siteCards'"
+      [ngx-scroll-to-offset]="offset"
+    >
+      <div class="item container updown justify">
+        <div>
+          <h2 class="fixed">{{ card.title.toUpperCase() }}</h2>
+          <p>{{ card.text }}</p>
+        </div>
+        <p>
+          <span>{{ card.location.name }}</span>
+          <br />
+          <a [href]="card.location.link" class="coordinates" target="_blank">
+            <span>{{ card.location.coordinateN }}</span>
+            <span> {{ card.location.coordinateE }}</span>
+          </a>
+        </p>
+      </div>
+    </a>
+  </div>
+
+  <div class="container section" id="companies">
+    <app-row-image [rowImage]="currentRow"></app-row-image>
+  </div>
+</div>

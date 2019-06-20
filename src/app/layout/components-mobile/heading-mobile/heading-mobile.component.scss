@@ -1,0 +1,19 @@
+@import "../../../../variables.scss";
+
+h1 {
+  padding-bottom: 8vh;
+  padding-top: 32vh;
+}
+.play {
+  img {
+    width: $play-button-width;
+    margin-right: 30px;
+  }
+  span {
+    font-size: $medium;
+    color: $black-light;
+  }
+}
+.heading{
+  @include fullscreen;
+}

@@ -1,0 +1,15 @@
+@import "../../../../variables.scss";
+
+.arrow{
+  width:auto;
+  display:none;
+  img{
+    width: $card-arrow-width;
+  }
+}
+
+.card:hover, .active{
+  .arrow{
+    display:block;
+  }
+}

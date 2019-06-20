@@ -1,0 +1,12 @@
+@import "../../../../variables.scss";
+
+dl dt{
+    display:inline;
+}
+dl dt:not(:last-of-type){
+  margin-right: 10px;
+}
+
+.footer-absolute > * {
+  margin: $p3 $p1;
+}
