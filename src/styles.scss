@@ -36,6 +36,9 @@ textarea,
 h3 {
   font-size: $large;
 }
+.hyphens{
+  hyphens: auto;
+}
 
 a {
   &:hover {
@@ -67,11 +70,35 @@ ul {
   }
 }
 
+.card-mobile {
+  
+  background: $grey;
+  &:hover:not(.no-hover) {
+    background: $yellow;
+  }
+  &.active:not(.no-hover) {
+    background: $yellow;
+  }
+  > * {
+    padding: $p3;
+  }
+  width: 95%;
+  margin: auto;
+  border-radius: $border-radius;
+
+  &.full-width{
+    width: 100%;
+  }
+}
+
 .grey {
   background-color: $grey;
 }
 .white {
   background-color: $white;
+}
+.white-strong{
+  background-color: $white-strong;
 }
 .yellow {
   background-color: $yellow;
@@ -79,6 +106,13 @@ ul {
 
 .font-medium {
   font-size: $medium;
+}
+.font-average {
+  font-size: $average;
+}
+
+.font-large {
+  font-size: $large;
 }
 .bold {
   font-weight: $bold;
@@ -109,13 +143,6 @@ html {
   padding-top: 80px;
 }
 
-.background {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: $width-mobile;
-  background-image: url(assets/images/map-flag-min.png);
-}
 // layout
 .wrapper * {
   max-width: $width-mobile;
@@ -136,6 +163,9 @@ html {
   }
   &.spacing {
     justify-content: space-around;
+  }
+  &.spacing-vertical {
+    align-items: stretch;
   }
   &.start {
     justify-content: flex-start;
@@ -164,6 +194,13 @@ html {
   height: 100%;
 }
 
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+
 .only-desktop {
   display: none;
 }
@@ -174,15 +211,47 @@ html {
   .section {
     flex-direction: column;
   }
-  .background{
-    background-attachment: initial;
+  .background-map:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    @include background-map-image;
+    @include background-position-mobile;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
+  // .background-regular:before{
+  //   content: "";
+  //   display: block;
+  //   position: fixed;
+  //   left: 0;
+  //   top: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: -10;
+  //   @include background-regular-image;
+  //   @include background-position-mobile;
+  //   -webkit-background-size: cover;
+  //   -moz-background-size: cover;
+  //   -o-background-size: cover;
+  //   background-size: cover;
+  // }
 }
 @include screen-medium {
-  .background {
-    background-size: $width-medium;
+  .background-map {
+    @include background-map-image;
     @include background-position;
-    @include background-image;
+  }
+  .background-regular {
+    @include background-regular-image;
+    @include background-position;
   }
   .wrapper * {
     max-width: $max-width;
@@ -195,10 +264,9 @@ html {
   }
 }
 @include screen-large {
-  .background {
+  .background-regular,
+  .background-map {
     background-size: $width-large;
-    @include background-position;
-    @include background-image;
   }
   .wrapper * {
     max-width: $width-medium;
@@ -211,11 +279,10 @@ html {
   }
 }
 @include screen-huge {
-  .background {
+  .background-regular,
+  .background-map {
     background-size: $width-huge;
-    @include background-position;
     @include background-margins;
-    @include background-image;
   }
   .wrapper * {
     max-width: $width-large;

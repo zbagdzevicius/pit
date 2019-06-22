@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
   @Select(LangState.getMenu) menu$: Observable<string[]>;
   contactButton: string;
   menu: string[];
+  numberOfMenuItems: number;
   activeMenuItem: string;
   resizing = false;
   pageSections = [];
@@ -31,18 +32,24 @@ export class HeaderComponent implements OnInit {
         if (menu) {
           this.menu = menu;
           this.activeMenuItem = menu[0];
+          this.numberOfMenuItems = this.menu.length;
         }
       }
       );
   }
+
+
   @HostListener('document:scroll')
   onScroll() {
     const currentScrollPosition = window.scrollY;
     if (this.router.url === '/') {
-      for (const menuItem of this.menu) {
-        this.pageSections.push(this.document.getElementById(menuItem).offsetTop);
+      if (this.pageSections.length === this.numberOfMenuItems) {
+        this.changeActiveButton(currentScrollPosition);
+      } else {
+        this.getPageSections();
       }
-      this.changeActiveButton(currentScrollPosition);
+    } else {
+      this.activeMenuItem = null;
     }
     this.resizeLogo(currentScrollPosition);
   }
@@ -50,9 +57,23 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  getPageSections() {
+    if (this.menu.length !== 0) {
+      const pageSections = [];
+      for (const menuItem of this.menu) {
+        const menuElement = this.document.getElementById(menuItem);
+        if (menuElement) {
+          const offset = menuElement.offsetTop;
+          pageSections.push(offset);
+        }
+      }
+      this.pageSections = pageSections;
+    }
+  }
+
   changeActiveButton(currentScrollPosition) {
     this.pageSections.forEach((sectionPosition, index) => {
-      if ((sectionPosition + AppSettings.SCROLL_OFFSET ) < currentScrollPosition) {
+      if ((sectionPosition + AppSettings.SCROLL_OFFSET) < currentScrollPosition) {
         if (this.menu[index] === undefined) {
           return;
         }
@@ -61,6 +82,7 @@ export class HeaderComponent implements OnInit {
       return;
     });
   }
+
   resizeLogo(currentScrollPosition) {
     if (currentScrollPosition > 100) {
       this.resizing = true;

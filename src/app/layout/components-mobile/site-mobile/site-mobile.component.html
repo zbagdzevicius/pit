@@ -1,57 +1,27 @@
 <div *ngIf="site" id="siteCard">
-  <div class="container section cards">
-    <div class="item grey container card no-hover">
-      <div class="container updown justify">
-        <div>
-          <h2>{{ site.rowInfo.title }}</h2>
-          <span class="font-medium">{{ site.rowInfo.subtitle }}</span>
-        </div>
-        <p>
-          <span>{{ site.rowInfo.location.name }}</span>
-          <br />
-          <a
-            [href]="site.rowInfo.location.link"
-            class="coordinates"
-            target="_blank"
-          >
-            <span>{{ site.rowInfo.location.coordinateN }}</span>
-            <span>{{ site.rowInfo.location.coordinateE }}</span>
-          </a>
-        </p>
-      </div>
-    </div>
+  <div class="grey card-mobile no-hover section">
+    <h2 class="font-large">{{ site.rowInfo.title }}</h2>
+    <span class="font-average">{{ site.rowInfo.subtitle }}</span>
   </div>
 
-  <div class="container section cards" id="siteCards" #siteCards>
-    <a
-      class="item card container"
-      *ngFor="let card of site.cardsLocation"
-      (click)="changeCard(card)"
-      [ngClass]="{
-        active: indexOfActiveCard === site.cardsLocation.indexOf(card)
-      }"
-      [id]="card.title"
-      [ngx-scroll-to]="'siteCards'"
-      [ngx-scroll-to-offset]="offset"
+  <a
+    *ngFor="let card of site.cardsLocation; index as i"
+    [ngClass]="{
+      active: indexOfActiveCard === site.cardsLocation.indexOf(card)
+    }"
+    [id]="card.title"
+  >
+    <div class="card-mobile heading grey"
+    [ngx-scroll-to]="card.title"
+    [ngClass]="{'heading yellow': i===indexOfActiveCard}"
     >
-      <div class="item container updown justify">
-        <div>
-          <h2 class="fixed">{{ card.title.toUpperCase() }}</h2>
-          <p>{{ card.text }}</p>
-        </div>
-        <p>
-          <span>{{ card.location.name }}</span>
-          <br />
-          <a [href]="card.location.link" class="coordinates" target="_blank">
-            <span>{{ card.location.coordinateN }}</span>
-            <span> {{ card.location.coordinateE }}</span>
-          </a>
-        </p>
-      </div>
-    </a>
-  </div>
-
-  <div class="container section" id="companies">
-    <app-row-image [rowImage]="currentRow"></app-row-image>
-  </div>
+      <h2 class="fixed">{{ card.title.toUpperCase() }}</h2>
+    </div>
+    <div class="card-mobile white no-hover">
+      <p class="font-medium">{{ card.text }}</p>
+    </div>
+    <div>
+      <app-row-image [rowImage]="card.rowImage" [mediumFont]="true"></app-row-image>
+    </div>
+  </a>
 </div>

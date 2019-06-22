@@ -1,10 +1,9 @@
 <div *ngIf="isMobile; else desktop">
-  <div class="background">
+  <div class="background-map">
     <app-heading-mobile [id]="heroes[0]"></app-heading-mobile>
   </div>
   <div
-    class="background"
-    style="background-image: url(assets/images/map-regular-min.png);"
+    class="background-regular"
   >
     <app-hero *ngIf="heroes" [hero]="heroes[1]" [id]="heroes[1]"></app-hero>
     <app-about-us-mobile></app-about-us-mobile>
@@ -17,12 +16,11 @@
   </div>
 </div>
 <ng-template #desktop>
-  <div class="background">
+  <div class="background-map">
     <app-heading [id]="heroes[0]"></app-heading>
   </div>
   <div
-    class="background"
-    style="background-image: url(assets/images/map-regular-min.png);"
+    class="background-regular"
   >
     <app-hero *ngIf="heroes" [hero]="heroes[1]" [id]="heroes[1]"></app-hero>
     <app-about-us></app-about-us>

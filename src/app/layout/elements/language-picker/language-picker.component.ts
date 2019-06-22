@@ -23,17 +23,20 @@ export class LanguagePickerComponent implements OnInit {
   }
 
   getFlags(language) {
+    this.currentFlagSrouce = `assets/images/flags/${language}.png`;
     const flags = ['de', 'en', 'lt', 'ru', 'ua'];
     const flagSources = [];
     for (const flag of flags) {
-      if (flag !== language) {
-        flagSources.push(`assets/images/flags/${flag}.png`);
-      }
+      flagSources.push(`assets/images/flags/${flag}.png`);
     }
     this.flagSources = flagSources;
   }
 
   ngOnInit() {
+  }
+
+  changeFlagSource(flagSource) {
+    
   }
 
 }

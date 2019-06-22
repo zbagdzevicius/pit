@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, Inject } from '@angular/core';
 import { Select } from '@ngxs/store';
 import { LangState } from 'src/app/core/state/lang.state';
 import { Observable } from 'rxjs';
 import { Services } from 'src/app/core/models/translate/services.model';
 import { RowCardsImage } from 'src/app/core/models/translate/row-cards-image.model';
 import { AppSettings } from 'src/app/core/settings/app.settings';
-import { RowCard } from 'src/app/core/models/translate/row-card.model';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-services-mobile',
@@ -17,15 +17,17 @@ export class ServicesMobileComponent implements OnInit {
   @Select(LangState.getServices) services$: Observable<Services>;
   services: Services;
   currentRows: RowCardsImage[];
-  index = 0;
   offset = AppSettings.SCROLL_OFFSET_CARDS;
+  pageSections = [];
+  numberOfCards: number;
+  indexOfActiveCard: number;
 
-  constructor() {
+  constructor(@Inject(DOCUMENT) private document: Document) {
     this.services$
       .subscribe(services => {
-        if (services){
+        if (services) {
           this.services = services;
-          this.currentRows = services.rowCards[0].rowCardsImage;
+          this.numberOfCards = services.rowCards.length;
         }
       });
   }
@@ -34,10 +36,30 @@ export class ServicesMobileComponent implements OnInit {
   ngOnInit() {
   }
 
-  changeCard(rowCard: RowCard) {
-    this.currentRows = rowCard.rowCardsImage;
-    this.index = this.services.rowCards.indexOf(rowCard);
-    // this.currentRow = this.services.cardsLocation[this.index].rowImage;
+  @HostListener('document:scroll')
+  onScroll() {
+    if (this.pageSections.length === this.numberOfCards) {
+      const currentScrollPosition = window.scrollY;
+      this.changeCurrentCardIndex(currentScrollPosition);
+    } else {
+      this.getLocationsOfCards();
+    }
+  }
+
+  getLocationsOfCards() {
+    const pageSections = [];
+    for (const card of this.services.rowCards) {
+      pageSections.push(this.document.getElementById(card.title).offsetTop);
+    }
+    this.pageSections = pageSections;
+  }
+
+  changeCurrentCardIndex(currentScrollPosition) {
+    this.pageSections.forEach((value, index) => {
+      if (currentScrollPosition >= value) {
+        this.indexOfActiveCard = index;
+      }
+    });
   }
 
 }

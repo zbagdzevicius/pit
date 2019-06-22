@@ -11,6 +11,7 @@ $black-light: #666;
 // FONTS
 $big: 44px;
 $large: 32px;
+$average: 26px;
 $medium: 22px;
 $small: 16px;
 $smallest: 14px;
@@ -32,6 +33,7 @@ $p3: 30px;
 $p4: 10px;
 $p44: 15px;
 $p5: 7px;
+$padding-zero: 0px;
 
 // WIDTHS
 $max-width: 1200px;
@@ -42,13 +44,15 @@ $mobile-background-width: $mobile-max-width;
 
 // CONTAINER SIZES
 $width-mobile: 100%;
+$width-mobile-background: 300%;
+$width-tablet-background: 200%;
 $width-medium: 100%;
 $width-huge: 1400px;
 $width-large: 1200px;
 
 // RESPONSIVE WIDTH
 $screen-small-max: 768px;
-$screen-medium-min: 1000px;
+$screen-medium-min: 769px;
 $screen-large-min: $max-width;
 $screen-huge-min: $background-width;
 
@@ -61,9 +65,11 @@ $z-index-animation-logo: 4;
 
 $header-height: 76px;
 $video-width: 900px;
+$video-mobile-width: 99%;
 $close-button-width: 30px;
 $play-button-width: 55px;
 $language-picker-width: 25px;
+$language-picker-mobile-width: 50px;
 $contact-textarea-width: 150px;
 $card-arrow-width: 25px;
 
@@ -114,20 +120,21 @@ $logo-top: $logo-margin;
   margin-left: -100px;
   padding-left: 100px;
 }
-@mixin background-margins {
-  margin-right: -100px;
-  padding-right: 100px;
-  margin-left: -100px;
-  padding-left: 100px;
-}
 
 @mixin background-position {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-@mixin background-image {
+@mixin background-position-mobile {
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+@mixin background-map-image {
   background-image: url(assets/images/map-flag-min.png);
+}
+@mixin background-regular-image {
+  background-image: url(assets/images/map-regular-min.png);
 }
 
 @mixin fullscreen {

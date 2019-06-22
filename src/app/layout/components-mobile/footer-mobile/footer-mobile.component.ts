@@ -14,11 +14,14 @@ import { SetActiveCard } from 'src/app/core/actions/lang.actions';
 })
 export class FooterMobileComponent implements OnInit {
   @Select(LangState.getSiteTitles) pageSiteCards$: Observable<CardsLocation[]>;
-  @Input() footer: Footer;
+  @Select(LangState.getFooter) footer$: Observable<Footer>;
+  footer: Footer;
   footerLinks = [];
   offset = AppSettings.SCROLL_OFFSET_CARDS;
 
   constructor(private store: Store) {
+    this.footer$
+    .subscribe(footer => this.footer = footer);
     this.pageSiteCards$
       .subscribe((cards: CardsLocation[]) => {
         if (cards) {

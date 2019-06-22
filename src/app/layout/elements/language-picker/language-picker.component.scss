@@ -7,19 +7,26 @@
 }
 .flag {
   display: inline-block;
-  width:$language-picker-width;
+  width: $language-picker-mobile-width;
   height: auto;
-  margin-right: 20px;
   &:hover {
     .hidden {
       display: list-item;
     }
   }
-  ul:hover{
+  ul:hover {
     display: list-item;
   }
-  img{
-    width:$language-picker-width;
+  img {
+    width: $language-picker-mobile-width;
   }
 }
 
+@include screen-medium {
+  .flag {
+    // margin-right: 20px;
+    img {
+      width: $language-picker-width;
+    }
+  }
+}

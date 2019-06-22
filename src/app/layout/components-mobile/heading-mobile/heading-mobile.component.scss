@@ -1,13 +1,16 @@
 @import "../../../../variables.scss";
 
+.heading-padding{
+  padding-bottom: 6vh;
+}
+
 h1 {
-  padding-bottom: 8vh;
-  padding-top: 32vh;
+  padding-top: 12vh;
 }
 .play {
   img {
     width: $play-button-width;
-    margin-right: 30px;
+    margin-right: 20px;
   }
   span {
     font-size: $medium;

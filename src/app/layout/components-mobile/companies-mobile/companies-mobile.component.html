@@ -1,10 +1,28 @@
 <div *ngIf="companies">
-  <div class="container">
-    <app-row-image [rowImage]="companies.rowImage" [isReversed]=true [smallFont]=true></app-row-image>
-  </div>
+  <app-row-image
+    [rowImage]="companies.rowImage"
+    [mediumFont]="true"
+  ></app-row-image>
 
-  
-  <div class="container">
-    <app-row-texts [rowTexts]="companies.rowTexts"></app-row-texts>
+  <div class="card white no-hover font-medium">
+    <div>
+      <p
+        *ngFor="
+          let text of companies.rowTexts.columnSpecial.texts;
+          first as isFirst
+        "
+      >
+        <b *ngIf="companies.rowTexts.columnSpecial.boldText !== '' && isFirst">
+          {{ companies.rowTexts.columnSpecial.boldText }}
+        </b>
+        {{ text }}
+      </p>
+      <p *ngFor="let text of companies.rowTexts.columnContact.texts">
+        {{ text }}
+      </p>
+      <div class="container center">
+        <app-button></app-button>
+      </div>
+    </div>
   </div>
 </div>

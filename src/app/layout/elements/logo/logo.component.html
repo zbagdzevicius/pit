@@ -1,19 +1,10 @@
-<div *ngIf="animationShowing" class="container center animation-container">
-  <object data="assets/images/logo2.svg" class="logo"></object>
-  <div class=" logo-background" style="background:white;">
-    <div
-      class="logo-background"
-      style=" background-image:url(assets/images/map-regular-min.png)"
-    ></div>
-  </div>
-</div>
-
+<app-animation (animationShow)="animationEnded()"></app-animation>
 <a
   [routerLink]="['/']"
   routerLinkActive="router-link-active"
   [ngx-scroll-to]="'#start'"
   [ngx-scroll-to-offset]="offset"
-  [ngClass]="{'invisible': animationShowing}"
+  [ngClass]="{ invisible: animationShowing }"
 >
   <img
     src="assets/images/logo.png"

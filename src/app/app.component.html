@@ -1,9 +1,9 @@
 <div class="container center">
   <span id="start"></span>
-  <div class="wrapper" *ngIf="isMobile; else isDesktop">
+  <div *ngIf="isMobile; else isDesktop">
     <app-header-mobile></app-header-mobile>
     <router-outlet></router-outlet>
-    <app-contact-mobile></app-contact-mobile>
+    <!-- <app-contact-mobile></app-contact-mobile> -->
     <app-footer-mobile></app-footer-mobile>
     <app-footer-absolute-mobile></app-footer-absolute-mobile>
   </div>
@@ -13,8 +13,7 @@
     <app-header></app-header>
     <router-outlet></router-outlet>
     <div
-      class="background"
-      style="background-image: url(assets/images/map-regular-min.png);"
+      class="background-regular"
     >
       <app-hero *ngIf="lastHero" [hero]="lastHero" [id]="lastHero"></app-hero>
       <app-contact [id]="'contact'"></app-contact>

@@ -1,10 +1,10 @@
 <div *ngIf="currentFlagSrouce" class="flag">
   <div>
-    <img [src]="currentFlagSrouce" />
+    <img [src]="currentFlagSrouce"/>
   </div>
   <ul class="hidden">
     <li *ngFor="let flagSource of flagSources">
-      <a><img [src]="flagSource"/></a>
+      <a (click)="changeFlagSource(flagSource)"><img [src]="flagSource"/></a>
     </li>
   </ul>
 </div>

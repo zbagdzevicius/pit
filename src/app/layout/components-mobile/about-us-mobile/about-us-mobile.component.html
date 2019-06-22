@@ -1,3 +1,23 @@
-<div class="container section" *ngIf="aboutUs">
-  <app-row-texts [rowTexts]="aboutUs.rowTexts" [isYellow]=true></app-row-texts>
+<div *ngIf="aboutUs" class="font-medium">
+  <div class="card-mobile yellow">
+    <p
+      *ngFor="
+        let text of aboutUs.rowTexts.columnSpecial.texts;
+        first as isFirst
+      "
+    >
+      <b *ngIf="aboutUs.rowTexts.columnSpecial.boldText !== '' && isFirst">
+        {{ aboutUs.rowTexts.columnSpecial.boldText }}
+      </b>
+      {{ text }}
+    </p>
+  </div>
+  <div class="card-mobile white no-hover">
+    <div>
+      <p *ngFor="let text of aboutUs.rowTexts.columnContact.texts">
+        {{ text }}
+      </p>
+      <br />
+    </div>
+  </div>
 </div>

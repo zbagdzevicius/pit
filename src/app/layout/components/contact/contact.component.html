@@ -38,7 +38,7 @@
       </div>
       <p>
         {{ contact.form.texts[0] }}
-        <a [href]="contact.form.textLink" class="a-special" [routerLink]="['/policy']" [ngx-scroll-to]="'#start'">{{ contact.form.textLink }}</a>
+        <a [href]="contact.form.textLink" class="a-special" [routerLink]="['/policy']" [ngx-scroll-to]="'#start'" [ngx-scroll-to-offset]="offset">{{ contact.form.textLink }}</a>
         {{ contact.form.texts[1] }}
       </p>
       <app-button [buttonText]="contact.form.send"></app-button>

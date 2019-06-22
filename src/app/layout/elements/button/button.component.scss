@@ -1,11 +1,18 @@
 @import "../../../../variables.scss";
 
 button {
-  padding: 10px 15px;
-  margin-right: 15px;
-  font-size: $smallest;
+  padding: $p3 $p3;
+  font-size: $medium;
   border-radius: $border-radius;
   background: $yellow;
   border: none;
   font-weight: $bold;
+}
+
+@include screen-medium {
+  button{
+    font-size: $smallest;
+    margin-right: 15px;
+    padding: 10px 15px;
+  }
 }

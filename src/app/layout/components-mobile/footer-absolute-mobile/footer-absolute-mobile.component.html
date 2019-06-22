@@ -1,14 +1,20 @@
-<div class="container center-vertical footer-absolute font-small" *ngIf="footerAbsolute">
-  <div class="item">
-    {{ footerAbsolute.copyright }}
-  </div>
-  <div class="item container">
+<div *ngIf="footerAbsolute">
+  <div class="card-mobile full-width no-hover white text-center">
     <dl>
-      <dt class="container" *ngFor="let infoLink of footerAbsolute.infoLinks">
-        <a [href]="infoLink.link" class="coordinates" [routerLink]="[infoLink.link]" [ngx-scroll-to]="'#start'" [ngx-scroll-to-offset]="offset">
-          {{infoLink.text}}
+      <dt class="font-medium" *ngFor="let infoLink of footerAbsolute.infoLinks">
+        <a
+          [href]="infoLink.link"
+          class="coordinates"
+          [routerLink]="[infoLink.link]"
+          [ngx-scroll-to]="'#start'"
+          [ngx-scroll-to-offset]="offset"
+        >
+          {{ infoLink.text }}
         </a>
       </dt>
     </dl>
+    <div class="font-medium">
+      {{ footerAbsolute.copyright }}
+    </div>
   </div>
 </div>

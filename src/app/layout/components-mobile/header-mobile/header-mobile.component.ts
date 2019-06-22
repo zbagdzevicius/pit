@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderMobileComponent implements OnInit {
   resizing: boolean;
+  isMenuOpened = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  openMenu(){
+    this.isMenuOpened = true;
   }
 
 }

@@ -1,32 +1,21 @@
-<div class="container footer grey" *ngIf="footer && footerLinks">
-  <div class="item container updown justified">
-    <div class="item">
-      <h4 class="marginless">{{ footer.address.title }}</h4>
-      <span>{{ footer.address.subtitle }}</span>
-    </div>
-    <br>
-    <ul class="item">
-      <li *ngFor="let location of footer.address.locations">
-        {{ location }}<br />
-      </li>
-    </ul>
-    <br>
-    <div class="item">
-      <span class="social-link"><a [href]="footer.socialLinks.facebook"><img src="assets/images/facebook-min.png"></a> </span>
-      <span class="social-link"><a [href]="footer.socialLinks.linkedin"><img src="assets/images/linkedin-min.png"></a> </span>
-    </div>
+<div class="container updown center-vertical" *ngIf="footer && footerLinks">
+  <div class="container item card-mobile full-width center white no-hover">
+    <h1 class="font-large section">
+      <a href="tel:{{ footer.footerInfo.number }}">{{
+        footer.footerInfo.number
+      }}</a>
+    </h1>
   </div>
-
-  <div class="item">
-    <h2><a href="tel:{{footer.footerInfo.number}}">{{ footer.footerInfo.number }}</a></h2>
-    <br>
-    <dl>
-      <dt>
-        <a *ngFor="let footerLink of footerLinks" [routerLink]="['/']" [ngx-scroll-to-offset]="offset" routerLinkActive="router-link-active"  [ngx-scroll-to]="footerLink" (click)="changeActiveCard(footerLink)">
-          {{ footerLink }}
-          <br />
-        </a>
-      </dt>
-    </dl>
+  <div class="container card-mobile grey full-width center no-hover">
+    <span class="social-link"
+      ><a [href]="footer.socialLinks.facebook"
+        ><img src="assets/images/facebook-min.png"
+      /></a>
+    </span>
+    <span class="social-link"
+      ><a [href]="footer.socialLinks.linkedin"
+        ><img src="assets/images/linkedin-min.png"
+      /></a>
+    </span>
   </div>
 </div>

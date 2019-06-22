@@ -1,9 +1,16 @@
 <nav>
-  <dl class="container justify center-vertical">
-    <dt><span><img src="assets/images/menu.png"></span></dt>
+  <dl class="container spacing center-vertical">
+    <dt>
+      <span (click)="openMenu()"
+        ><img src="assets/images/menu.png" />
+      </span>
+    </dt>
     <dt><app-logo [resizing]="resizing"></app-logo></dt>
     <dt class="container center-vertical">
-          <app-language-picker></app-language-picker>
+      <app-language-picker></app-language-picker>
     </dt>
   </dl>
+  <div class="main-nav" *ngIf="isMenuOpened">
+    <app-menu-mobile></app-menu-mobile>
+  </div>
 </nav>

@@ -10,6 +10,7 @@ export class RowImageComponent implements OnInit {
   @Input() rowImage: RowCardsImage;
   @Input() isReversed: boolean;
   @Input() smallFont: boolean;
+  @Input() mediumFont: boolean;
 
   constructor() { }
 

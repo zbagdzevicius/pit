@@ -17,6 +17,7 @@ export class MenuComponent implements OnInit {
   @Select(LangState.getMenu) menu$: Observable<string[]>;
   menu: string[];
   @Input() activeMenuItem: string;
+  offset = AppSettings.SCROLL_OFFSET + 1;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -39,7 +40,7 @@ export class MenuComponent implements OnInit {
 
   changeActive(index) {
     this.activeMenuItem = this.menu[index];
-    this.scroll(index);
+    // this.scroll(index);
   }
 
   public triggerScrollTo(target) {
@@ -65,14 +66,14 @@ export class MenuComponent implements OnInit {
   //     this._scrollToService.scrollTo(config);
   //   }
   // }
-  scroll(index: number) {
-    const config: ScrollToConfigOptions = {
-      offset: AppSettings.SCROLL_OFFSET + 1,
-      target: this.menu[index],
-      duration: 0
-    };
-    this._scrollToService.scrollTo(config);
-  }
+  // scroll(index: number) {
+  //   const config: ScrollToConfigOptions = {
+  //     offset: AppSettings.SCROLL_OFFSET + 1,
+  //     target: this.menu[index],
+  //     duration: 650
+  //   };
+  //   this._scrollToService.scrollTo(config);
+  // }
 
   scrollIntoView(elementId) {
     this.router.navigateByUrl('/');

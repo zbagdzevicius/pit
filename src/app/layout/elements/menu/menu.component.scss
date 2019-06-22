@@ -5,11 +5,20 @@
   .menu-item{
     text-decoration: none;
     margin-right: $p5;
-    padding-bottom: $p5;
+    padding-bottom: $padding-zero;
   }
   .menu-item:hover,
   .active {
     border-bottom: 5px solid $yellow;
     position: relative;
+  }
+}
+
+@include screen-large {
+  .menu {
+    .menu-item{
+      margin-right: $p5;
+      padding-bottom: $p5;
+    }
   }
 }

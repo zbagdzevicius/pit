@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { ContactForm } from 'src/app/core/models/layout/contact-form.model';
 import { ContactService } from 'src/app/core/services/contact.service';
+import { AppSettings } from 'src/app/core/settings/app.settings';
 
 @Component({
   selector: 'app-contact',
@@ -16,6 +17,7 @@ export class ContactComponent implements OnInit {
 
   @Select(LangState.getContact) contact$: Observable<Contact>;
   @Input() contact: Contact;
+  offset = AppSettings.SCROLL_OFFSET;
   // contactFormGroup: FormGroup;
   // contactForm: ContactForm;
 

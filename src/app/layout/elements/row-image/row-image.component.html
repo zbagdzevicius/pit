@@ -1,8 +1,11 @@
-<div class="container section" [ngClass]="{ 'reverse': isReversed }">
+<div
+  class="container section"
+  [ngClass]="{ reverse: isReversed, 'font-medium': mediumFont }"
+>
   <div class="item yellow">
-    <img [src]="rowImage.image" class="cover-image"/>
+    <img [src]="rowImage.image" class="cover-image" />
   </div>
-  <div class="item card-regular" [ngClass]="smallFont ? 'grey': 'white' ">
-      <p class="font-small" *ngFor="let text of rowImage.texts">{{ text }}</p>
+  <div class="item card no-hover" [ngClass]="smallFont ? 'grey' : 'white'">
+    <p *ngFor="let text of rowImage.texts">{{ text }}</p>
   </div>
 </div>

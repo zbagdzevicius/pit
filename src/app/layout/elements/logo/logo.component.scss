@@ -1,82 +1,5 @@
 @import "../../../../variables.scss";
 
-$animation-duration: 6s;
-
-.logo {
-  position: absolute;
-  @include transform-position-and-scale(
-    $scale: $logo-scale,
-    $left: $logo-left,
-    $top: $logo-top,
-    $isInverted: false
-  );
-  animation-fill-mode: forwards;
-  animation-name: increase;
-  animation-duration: $animation-duration;
-  animation-timing-function: ease-in-out;
-  z-index: 1;
-  opacity: 1;
-}
-@keyframes increase {
-  0% {
-    @include transform-position-and-scale($scale: $logo-animation);
-    z-index: $z-index-animation-logo;
-  }
-  50% {
-    @include transform-position-and-scale($scale: $logo-animation);
-    z-index: $z-index-animation-logo;
-  }
-  75% {
-    @include transform-position-and-scale($scale: $logo-animation-increase);
-    z-index: $z-index-animation-logo;
-    opacity: 1;
-  }
-  100% {
-    z-index: $z-index-animation-logo;
-    @include transform-position-and-scale(
-      $scale: $logo-scale,
-      $left: $logo-left,
-      $top: $logo-top,
-      $isInverted: false
-      );
-  }
-}
-
-.logo-background {
-  position: absolute;
-  display: block;
-  top: 0;
-  width: 0;
-  height: 0;
-  z-index: $z-index-animation-background;
-  animation-name: background;
-  animation-duration: $animation-duration;
-  animation-timing-function: ease-in;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: $background-width;
-}
-
-@keyframes background {
-  from {
-    opacity: 1;
-    z-index: $z-index-animation-background;
-    width: $background-width;
-    height: 100%;
-  }
-  75% {
-    opacity: 1;
-  }
-  to {
-    @include background-margins;
-    width: $background-width;
-    z-index: $z-index-animation-background;
-    opacity: 0;
-    height: 100%;
-  }
-}
-
 .brand{
   transition: 0.5s ease-in all;
   margin:$logo-margin;
@@ -88,18 +11,4 @@ $animation-duration: 6s;
 }
 .invisible{
   opacity: 0;
-}
-
-.animation-container{
-  width: 100%;
-  height: 100%;
-  position:fixed;
-  z-index: $z-index-animation-background;
-}
-
-@include screen-medium {
-  
-}
-@include screen-large {
-  width: 1200px;
 }

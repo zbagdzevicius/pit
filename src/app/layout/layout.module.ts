@@ -30,6 +30,8 @@ import { AboutUsMobileComponent } from './components-mobile/about-us-mobile/abou
 import { SiteMobileComponent } from './components-mobile/site-mobile/site-mobile.component';
 import { ServicesMobileComponent } from './components-mobile/services-mobile/services-mobile.component';
 import { ContactMobileComponent } from './components-mobile/contact-mobile/contact-mobile.component';
+import { AnimationComponent } from './elements/animation/animation.component';
+import { MenuMobileComponent } from './components-mobile/menu-mobile/menu-mobile.component';
 
 const COMPONENTS = [
   HeaderComponent, FooterComponent,
@@ -69,7 +71,9 @@ const ELEMENTS = [
   declarations: [
     ...COMPONENTS,
     ...ELEMENTS,
-    ...COMPONENTS_MOBILE
+    ...COMPONENTS_MOBILE,
+    AnimationComponent,
+    MenuMobileComponent
   ],
   imports: [
     CommonModule,
