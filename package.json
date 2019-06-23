@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "start:server": "ng serve --host 0.0.0.0",
-    "build": "ng build --prod --base-href='/dev/' && gzipper --verbose ./dist",
+    "start": "ng serve --proxy-config proxy.conf.json",
+    "start:dev": "ng serve --proxy-config proxy.conf.dev.json --host 0.0.0.0",
+    "build": "ng build --prod --base-href='/dev/'  --proxy-config proxy.conf.json && gzipper --verbose ./dist",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

@@ -19,11 +19,7 @@ export class MenuComponent implements OnInit {
   @Input() activeMenuItem: string;
   offset = AppSettings.SCROLL_OFFSET + 1;
 
-  constructor(
-    @Inject(DOCUMENT) private document: Document,
-    private _scrollToService: ScrollToService,
-    private router: Router
-  ) {
+  constructor() {
     this.menu$
       .subscribe(menu => {
         if (menu) {
@@ -36,54 +32,6 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
 
-  }
-
-  changeActive(index) {
-    this.activeMenuItem = this.menu[index];
-    // this.scroll(index);
-  }
-
-  public triggerScrollTo(target) {
-
-    const config: ScrollToConfigOptions = {
-      target: target
-    };
-
-    this._scrollToService.scrollTo(config);
-  }
-
-  // scroll(index: number) {
-  //   if (index === 2) {
-  //     this.scrollIntoView('siteCards');
-  //   } else if (index === 3) {
-  //     this.scrollIntoView('servicesCards');
-  //   } else {
-  //     const config: ScrollToConfigOptions = {
-  //       offset: AppSettings.SCROLL_OFFSET,
-  //       target: this.menu[index],
-  //       duration: 0
-  //     };
-  //     this._scrollToService.scrollTo(config);
-  //   }
-  // }
-  // scroll(index: number) {
-  //   const config: ScrollToConfigOptions = {
-  //     offset: AppSettings.SCROLL_OFFSET + 1,
-  //     target: this.menu[index],
-  //     duration: 650
-  //   };
-  //   this._scrollToService.scrollTo(config);
-  // }
-
-  scrollIntoView(elementId) {
-    this.router.navigateByUrl('/');
-    const checkExist = setInterval(function () {
-      if (this.document.getElementById(elementId)) {
-        clearInterval(checkExist);
-        const element = this.document.getElementById(elementId);
-        element.scrollIntoView(false);
-      }
-    }, 100);
   }
 
 }

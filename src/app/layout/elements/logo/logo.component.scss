@@ -5,10 +5,17 @@
   margin:$logo-margin;
   width: 155px;
   &.logo-small{
-    margin-right: 30px;
     width: 125px;
   }
 }
 .invisible{
   opacity: 0;
+}
+
+@include screen-medium{
+  .brand{
+    &.logo-small{
+      margin-right: 30px;
+    }
+  }
 }

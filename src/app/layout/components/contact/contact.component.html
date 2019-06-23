@@ -23,25 +23,24 @@
   </div>
 
   <div class="item">
-    <form>
-    <!-- <form [formGroup]="contactFormGroup"> -->
+    <form [formGroup]="contactFormGroup" (ngSubmit)="onSubmit()">
       <div class="container margin-right">
-        <!-- <input class="item grey" formControlName="name" [placeholder]="contact.form.name" />
-        <input class="item grey" formControlName="email" [placeholder]="contact.form.email" /> -->
-        <input class="item grey" [placeholder]="contact.form.name" />
-        <input class="item grey" [placeholder]="contact.form.email" />
+        <input class="item grey" formControlName="name" [placeholder]="contact.form.name"
+          [ngClass]="{'invalid': contactFormGroup.controls.name.invalid}" />
+        <input class="item grey" formControlName="email" [placeholder]="contact.form.email"
+          [ngClass]="{'invalid': contactFormGroup.controls.email.invalid}" />
       </div>
       <div class="container">
-        <!-- <textarea class="item grey message" formControlName="message" [placeholder]="contact.form.message"></textarea> -->
-        <textarea class="item grey message" [placeholder]="contact.form.message"></textarea>
-        <!-- <app-form-error-messages [control]="contactFormGroup.controls['message']"></app-form-error-messages> -->
+        <textarea class="item grey message" formControlName="message" [placeholder]="contact.form.message"
+          [ngClass]="{'invalid': contactFormGroup.controls.message.invalid}"></textarea>
       </div>
       <p>
         {{ contact.form.texts[0] }}
-        <a [href]="contact.form.textLink" class="a-special" [routerLink]="['/policy']" [ngx-scroll-to]="'#start'" [ngx-scroll-to-offset]="offset">{{ contact.form.textLink }}</a>
+        <a [href]="contact.form.textLink" class="a-special" [routerLink]="['/policy']" [ngx-scroll-to]="'#start'"
+          [ngx-scroll-to-offset]="offset">{{ contact.form.textLink }}</a>
         {{ contact.form.texts[1] }}
       </p>
-      <app-button [buttonText]="contact.form.send"></app-button>
+      <app-button type="submit" [buttonText]="contact.form.send" [disabled]="!contactFormGroup.valid"></app-button>
     </form>
   </div>
 </div>

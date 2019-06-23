@@ -3,7 +3,8 @@
   <div *ngIf="isMobile; else isDesktop">
     <app-header-mobile></app-header-mobile>
     <router-outlet></router-outlet>
-    <!-- <app-contact-mobile></app-contact-mobile> -->
+    <app-hero *ngIf="lastHero" [hero]="lastHero" [id]="lastHero"></app-hero>
+    <app-contact-mobile></app-contact-mobile>
     <app-footer-mobile></app-footer-mobile>
     <app-footer-absolute-mobile></app-footer-absolute-mobile>
   </div>

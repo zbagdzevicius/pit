@@ -1,0 +1,9 @@
+{
+    "/api": {
+      "target": "https://pit-contact-form.herokuapp.com/",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true,
+      "pathRewrite": {"^/api" : ""}
+    }
+  }

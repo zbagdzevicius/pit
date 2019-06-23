@@ -11,19 +11,19 @@ import { Observable } from 'rxjs';
 export class LanguagePickerComponent implements OnInit {
 
   @Select(LangState.getLanguage) language$: Observable<string>;
-  currentFlagSrouce: string;
+  currentFlagSource: string;
   flagSources: string[];
 
   constructor() {
     this.language$
       .subscribe(language => {
-        this.currentFlagSrouce = `assets/images/flags/${language}.png`;
+        this.currentFlagSource = `assets/images/flags/${language}.png`;
         this.getFlags(language);
       });
   }
 
   getFlags(language) {
-    this.currentFlagSrouce = `assets/images/flags/${language}.png`;
+    this.currentFlagSource = `assets/images/flags/${language}.png`;
     const flags = ['de', 'en', 'lt', 'ru', 'ua'];
     const flagSources = [];
     for (const flag of flags) {
@@ -36,7 +36,7 @@ export class LanguagePickerComponent implements OnInit {
   }
 
   changeFlagSource(flagSource) {
-    
+    this.currentFlagSource = flagSource;
   }
 
 }

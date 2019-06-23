@@ -135,7 +135,7 @@ ul {
 
 $font-family: "Titillium Web";
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
-body {
+body, textarea, input {
   font-family: $font-family, sans-serif;
   margin: 0;
 }
@@ -165,7 +165,7 @@ html {
     justify-content: space-around;
   }
   &.spacing-vertical {
-    align-items: stretch;
+    align-content: stretch;
   }
   &.start {
     justify-content: flex-start;

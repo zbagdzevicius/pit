@@ -1,16 +1,17 @@
-<nav>
-  <dl class="container spacing center-vertical">
+<nav id="main-menu">
+  <div class="main-nav" *ngIf="isMenuOpened">
+    <app-menu-mobile (menuClosed)="isMenuOpened=false" [activeMenuItem]="activeMenuItem"></app-menu-mobile>
+  </div>
+  <dl class="container spacing center-vertical menu-items" *ngIf="scrollingDown">
     <dt>
-      <span (click)="openMenu()"
-        ><img src="assets/images/menu.png" />
+      <span (click)="openMenu()" class="open"><img src="assets/images/menu.png" />
       </span>
     </dt>
-    <dt><app-logo [resizing]="resizing"></app-logo></dt>
+    <dt>
+      <app-logo [resizing]="resizing"></app-logo>
+    </dt>
     <dt class="container center-vertical">
       <app-language-picker></app-language-picker>
     </dt>
   </dl>
-  <div class="main-nav" *ngIf="isMenuOpened">
-    <app-menu-mobile></app-menu-mobile>
-  </div>
 </nav>

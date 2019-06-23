@@ -19,7 +19,7 @@ import { RowTextsComponent } from './elements/row-texts/row-texts.component';
 import { RowImageComponent } from './elements/row-image/row-image.component';
 import { VideoComponent } from './elements/video/video.component';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PolicyPopupComponent } from './components/policy-popup/policy-popup.component';
 import { HeaderMobileComponent } from './components-mobile/header-mobile/header-mobile.component';
 import { FooterAbsoluteMobileComponent } from './components-mobile/footer-absolute-mobile/footer-absolute-mobile.component';
@@ -31,7 +31,7 @@ import { SiteMobileComponent } from './components-mobile/site-mobile/site-mobile
 import { ServicesMobileComponent } from './components-mobile/services-mobile/services-mobile.component';
 import { ContactMobileComponent } from './components-mobile/contact-mobile/contact-mobile.component';
 import { AnimationComponent } from './elements/animation/animation.component';
-import { MenuMobileComponent } from './components-mobile/menu-mobile/menu-mobile.component';
+import { MenuMobileComponent } from './elements-mobile/menu-mobile/menu-mobile.component';
 
 const COMPONENTS = [
   HeaderComponent, FooterComponent,
@@ -44,7 +44,8 @@ const COMPONENTS = [
   ButtonComponent,
   ServicesComponent,
   PolicyPopupComponent,
-  HeaderMobileComponent
+  HeaderMobileComponent,
+  AnimationComponent
 ];
 
 const COMPONENTS_MOBILE = [
@@ -64,20 +65,21 @@ const ELEMENTS = [
   LogoComponent,
   RowTextsComponent,
   RowImageComponent,
-  VideoComponent
+  VideoComponent,
+  MenuMobileComponent
 ];
 
 @NgModule({
   declarations: [
     ...COMPONENTS,
     ...ELEMENTS,
-    ...COMPONENTS_MOBILE,
-    AnimationComponent,
-    MenuMobileComponent
+    ...COMPONENTS_MOBILE
   ],
   imports: [
     CommonModule,
     RouterModule,
+    ReactiveFormsModule,
+    FormsModule,
     ScrollToModule.forRoot()
   ],
   exports: [

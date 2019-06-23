@@ -7,6 +7,7 @@ button {
   background: $yellow;
   border: none;
   font-weight: $bold;
+  width: 100%;
 }
 
 @include screen-medium {
@@ -14,5 +15,6 @@ button {
     font-size: $smallest;
     margin-right: 15px;
     padding: 10px 15px;
+    width: auto;
   }
 }

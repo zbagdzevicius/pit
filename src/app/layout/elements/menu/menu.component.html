@@ -2,8 +2,7 @@
   <a
   *ngFor="let menuItem of menu; index as i"
   [routerLink]="['/']"
-  [ngClass]="{ 'active': activeMenuItem === menuItem }"
-  (click)="changeActive(i)" class="menu-item"
+  [ngClass]="{ 'active': activeMenuItem === menuItem }" class="menu-item"
   [ngx-scroll-to]="menuItem"
   [ngx-scroll-to-offset]="offset"
   >{{ menuItem }}

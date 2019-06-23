@@ -14,6 +14,7 @@ export class ButtonComponent implements OnInit {
   contactButton: string;
   @Input() buttonText: string;
   offset = AppSettings.SCROLL_OFFSET;
+  @Input() disabled = false;
 
   constructor() {
     this.contactButton$

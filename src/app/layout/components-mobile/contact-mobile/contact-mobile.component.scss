@@ -3,8 +3,15 @@
 input, textarea{
   border: none;
   padding: $p44 $p3;
+  margin-bottom: $p4;
   vertical-align: middle;
-  max-width: 100hr;
+  box-sizing:border-box;
+  &:focus{
+    outline: green auto 1px;
+  }
+  &.invalid:focus{
+    outline: red auto 1px;
+  }
 }
 .margin-right {
   margin-bottom: $p44;

@@ -1,0 +1,36 @@
+@import "../../../../variables.scss";
+
+.menu {
+  font-size: $average;
+  .menu-item{
+    text-decoration: none;
+    margin-right: $p5;
+    padding-bottom: $p5;
+    margin-bottom: $p4;
+  }
+  .menu-item:hover,
+  .active {
+    border-bottom: 5px solid $yellow;
+    position: relative;
+  }
+}
+.close{
+    width: 50px;
+    margin: 10px 15px;
+  }
+
+  .menu-mobile{
+      height: 70vh;
+      animation-name: transition;
+      animation-duration: 1s;
+      animation-timing-function:ease-in-out; 
+  }
+
+  @keyframes transition {
+    from {
+      opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }

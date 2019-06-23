@@ -4,6 +4,12 @@ input, textarea{
   border: none;
   padding: $p44 $p3;
   vertical-align: middle;
+  &:focus{
+    outline: green auto 1px;
+  }
+  &.invalid:focus{
+    outline: red auto 1px;
+  }
 }
 .margin-right {
   margin-bottom: $p44;
@@ -23,3 +29,4 @@ textarea{
 .contact > *:nth-of-type(2) {
   margin: $p2 0 $p0 0;
 }
+
