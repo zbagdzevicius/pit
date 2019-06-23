@@ -98,13 +98,8 @@ $logo-top: $logo-margin;
   $isInverted: false
 ) {
   transform: translate(-$left, -$top) scale($scale);
-  @if $isInverted {
-    left: -$left;
-    top: -$top;
-  } @else {
-    left: $left;
-    top: $top;
-  }
+  left: $left;
+  top: $top;
 }
 @mixin transform-position-center($left: 50%, $top: 50%) {
   left: $left;

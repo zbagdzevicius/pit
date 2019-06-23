@@ -5,7 +5,7 @@
   ></app-row-image>
 
   <div class="card white no-hover font-medium">
-    <div>
+    <div class="section">
       <p
         *ngFor="
           let text of companies.rowTexts.columnSpecial.texts;
@@ -20,9 +20,6 @@
       <p *ngFor="let text of companies.rowTexts.columnContact.texts">
         {{ text }}
       </p>
-      <div class="section">
-        <app-button></app-button>
-      </div>
     </div>
   </div>
 </div>

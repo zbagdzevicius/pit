@@ -1,0 +1,71 @@
+@import "../../../../variables.scss";
+
+$animation-duration: 5s;
+
+.logo {
+  position: fixed;
+  @include transform-position-and-scale(
+    $scale: $logo-scale,
+    $left: 50%,
+    $top: 0
+  );
+  animation-name: increase;
+  animation-duration: $animation-duration;
+  animation-timing-function: ease-in-out;
+  z-index: $z-index-animation-logo;
+}
+@keyframes increase {
+  0% {
+    @include transform-position-and-scale($scale: $logo-animation);
+  }
+  50% {
+    @include transform-position-and-scale($scale: $logo-animation);
+  }
+  75% {
+    @include transform-position-and-scale($scale: $logo-animation-increase);
+  }
+  100% {
+    @include transform-position-and-scale(
+        $scale: $logo-scale,
+        $left: 50%,
+        $top: 0
+      );
+  }
+}
+
+.logo-background {
+  position: absolute;
+  width: $background-width;
+  height: 100%;
+  z-index: $z-index-animation-background;
+  opacity:1;
+  animation-name: background;
+  animation-duration: $animation-duration;
+  @include background-position;
+  background-size: $background-width;
+  visibility: visible;
+}
+
+@keyframes background {
+    from {
+        @include background-position;
+        visibility: visible;
+    z-index: $z-index-animation-background;
+    opacity:1;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    width: $background-width;
+    z-index: $z-index-animation-background;
+    opacity: 0;
+  }
+}
+.animation-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  color:white;
+  z-index: $z-index-animation-background;
+}

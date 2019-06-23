@@ -32,6 +32,7 @@ import { ServicesMobileComponent } from './components-mobile/services-mobile/ser
 import { ContactMobileComponent } from './components-mobile/contact-mobile/contact-mobile.component';
 import { AnimationComponent } from './elements/animation/animation.component';
 import { MenuMobileComponent } from './elements-mobile/menu-mobile/menu-mobile.component';
+import { AnimationMobileComponent } from './elements-mobile/animation-mobile/animation-mobile.component';
 
 const COMPONENTS = [
   HeaderComponent, FooterComponent,
@@ -73,7 +74,8 @@ const ELEMENTS = [
   declarations: [
     ...COMPONENTS,
     ...ELEMENTS,
-    ...COMPONENTS_MOBILE
+    ...COMPONENTS_MOBILE,
+    AnimationMobileComponent
   ],
   imports: [
     CommonModule,

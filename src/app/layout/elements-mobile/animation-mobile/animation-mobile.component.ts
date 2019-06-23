@@ -1,11 +1,11 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-animation',
-  templateUrl: './animation.component.html',
-  styleUrls: ['./animation.component.scss']
+  selector: 'app-animation-mobile',
+  templateUrl: './animation-mobile.component.html',
+  styleUrls: ['./animation-mobile.component.scss']
 })
-export class AnimationComponent implements OnInit {
+export class AnimationMobileComponent implements OnInit {
 
   @Output() animationShow = new EventEmitter();
   animationDuration = 5 * 1000;

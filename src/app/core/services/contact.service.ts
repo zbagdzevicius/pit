@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ContactForm } from '../models/layout/contact-form.model';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,7 @@ export class ContactService {
     formdata.append('email', contactForm.email);
     formdata.append('message', contactForm.message);
     formdata.append('token', '1');
-    return this.http.post('api', formdata);
+    return this.http.post(environment.apiUrl, formdata);
   }
 
 

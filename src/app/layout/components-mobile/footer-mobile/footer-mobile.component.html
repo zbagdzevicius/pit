@@ -1,12 +1,4 @@
-<div class="container updown center-vertical" *ngIf="footer && footerLinks">
-  <div class="container item card-mobile full-width center white no-hover">
-    <h1 class="font-large section">
-      <a href="tel:{{ footer.footerInfo.number }}">{{
-        footer.footerInfo.number
-      }}</a>
-    </h1>
-  </div>
-  <div class="container card-mobile grey full-width center no-hover">
+<div class="container card-mobile grey full-width center no-hover" *ngIf="footer">
     <span class="social-link"
       ><a [href]="footer.socialLinks.facebook"
         ><img src="assets/images/facebook-min.png"
@@ -18,4 +10,3 @@
       /></a>
     </span>
   </div>
-</div>
