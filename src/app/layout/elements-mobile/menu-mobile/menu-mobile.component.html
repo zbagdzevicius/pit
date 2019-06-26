@@ -1,10 +1,21 @@
-<span (click)="menuClose()"><img src="assets/images/xxx.png"  class="close"></span>
+<span (click)="menuClose()"
+  ><img src="assets/images/xxx.png" class="close"
+/></span>
 <div class="container updown center-vertical spacing menu-mobile">
-  <ul class="menu text-center">
-    <li *ngFor="let menuItem of menu" [routerLink]="['/']"
-      [ngClass]="{ 'active': activeMenuItem === menuItem }" (click)="menuClose()" class="menu-item"
-      [ngx-scroll-to]="menuItem">{{ menuItem }}
-  </li>
+  <ul class="menu text-center bold">
+    <li
+      *ngFor="let menuItem of menu"
+      [routerLink]="['/']"
+      (click)="menuClose()"
+      [ngx-scroll-to]="menuItem"
+      class="menu-item-container"
+    >
+      <span
+        [ngClass]="{ active: activeMenuItem === menuItem }"
+        class="menu-item"
+        >{{ menuItem }}</span
+      >
+    </li>
   </ul>
   <app-button (click)="menuClose()"></app-button>
 </div>

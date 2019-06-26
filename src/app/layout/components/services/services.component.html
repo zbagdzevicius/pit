@@ -1,4 +1,4 @@
-<div *ngIf="services">
+<div *ngIf="services" class="services-container">
   <div class="container section cards" [ngx-scroll-to]="'servicesCards'" [ngx-scroll-to-offset]="offset" *ngIf="services" id="servicesCards" #servicesCards>
     <a class="item container card" *ngFor="let card of services.rowCards" (click)="changeCard(card)"
       [ngClass]="{ active: index === services.rowCards.indexOf(card) }">

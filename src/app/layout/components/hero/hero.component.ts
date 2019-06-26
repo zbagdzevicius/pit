@@ -9,6 +9,7 @@ export class HeroComponent implements OnInit {
 
   @Input() hero: string;
   @Input() fill: false;
+  @Input() isMobile: boolean;
 
   ngOnInit() {
   }

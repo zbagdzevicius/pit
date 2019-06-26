@@ -6,7 +6,9 @@
     text-decoration: none;
     margin-right: $p5;
     padding-bottom: $p5;
-    margin-bottom: $p4;
+  }
+  .menu-item-container{
+    margin-bottom: $p3;
   }
   .menu-item:hover,
   .active {
@@ -15,8 +17,8 @@
   }
 }
 .close{
-    width: 50px;
-    margin: 10px 15px;
+    height: 40px;
+    margin: 10px 30px;
   }
 
   .menu-mobile{

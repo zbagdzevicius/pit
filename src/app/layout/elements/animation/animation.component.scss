@@ -97,10 +97,6 @@ $animation-duration: 5s;
   }
 }
 @include screen-large {
-  .logo-background {
-    background-size: $width-large;
-    width: $width-large;
-  }
 }
 @include screen-huge {
   .logo-background {

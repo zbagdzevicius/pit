@@ -36,7 +36,7 @@ textarea,
 h3 {
   font-size: $large;
 }
-.hyphens{
+.hyphens {
   hyphens: auto;
 }
 
@@ -71,7 +71,6 @@ ul {
 }
 
 .card-mobile {
-  
   background: $grey;
   &:hover:not(.no-hover) {
     background: $yellow;
@@ -82,13 +81,20 @@ ul {
   > * {
     padding: $p3;
   }
+  &.white {
+    background: $white-strong;
+  }
   width: 95%;
   margin: auto;
   border-radius: $border-radius;
 
-  &.full-width{
+  &.full-width {
     width: 100%;
   }
+}
+
+.white-strong{
+  background: $white-strong;
 }
 
 .grey {
@@ -97,7 +103,7 @@ ul {
 .white {
   background-color: $white;
 }
-.white-strong{
+.white-strong {
   background-color: $white-strong;
 }
 .yellow {
@@ -135,7 +141,9 @@ ul {
 
 $font-family: "Titillium Web";
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
-body, textarea, input {
+body,
+textarea,
+input {
   font-family: $font-family, sans-serif;
   margin: 0;
 }
@@ -192,6 +200,9 @@ html {
   min-height: 400px;
   object-fit: cover;
   height: 100%;
+  &.no-min-height{
+    min-height: 0;
+  }
 }
 
 .text-center {
@@ -211,23 +222,7 @@ html {
   .section {
     flex-direction: column;
   }
-  .background-map:before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    @include background-map-image;
-    @include background-position-mobile;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  // .background-regular:before{
+  // .background-map:before {
   //   content: "";
   //   display: block;
   //   position: fixed;
@@ -236,14 +231,35 @@ html {
   //   width: 100%;
   //   height: 100%;
   //   z-index: -10;
-  //   @include background-regular-image;
+  //   @include background-map-image;
   //   @include background-position-mobile;
   //   -webkit-background-size: cover;
   //   -moz-background-size: cover;
   //   -o-background-size: cover;
   //   background-size: cover;
   // }
+  .background-regular:before{
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    @include background-regular-image;
+    @include background-position-mobile;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
+
+.margin-bottom{
+  margin-bottom: 17vh;
+}
+
 @include screen-medium {
   .background-map {
     @include background-map-image;

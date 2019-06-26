@@ -1,17 +1,17 @@
 <div *ngIf="isMobile; else desktop">
-  <div class="background-map">
+  <div class="background-regular">
     <app-heading-mobile [id]="heroes[0]"></app-heading-mobile>
   </div>
   <div
     class="background-regular"
   >
-    <app-hero *ngIf="heroes" [hero]="heroes[1]" [id]="heroes[1]"></app-hero>
+    <app-hero *ngIf="heroes" [hero]="heroes[1]" [id]="heroes[1]" [isMobile]="true"></app-hero>
     <app-about-us-mobile></app-about-us-mobile>
-    <app-hero *ngIf="heroes" [hero]="heroes[2]" [id]="heroes[2]"></app-hero>
+    <app-hero *ngIf="heroes" [hero]="heroes[2]" [id]="heroes[2]" [isMobile]="true"></app-hero>
     <app-site-mobile></app-site-mobile>
-    <app-hero *ngIf="heroes" [hero]="heroes[3]" [id]="heroes[3]"></app-hero>
+    <app-hero *ngIf="heroes" [hero]="heroes[3]" [id]="heroes[3]" [isMobile]="true"></app-hero>
     <app-services-mobile></app-services-mobile>
-    <app-hero *ngIf="heroes" [hero]="heroes[4]" [id]="heroes[4]"></app-hero>
+    <app-hero *ngIf="heroes" [hero]="heroes[4]" [id]="heroes[4]" [isMobile]="true"></app-hero>
     <app-companies-mobile></app-companies-mobile>
   </div>
 </div>
