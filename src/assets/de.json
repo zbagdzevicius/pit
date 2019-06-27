@@ -216,10 +216,10 @@
     ],
     "form": {
       "name": "Name",
-      "email": "E-Mail-Addresse",
+      "email": "E-Mail-Adresse",
       "message": "Ihre Nachricht",
       "texts": [
-        "Mit dem Absenden dieses Forumulars stimmen Sie unserer",
+        "Mit dem Absenden dieses Formulars stimmen Sie unserer",
         "zu."
       ],
       "textLink": "Datenschutzerklärung",

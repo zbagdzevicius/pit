@@ -15,7 +15,7 @@ export class HeadingComponent implements OnInit {
   heading: Heading;
   isModalActive = false;
   imgSources = ['assets/images/play.png', 'assets/images/close.png'];
-  videoSources = ['https://pit-deutschland.eu/assets/pit-demo.mp4', 'https://pit-deutschland.eu/PIT-production.mp4'];
+  videoSources = ['https://pit-deutschland.eu/pit-demo-1.webm', 'https://pit-deutschland.eu/PIT-production.mp4'];
   videoSource: string;
 
   constructor() {
