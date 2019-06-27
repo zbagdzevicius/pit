@@ -9,7 +9,6 @@ export class AnimationComponent implements OnInit {
 
   @Output() animationShow = new EventEmitter();
   animationDuration = 12 * 1000;
-  // animationDuration = 0 * 1000;
   animationShowing = true;
 
 

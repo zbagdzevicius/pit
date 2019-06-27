@@ -11,8 +11,10 @@ $animation-duration: 12s;
   );
   animation-name: increase;
   animation-duration: $animation-duration;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in;
   z-index: $z-index-animation-logo;
+  backface-visibility: hidden;
+  perspective: 1000;
 }
 @keyframes increase {
   0% {
@@ -40,21 +42,18 @@ $animation-duration: 12s;
   z-index: $z-index-animation-background;
   animation-name: background;
   animation-duration: $animation-duration;
+  animation-timing-function: ease-in;
   @include background-position;
   background-size: $background-width;
+  backface-visibility: hidden;
+  perspective: 1000;
 }
 
 @keyframes background {
-  from {
-    @include background-position;
-    z-index: $z-index-animation-background;
-  }
   75% {
     opacity: 1;
   }
   to {
-    width: $background-width;
-    z-index: $z-index-animation-background;
     opacity: 0;
   }
 }
@@ -107,16 +106,12 @@ $animation-duration: 12s;
     from {
         @include background-margins;
         @include background-position;
-        z-index: $z-index-animation-background;
       }
       75% {
         opacity: 1;
       }
       to {
-        width: $background-width;
-        z-index: $z-index-animation-background;
         opacity: 0;
-        height: 100%;
       }
   }
 }
