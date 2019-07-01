@@ -9,8 +9,8 @@
   "contactButton": "KONTAKTIEREN SIE UNS",
   "heading": {
     "title": "Wettbewerb: Global. Qualität: Deutsch.",
-    "button1": "Runde Produktionsstätten",
-    "button2": "Produktionsclip"
+    "button1": "Vostellung unseres Produktionsstandorts Klaipėda",
+    "button2": "Blick in unsere Produktion"
   },
   "aboutUs": {
     "rowTexts": {
@@ -18,7 +18,7 @@
         "boldText": "Die PIT Group",
         "texts": [
           "ist Ihr Partner für ganzheitliche Lösungen im Bereich der Kabelkonfektionierung und Lohnfertigung. PIT steht dabei für Produktion, Innovation und Technologie. Unsere Kabelkonfektionierungen kommen bereits in den verschiedensten Branchen zum Einsatz – von der Automobilindustrie über die Sicherheitstechnik und Windenergie bis zum Schaltschrank- und Pipelinebau. Auch die Herstellung von EMV-Filtern zählt zu unserem vielfältigen Portfolio.",
-          "PIT bietet Full Service aus einer Hand: Unsere UAB Lithutec Tochterfirmen in Litauen und der Ukraine bieten höchste Qualitätsstandards bei niedrigen Produktionskosten und guter logistischer Anbindung an den EU-Markt. Wir beliefern Sie wöchentlich mit eigenen LKW unseres Logistikunternehmens UAB Dolinera."
+          "PIT bietet Full Service aus einer Hand:  An unseren Standorten in Litauen und der Ukraine bieten wir höchste  Qualitätsstandards bei niedrigen Produktionskosten und guter logistischer Anbindung an den EU-Markt. Wir beliefern Sie wöchentlich mit eigenem LKW unseres Logistikunternehmens UAB Dolinera."
         ]
       },
       "columnContact": {
@@ -73,7 +73,7 @@
         "rowCardsImage": [
           {
             "texts": [
-              "Alle unsere Produktionsstandorte bieten eine gute logistische Anbindung an den EU-Markt – auf dem Land- wie auch auf dem Seeweg. Mit unserem eigenen Logistikunternehmen, der UAB Dolinera, beliefern wir unsere Auftraggeber wöchentlich mit eigenen LKW. In Litauen gefertigte Produkt sind beispielsweise über die Baltikum Fähre von Kiel nach Klaipėda nach durchschnittlich 22 Stunden beim Kunden in Deutschland – auch im Winter!"
+              "Alle unsere Produktionsstandorte bieten eine gute logistische Anbindung an den EU-Markt – auf dem Land- wie auch auf dem Seeweg. Mit unserem eigenen Logistikunternehmen, der UAB Dolinera, beliefern wir unsere Auftraggeber wöchentlich mit eigenem LKW. In Litauen gefertigte Produkte sind beispielsweise über die Baltikum Fähre von Kiel nach Klaipėda nach durchschnittlich 22 Stunden beim Kunden in Deutschland – auch im Winter!"
             ],
             "image": "assets/images/truck1.png"
           }
@@ -106,7 +106,7 @@
         "rowImage": {
           "texts": [
             "Die litauische Hafenstadt Klaipėda verbindet ein dynamisches wirtschaftliches und technologisches Umfeld mit kostengünstiger Produktion im EU-Ausland. Unser UAB Lithutec Produktionsstandort im modernen Klaipėda Business Park (KVP) bietet optimale technische und logistische Voraussetzungen für die Realisierung Ihrer Projekte.",
-            "Unsere Betriebsabläufe werden regelmäßig kontrolliert und sind nach ISO 9001:2015 zertifiziert. In unseren hellen und modernen Fertigungshallen auf mehr als 2.000 m² konfektionieren, montieren, verpacken und lagern wir Ihre Produkte bis zur fristgerechten Auslieferung."
+            "Unsere Betriebsabläufe werden regelmäßig kontrolliert und sind nach ISO 9001:2015 zertifiziert. In unseren hellen und modernen Fertigungshallen auf mehr als 3.000 m² konfektionieren, montieren, verpacken und lagern wir Ihre Produkte bis zur fristgerechten Auslieferung."
           ],
           "image": "assets/images/lithutec.jpg"
         }
@@ -122,7 +122,7 @@
         },
         "rowImage": {
           "texts": [
-            "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen UAB Lithutec Firmenstandort im ukrainischen UAB Lithutec-Ukraine an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt. Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
+            "Seit Anfang 2019 bieten wir unsere Dienstleistungen auch an unserem neuen OOO LITHUTEC- UKRAINE Firmenstandort im ukrainischen Chmelnyzkyj an. Die 180.000-Einwohner-Stadt liegt nur rund 300 km von der polnischen Grenze entfernt und bietet damit eine gute logistische Anbindung an den EU-Markt. Zusätzlich machen niedrige Lohnstückkosten und gut ausgebildete Fachkräfte die Ukraine als wettbewerbsfähigen Produktionsstandort auch für deutsche Unternehmen immer interessanter."
           ],
           "image": "assets/images/ukraine.jpg"
         }
@@ -146,7 +146,7 @@
       },
       {
         "title": "UAB Dolinera",
-        "text": "Die Logistik-Experten zwischen Deutschland, Litauen und der Ukraine",
+        "text": "Die Logistik-Experten zwischen Deutschland, Litauen, Schweden und der Ukraine",
         "location": {
           "coordinateN": "55°53'26.6' N",
           "coordinateE": "21°15'33.4' E",
@@ -155,7 +155,7 @@
         },
         "rowImage": {
           "texts": [
-            "Die UAB Dolinera ist Ihr zuverlässiger Logistik-Partner für Transporte zwischen Deutschland, Litauen und der Ukraine.",
+            "Die UAB Dolinera ist Ihr zuverlässiger Logistik-Partner für Transporte zwischen Deutschland, Litauen, Schweden und der Ukraine.",
             "Alle unsere Produktionsstandorte bieten eine gute logistische Anbindung an den EU-Markt – auf dem Land- wie auch auf dem Seeweg. Mit unserem eigenen Logistikunternehmen, der UAB Dolinera, beliefern wir unsere Auftraggeber wöchentlich mit eigenen LKW. In Litauen gefertigte Produkt sind beispielsweise über die Baltikum Fähre von Kiel nach Klaipėda nach durchschnittlich 22 Stunden beim Kunden in Deutschland – auch im Winter!"
           ],
           "image": "assets/images/truck1.png"
@@ -177,8 +177,8 @@
         "boldText": "",
         "texts": [
           "Das große Vertrauen unserer Kunden aus Deutschland und der EU bestärkte uns in der Entscheidung, mit der neu gegründeten UAB Litfabric einen weiteren Markt zu erschließen: Schwerpunkt ist hier die maschinelle wie auch manuelle Lohnfertigung inklusive Montage, Verpackung und Lagerung.",
-          "Um für die Zukunft alle Unternehmen unter einem Dach zu vereinen, erfolgte 2013 die Gründung der übergeordneten PIT Group. Unsere Philosophie: Bei uns erhalten Sie alles aus einer Hand – ohne teure Subunternehmer!",
-          "Diesem Leitgedanken folgend ergänzten wir die PIT Familie um einen weiteren zentralen Dienstleistungssektor: Mit der Gründung unseres eigenen Logistikunternehmens, der UAB Dolinera, schlossen wir Ende 2018 die Lücke zwischen Auftrag, Fertigung und Kunde und beliefern unsere Auftraggeber seither wöchentlich mit eigenen LKW."
+          "Im Jahr 2013 erfolgte die Gründung der PIT Deutschland GmbH & Co. KG. Unsere Philosophie: Bei uns erhalten Sie alles aus einer Hand – ohne teure Subunternehmer!",
+          "Diesem Leitgedanken folgend ergänzten wir die PIT Familie um einen weiteren zentralen Dienstleistungssektor: Mit der Gründung unseres eigenen Logistikunternehmens, der UAB Dolinera, schlossen wir Ende 2018 die Lücke zwischen Auftrag, Fertigung und Kunde und beliefern unsere Auftraggeber seither wöchentlich mit eigenem LKW."
         ]
       },
       "columnContact": {

@@ -1,37 +1,27 @@
 @import "../../../../variables.scss";
 
-$animation-duration: 12s;
+$animation-duration: 9s;
 
 .logo {
   position: fixed;
-  @include transform-position-and-scale(
-    $scale: $logo-scale,
-    $left: 50%,
-    $top: 0
-  );
+  @include transform-position-and-scale($scale: $logo-scale, $left: $logo-left, $top: $logo-top);
+  animation-timing-function: ease-in;
   animation-name: increase;
   animation-duration: $animation-duration;
-  animation-timing-function: ease-in;
   z-index: $z-index-animation-logo;
-  backface-visibility: hidden;
-  perspective: 1000;
 }
 @keyframes increase {
-  0% {
+  from {
     @include transform-position-and-scale($scale: $logo-animation);
   }
-  50% {
+  40% {
     @include transform-position-and-scale($scale: $logo-animation);
   }
-  75% {
+  80% {
     @include transform-position-and-scale($scale: $logo-animation-increase);
   }
-  100% {
-    @include transform-position-and-scale(
-      $scale: $logo-scale,
-      $left: 50%,
-      $top: 0
-    );
+  to {
+    @include transform-position-and-scale($scale: $logo-scale, $left: $logo-left, $top: $logo-top);
   }
 }
 
@@ -40,13 +30,12 @@ $animation-duration: 12s;
   width: $background-width;
   height: 100%;
   z-index: $z-index-animation-background;
+  animation-delay: 6;
+  animation-timing-function: linear;
   animation-name: background;
   animation-duration: $animation-duration;
-  animation-timing-function: ease-in;
   @include background-position;
   background-size: $background-width;
-  backface-visibility: hidden;
-  perspective: 1000;
 }
 
 @keyframes background {
@@ -68,30 +57,22 @@ $animation-duration: 12s;
   .logo-background {
     @include background-position;
   }
-  .logo{
+  .logo {
     position: absolute;
-    @include transform-position-and-scale(
-      $scale: $logo-scale,
-      $left: $logo-left,
-      $top: $logo-top
-    );
+    @include transform-position-center($left: $logo-left, $top: $logo-top);
   }
   @keyframes increase {
-    0% {
+    from {
       @include transform-position-and-scale($scale: $logo-animation);
     }
-    50% {
+    40% {
       @include transform-position-and-scale($scale: $logo-animation);
     }
-    75% {
+    80% {
       @include transform-position-and-scale($scale: $logo-animation-increase);
     }
-    100% {
-      @include transform-position-and-scale(
-        $scale: $logo-scale,
-        $left: $logo-left,
-        $top: $logo-top
-      );
+    to {
+      @include transform-position-and-scale($scale: $logo-scale, $left: $logo-left, $top: $logo-top);
     }
   }
 }
@@ -104,14 +85,14 @@ $animation-duration: 12s;
   }
   @keyframes background {
     from {
-        @include background-margins;
-        @include background-position;
-      }
-      75% {
-        opacity: 1;
-      }
-      to {
-        opacity: 0;
-      }
+      @include background-margins;
+      @include background-position;
+    }
+    85% {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
   }
 }

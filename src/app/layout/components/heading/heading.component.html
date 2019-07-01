@@ -15,7 +15,7 @@
 </div>
 <ng-template #video>
   <div class="item container center-vertical updown">
-    <app-video class="video" [videoSource]="videoSource" (valueChange)='turnOffVideo($event)'>
+    <app-video class="video" [videoSource]="videoSource" [videoSourceFallback]="videoSourceFallback" (valueChange)='turnOffVideo($event)'>
     </app-video>
   </div>
 </ng-template>

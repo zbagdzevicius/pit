@@ -16,7 +16,9 @@ export class HeadingComponent implements OnInit {
   isModalActive = false;
   imgSources = ['assets/images/play.png', 'assets/images/close.png'];
   videoSources = ['https://pit-deutschland.eu/pit-demo-1.webm', 'https://pit-deutschland.eu/PIT-production.mp4'];
+  videoSourcesFallback = ['https://pit-deutschland.eu/assets/pit-demo.mp4'];
   videoSource: string;
+  videoSourceFallback: string;
 
   constructor() {
     this.heading$
@@ -25,10 +27,14 @@ export class HeadingComponent implements OnInit {
 
   turnOffVideo() {
     this.videoSource = null;
+    this.videoSourceFallback = null;
     this.isModalActive = false;
   }
   turnOnVideo(index) {
     this.videoSource = this.videoSources[index];
+    if(index === 0){
+      this.videoSourceFallback = this.videoSourcesFallback[index];
+    }
     this.isModalActive = true;
   }
 

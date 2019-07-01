@@ -3,7 +3,7 @@
 .brand{
   transition: 0.5s ease-in all;
   margin:$logo-margin;
-  width: 155px;
+  width: $logo-width;
   &.logo-small{
     width: 125px;
   }

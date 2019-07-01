@@ -8,6 +8,7 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 export class VideoComponent implements OnInit {
   @Output() valueChange = new EventEmitter();
   @Input() videoSource: string;
+  @Input() videoSourceFallback: string;
 
   constructor() { }
 

@@ -89,22 +89,28 @@ $logo-animation-increase: 5;
 $logo-margin: 5px;
 $logo-left: $logo-margin;
 $logo-top: $logo-margin;
+$logo-width: 155px;
 
 // FUNCTIONS
 @mixin transform-position-and-scale(
   $scale,
   $left: 50%,
-  $top: 50%,
-  $isInverted: false
+  $top: 50%
 ) {
-  transform: translate(-$left, -$top) scale($scale);
   left: $left;
   top: $top;
+  transform: perspective(2000px) translate(-$left, -$top) scale($scale);
+  backface-visibility: hidden;
+  -webkit-transform: translate(-$left, -$top) scale($scale); 
+  -webkit-backface-visibility: hidden;
 }
 @mixin transform-position-center($left: 50%, $top: 50%) {
   left: $left;
   top: $top;
-  transform: translate(-$left, -$top);
+  transform: perspective(2000px) translate(-$left, -$top);
+  backface-visibility: hidden;
+  -webkit-transform: translate(-$left, -$top); 
+  -webkit-backface-visibility: hidden;
 }
 
 // EXTENDERS

@@ -8,7 +8,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class AnimationComponent implements OnInit {
 
   @Output() animationShow = new EventEmitter();
-  animationDuration = 12 * 1000;
+  animationDuration = 9 * 1000;
   animationShowing = true;
 
 
