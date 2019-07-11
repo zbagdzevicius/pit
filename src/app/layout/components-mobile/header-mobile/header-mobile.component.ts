@@ -21,18 +21,19 @@ export class HeaderMobileComponent implements OnInit {
   menu: string[];
   activeMenuItem: string;
   numberOfMenuItems: number;
+  isHeaderOpened = true;
 
   constructor(@Inject(DOCUMENT) private document: Document,
-  private router: Router) {
+    private router: Router) {
     this.menu$
-    .subscribe(menu => {
-      if (menu) {
-        this.menu = menu;
-        this.activeMenuItem = menu[0];
-        this.numberOfMenuItems = this.menu.length;
+      .subscribe(menu => {
+        if (menu) {
+          this.menu = menu;
+          this.activeMenuItem = menu[0];
+          this.numberOfMenuItems = this.menu.length;
+        }
       }
-    }
-    );
+      );
   }
 
   ngOnInit() {
@@ -41,17 +42,6 @@ export class HeaderMobileComponent implements OnInit {
   openMenu() {
     this.isMenuOpened = true;
   }
-
-  // @HostListener('document:scroll')
-  // onScroll() {
-  //   const currentScrollPos = window.scrollY;
-  //   if (this.prevScrollPos > currentScrollPos || currentScrollPos <= 80) {
-  //     this.scrollingDown = true;
-  //   } else {
-  //     this.scrollingDown = false;
-  //   }
-  //   this.prevScrollPos = currentScrollPos;
-  // }
 
   getPageSections() {
     if (this.menu.length !== 0) {
@@ -84,6 +74,7 @@ export class HeaderMobileComponent implements OnInit {
     const currentScrollPosition = window.scrollY;
     if (this.router.url === '/') {
       if (this.pageSections.length === this.numberOfMenuItems) {
+        this.hideLogoOnServicesAndCompanies(currentScrollPosition);
         this.changeActiveButton(currentScrollPosition);
       } else {
         this.getPageSections();
@@ -92,6 +83,14 @@ export class HeaderMobileComponent implements OnInit {
       this.activeMenuItem = null;
     }
     this.resizeLogo(currentScrollPosition);
+  }
+
+  hideLogoOnServicesAndCompanies(currentScrollPosition) {
+    if (this.pageSections[2] < currentScrollPosition && currentScrollPosition < this.pageSections[4]) {
+      this.isHeaderOpened = false;
+    } else {
+      this.isHeaderOpened = true;
+    }
   }
 
   resizeLogo(currentScrollPosition) {

@@ -56,7 +56,7 @@ export class ServicesMobileComponent implements OnInit {
 
   changeCurrentCardIndex(currentScrollPosition) {
     this.pageSections.forEach((value, index) => {
-      if (currentScrollPosition >= value) {
+      if (currentScrollPosition + 200 >= value) {
         this.indexOfActiveCard = index;
       }
     });

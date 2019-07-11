@@ -50,7 +50,7 @@ export class AppComponent {
   }
 
   resize(width) {
-    if (width > 768) {
+    if (width > 812) {
       this.deviceService.setDevice({ isMobile: false });
     } else {
       this.deviceService.setDevice({ isMobile: true });

@@ -1,4 +1,4 @@
-<nav id="main-menu">
+<nav id="main-menu" [ngClass]="{'header-hide': !isHeaderOpened}">
   <div class="main-nav" *ngIf="isMenuOpened">
     <app-menu-mobile (menuClosed)="isMenuOpened=false" [activeMenuItem]="activeMenuItem"></app-menu-mobile>
   </div>

@@ -26,6 +26,7 @@ export class HeadingMobileComponent implements OnInit {
     this.videoSource = null;
     this.isModalActive = false;
   }
+  
   turnOnVideo(index) {
     this.videoSource = this.videoSources[index];
     this.isModalActive = true;

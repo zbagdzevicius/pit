@@ -18,10 +18,10 @@ $animation-duration: 9s;
     @include transform-position-and-scale($scale: $logo-animation);
   }
   80% {
-    @include transform-position-and-scale($scale: $logo-animation-increase);
+    @include transform-position-and-scale($scale: $logo-animation-increase-mobile);
   }
   to {
-    @include transform-position-and-scale($scale: $logo-scale, $left: $logo-left, $top: $logo-top);
+    @include transform-position-and-scale($scale: $logo-scale, $left: 50%, $top: 0%);
   }
 }
 

@@ -1,16 +1,15 @@
 <div class="heading">
-  <div
-    class="container center-vertical updown justified"
-  >
+  <div class="container center-vertical updown">
     <h1 *ngIf="heading" class="text-center heading-padding">
       {{ heading.title }}
     </h1>
     <div class="container updown heading-padding" *ngIf="!isModalActive">
-      <div class="item container center-vertical play">
+      <div class="item container center-vertical updown play text-center">
         <a (click)="turnOnVideo(0)"><img [src]="imgSources[0]"/></a>
         <span class="coordinates">{{ heading.button1 }}</span>
       </div>
-      <div class="item container center-vertical play">
+      <br />
+      <div class="item container center-vertical updown play text-center">
         <a (click)="turnOnVideo(1)"><img [src]="imgSources[0]"/></a>
         <span class="coordinates">{{ heading.button2 }}</span>
       </div>
@@ -18,13 +17,12 @@
     <app-button></app-button>
   </div>
 </div>
-<!-- <ng-template #video> -->
-  <div class="item container center-vertical updown" *ngIf="isModalActive">
-    <app-video
-      class="video"
-      [videoSource]="videoSource"
-      (valueChange)="turnOffVideo($event)"
-    >
-    </app-video>
-  </div>
-<!-- </ng-template> -->
+
+<div class="item container center-vertical updown" *ngIf="isModalActive">
+  <app-video
+    class="video"
+    [videoSource]="videoSource"
+    (valueChange)="turnOffVideo($event)"
+  >
+  </app-video>
+</div>
