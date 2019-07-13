@@ -16,7 +16,8 @@ export class PolicyService {
     this.http.get(`assets/${language}_policy.json`)
       .subscribe((policyRoot: PolicyRoot) => {
         this.store.dispatch(new SetPolicy(policyRoot));
-      }
+      },
+        error => console.log('there is no file with this name')
       );
   }
 }

@@ -16,7 +16,8 @@ export class WebmasterService {
       .subscribe((webmasterRoot: WebmasterRoot) => {
         console.log(webmasterRoot);
         this.store.dispatch(new SetWebmaster(webmasterRoot));
-      }
+      },
+      error => console.log('there is no file with this name')
       );
   }
 }

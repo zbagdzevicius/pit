@@ -16,7 +16,8 @@ export class ImpressService {
     this.http.get(`assets/${language}_impress.json`)
       .subscribe((impressRoot: ImpressRoot) => {
         this.store.dispatch(new SetImpress(impressRoot));
-      }
+      },
+      error => console.log('there is no file with this name')
       );
   }
 }

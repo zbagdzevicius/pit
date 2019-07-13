@@ -14,15 +14,20 @@ export class ContentService {
   }
 
   getContent(language: string) {
-    this.http.get(`assets/${language}.json`)
+    this.http
+      .get(`assets/${language}.json`)
       .subscribe((content: ContentModel) => {
         this.store.dispatch(new SetContent(content));
-      }
+      },
+        error => console.log('there is no file with this name')
       );
-    this.http.get(`assets/${language}_policy_popup.json`)
+
+    this.http
+      .get(`assets/${language}_policy_popup.json`)
       .subscribe((policyPopup: PolicyPopup) => {
         this.store.dispatch(new SetPolicyPopup(policyPopup));
-      }
+      },
+        error => console.log('there is no file with this name')
       );
   }
 }

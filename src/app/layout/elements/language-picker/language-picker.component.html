@@ -3,10 +3,10 @@
     <img [src]="currentFlagSource" />
   </div>
   <ul class="hidden">
-    <ng-container *ngFor="let flagSource of flagSources">
-      <li *ngIf="flagSource!==currentFlagSource" (click)="changeFlagSource(flagSource)">
+    <ng-container *ngFor="let flag of flags">
+      <li *ngIf="flag.source!==currentFlagSource" (click)="changeFlag(flag)">
         <a>
-          <img [src]="flagSource" />
+          <img [src]="flag.source" />
         </a>
       </li>
     </ng-container>
