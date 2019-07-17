@@ -6,6 +6,7 @@ import { ActiveCard } from '../models/layout/active-card.model';
 import { WebmasterRoot } from '../models/webmaster/webmaster-root.model';
 import { PolicyPopup } from '../models/popup/policy-popup.model';
 import { Device } from '../models/etc/device.model';
+import { Animation } from '../models/etc/animation.model';
 
 export class SetLanguage {
   static readonly type = '[lang] set language';
@@ -38,4 +39,8 @@ export class SetPolicyPopup {
 export class SetDevice {
   static readonly type = '[device] set device';
   constructor(public payload: Device) { }
+}
+export class SetAnimation {
+  static readonly type = '[animation] set animation';
+  constructor(public payload: Animation) { }
 }

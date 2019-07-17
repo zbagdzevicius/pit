@@ -53,7 +53,8 @@ export class LanguagePickerComponent implements OnInit {
       impressRoot: new ImpressRoot(),
       webmasterRoot: null,
       activeCard: null,
-      device: {isMobile: false}
+      device: {isMobile: false},
+      animation: {animationShowed: true}
     }));
   }
 

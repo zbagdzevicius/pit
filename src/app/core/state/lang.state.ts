@@ -1,7 +1,7 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
 import { SetLanguage,SetContent, SetImpress,
   SetPolicy, SetActiveCard, SetWebmaster,
-  SetPolicyPopup, SetDevice } from '../actions/lang.actions';
+  SetPolicyPopup, SetDevice, SetAnimation } from '../actions/lang.actions';
 import { Lang } from '../models/layout/lang.model';
 import { ContentModel } from '../models/translate/content.model';
 import { PolicyRoot } from '../models/policy/policy-root.model';
@@ -10,7 +10,7 @@ import { ActiveCard } from '../models/layout/active-card.model';
 import { WebmasterRoot } from '../models/webmaster/webmaster-root.model';
 import { PolicyPopup } from '../models/popup/policy-popup.model';
 import { Device } from '../models/etc/device.model';
-import { getTemplateContent } from '@angular/core/src/sanitization/html_sanitizer';
+import { Animation } from '../models/etc/animation.model';
 
 
 @State<Lang>({
@@ -22,7 +22,8 @@ import { getTemplateContent } from '@angular/core/src/sanitization/html_sanitize
     impressRoot: new ImpressRoot(),
     webmasterRoot: null,
     activeCard: null,
-    device: {isMobile: false}
+    device: {isMobile: false},
+    animation: {animationShowed: false},
   }
 })
 
@@ -30,6 +31,10 @@ export class LangState {
   @Selector()
   static getContent(content: ContentModel){
     return content;
+  }
+  @Selector()
+  static getAnimation(animation: Animation){
+    return animation;
   }
 
   @Selector()
@@ -136,6 +141,11 @@ export class LangState {
   }
   @Action(SetDevice)
   setDevice(context: StateContext<Device>, { payload }: SetDevice) {
+    context.patchState(payload);
+  }
+
+  @Action(SetAnimation)
+  SetAnimation(context: StateContext<Animation>, { payload }: SetAnimation) {
     context.patchState(payload);
   }
 
