@@ -100,18 +100,22 @@ $logo-width: 155px;
 ) {
   left: $left;
   top: $top;
+  -moz-transform: perspective(2000px) translate(-$left, -$top) scale($scale);
+  -o-transform: perspective(2000px) translate(-$left, -$top) scale($scale);
+  -webkit-transform: perspective(2000px) translate(-$left, -$top) scale($scale);
   transform: perspective(2000px) translate(-$left, -$top) scale($scale);
-  backface-visibility: hidden;
-  -webkit-transform: translate(-$left, -$top) scale($scale); 
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 @mixin transform-position-center($left: 50%, $top: 50%) {
   left: $left;
   top: $top;
+  -moz-transform: perspective(2000px) translate(-$left, -$top);
+  -o-transform: perspective(2000px) translate(-$left, -$top);
+  -webkit-transform: perspective(2000px) translate(-$left, -$top);
   transform: perspective(2000px) translate(-$left, -$top);
-  backface-visibility: hidden;
-  -webkit-transform: translate(-$left, -$top); 
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 // EXTENDERS
@@ -129,7 +133,7 @@ $logo-width: 155px;
   background-attachment: fixed;
 }
 @mixin background-position-mobile {
-  background-position: top center;
+  background-position: right 45% top;
   background-repeat: no-repeat;
 }
 @mixin background-map-image {

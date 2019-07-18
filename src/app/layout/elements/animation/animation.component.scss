@@ -5,9 +5,10 @@ $animation-duration: 9s;
 .logo {
   position: fixed;
   @include transform-position-and-scale($scale: $logo-scale, $left: $logo-left, $top: $logo-top);
-  animation-timing-function: ease-in;
-  animation-name: increase;
-  animation-duration: $animation-duration;
+  -webkit-animation: increase $animation-duration ease-in-out;
+  -moz-animation:    increase $animation-duration ease-in-out;
+  -o-animation:      increase $animation-duration ease-in-out;
+  animation: increase $animation-duration ease-in-out;
   z-index: $z-index-animation-logo;
 }
 @keyframes increase {
@@ -26,19 +27,22 @@ $animation-duration: 9s;
 }
 
 .logo-background {
-  position: absolute;
+  position: fixed;
   width: $background-width;
   height: 100%;
   z-index: $z-index-animation-background;
-  animation-delay: 6;
-  animation-timing-function: linear;
-  animation-name: background;
-  animation-duration: $animation-duration;
+  -webkit-animation: background $animation-duration forwards 6;
+  -moz-animation:    background $animation-duration forwards 6;
+  -o-animation:      background $animation-duration forwards 6;
+  animation: background $animation-duration forwards 6;
   @include background-position;
   background-size: $background-width;
 }
 
 @keyframes background {
+  from {
+    opacity: 1;
+  }
   75% {
     opacity: 1;
   }
@@ -54,9 +58,6 @@ $animation-duration: 9s;
 }
 
 @include screen-medium {
-  .logo-background {
-    @include background-position;
-  }
   .logo {
     position: absolute;
     @include transform-position-center($left: $logo-left, $top: $logo-top);
