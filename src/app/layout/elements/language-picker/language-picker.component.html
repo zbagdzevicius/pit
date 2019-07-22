@@ -1,5 +1,5 @@
 <div *ngIf="currentFlagSource" class="flag">
-  <div (click)="hidden=false">
+  <div (click)="hidden=!hidden">
     <img [src]="currentFlagSource" />
   </div>
   <ul *ngIf="!hidden" class="hidden">
