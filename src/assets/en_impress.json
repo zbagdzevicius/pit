@@ -1,0 +1,82 @@
+{
+  "pageTitle": "DATELINE",
+  "impress": {
+    "columnLeft": {
+      "texts": [
+        {
+          "subtitle": "Publisher:"
+        },
+        {
+          "dList": [
+            "PIT Deutschland GmbH & Co. KG",
+            "Vechtaer Straße 35",
+            "D-26197 Großenkneten"
+          ]
+        },
+        {
+          "contactBy": [
+            {
+              "name": "Phone",
+              "value": "+49 44 35-9 73 64 03"
+            },
+            {
+              "name": "Fax",
+              "value": "+49 32 12-1 48 52 23"
+            },
+            {
+              "name": "E-Mail",
+              "value": "info@pit-deutschland.eu"
+            }
+          ]
+        },
+        {
+          "subtitle": "Commercial register:"
+        },
+        {
+          "text": "Amtsgericht Oldenburg HRA 203875"
+        },
+        {
+          "subtitle": "In the person of:"
+        },
+        {
+          "text": "Neringa Stanke"
+        },
+        {
+          "subtitle": "Identification number of the tax payer:"
+        },
+        {
+          "text": "DE 291991163"
+        },
+        {
+          "subtitle": "Editorship:"
+        },
+        {
+          "text": "PIT Deutschland GmbH & Co. KG"
+        }
+      ]
+    },
+    "columnRight": {
+      "webmaster": [
+        {
+          "subtitle": "Website Administrator:"
+        },
+        {
+          "text": "Motiejus Benetis"
+        },
+        {
+          "contactBy": [
+            {
+              "name": "Mobile",
+              "value": "+370 611 44223"
+            },
+            {
+              "name": "E-Mail",
+              "value": "hello@bennetis.co"
+            }
+          ]
+        }
+      ],
+      "image": "assets/images/impress.png"
+    }
+  }
+}

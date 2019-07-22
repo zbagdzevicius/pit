@@ -17,7 +17,7 @@ export class ImpressService {
       .subscribe((impressRoot: ImpressRoot) => {
         this.store.dispatch(new SetImpress(impressRoot));
       },
-      error => console.log('there is no file with this name')
+      error => console.log('there is no file with this name', error)
       );
   }
 }

@@ -1,0 +1,24 @@
+{
+    "pageTitle": "ADMINISTRATORIUS",
+    "texts": [
+        {
+            "subtitle": "Administratorius:"
+        },
+        {
+            "text": "Motiejus Benetis"
+        },
+        {
+            "contactBy": [
+                {
+                    "name": "Mobilusis",
+                    "value": "+370 611 44223"
+                },
+                {
+                    "name": "El. paštas",
+                    "value": "hello@bennetis.co"
+                }
+            ]
+        }
+    ],
+    "image": "assets/images/impress.png"
+}

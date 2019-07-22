@@ -26,9 +26,11 @@ export class FooterComponent implements OnInit {
     this.pageSiteCards$
       .subscribe((cards: CardsLocation[]) => {
         if (cards) {
+          const footerLinks = [];
           cards.forEach(card => {
-            this.footerLinks.push(card.title);
+            footerLinks.push(card.title);
           });
+          this.footerLinks = footerLinks;
         }
       });
   }

@@ -1,0 +1,281 @@
+{
+  "menu": [
+    "PRADINIS",
+    "APIE MUS",
+    "GAMYBOS VIETOS",
+    "PASLAUGOS",
+    "ĮMONĖ"
+  ],
+  "contactButton": "SUSISIEKITE SU MUMIS",
+  "heading": {
+    "title": "Konkurencija: pasauliniu mastu. Kokybė: vokiška.",
+    "button1": "Mūsų gamybos vietos Klaipėdoje pristatymas",
+    "button2": "Žvilgsnis į mūsų gamybą"
+  },
+  "aboutUs": {
+    "rowTexts": {
+      "columnSpecial": {
+        "boldText": "PIT Group",
+        "texts": [
+          "Jūsų partneris, ieškantis kompleksinių kabelių surinkimo sprendimų bei užsiimantis gamyba pagal rangos sutartis. „PIT“ – tai gamyba, inovacijos ir technologijų kūrimas. Mūsų surinkti kabeliai naudojami įvairiose srityse – pradedant automobilių pramone, saugos technologijomis ir vėjo jėgainėmis, baigiant valdymo spintomis ir net vamzdynų klojimu. Mūsų įvairiapusiškas darbų portfelis papildytas net EMC filtrų gamyba. ",
+          "„PIT“ siūlo visą paslaugų spektrą iš vienų rankų: aukščiausios kokybės standarto gaminius iš savo Lietuvoje ir Ukrainoje esančių gamyklų palankiausiomis gamybos sąnaudomis bei puikų logistinį susisiekimą su ES rinka. Pasitelkęs savo logistikos įmonę UAB „Dolinera“, kiekvieną savaitę vykdo pristatymus nuosavais sunkvežimiais."
+        ]
+      },
+      "columnContact": {
+        "texts": [
+          "Mes užtikriname Jums profesionalų montavimą ir gamybą, taikydami metodą „nulis defektų“. Mes dirbsime su Jūsų projektais nuo pat pradžios – reikalavimų analizės, prototipo kūrimo, iki pabaigos – individualaus kabelių surinkimo ir serijinės jų gamybos. Gaukite naudos tiek iš biure dirbančių vokiečių specialistų–konsultantų, tiek tiesiogiai gamybos vietose.",
+          "Mes mielai Jums parengsime neįpareigojantį ir būtent Jūsų poreikius atitinkantį pasiūlymą. Išbandykite mus! Mes drąsiai priimame naujus iššūkius!"
+        ],
+        "contactButton": true
+      }
+    }
+  },
+  "services": {
+    "rowCards": [
+      {
+        "title": "Kabelių surinkimas",
+        "text": "„PIT Group“ specializacija – kompleksiniai sprendimai kabelių surinkimo ir valdymo spintų gamybos srityse.",
+        "location": "Lietuva, Ukraina",
+        "rowCardsImage": [
+          {
+            "texts": [
+              "Mes atliekame paruoštų prijungti mikro jungiklių, laidų grįžčių, valdymo spintų ir laidų gijų bei bešvinių spausdintų schemų jungčių surinkimą ir montavimą.",
+              "Mes surenkame visus kabelių tipus tiksliai pagal Jūsų individualius reikalavimus ir medžiagų specifikacijas. Į mūsų įvairiapusį darbų portfelį patenka net EMC filtrai."
+            ],
+            "image": "assets/images/1.jpg"
+          },
+          {
+            "texts": [
+              "Visiškai ir pusiau automatinės modernios presavimo staklės, litavimo stotys bei pjaustymo ir izoliacijos pašalinimo įranga užtikrina tikslų kabelių, kurių skerspjūvis 0,02–300 mm², apdorojimą pagal užsakymus. Gamybos procesas trumpinamas bei taupomas brangus laikas tuo pat metu atliekant ir kabelių ženklinimą.",
+              "Nuolatinė kokybės kontrolė visų mūsų gamybos procesų metu užtikrina patikimą galutinį rezultatą."
+            ],
+            "image": "assets/images/5.png"
+          }
+        ]
+      },
+      {
+        "title": "Gamyba pagal rangos sutartis",
+        "text": "Taupykite laiką ir pinigus! Mes atliekame montavimą, komplektavimą, ženklinimą, pakavimą ir sandėliavimą bei Jūsų prekių išsiuntimą numatytu laiku.",
+        "location": "Lietuva, Ukraina",
+        "rowCardsImage": [
+          {
+            "texts": [
+              "Savo moderniose gamybos vietose – Lietuvoje ir Ukrainoje – mes atliekame mechanines ir rankines montavimo ir komplektavimo, rūšiavimo, ženklinimo ir net pakavimo paslaugas. Dėl mūsų aukšto specializacijos lygio galime atlikti sutartinius darbus ir visą montavimą per optimalų laiką, o svarbiausia – mažiausiomis sąnaudomis. Bet kurią užduotį atliekame itin lanksčiai: Jūsų produktams montuoti reikia specialių medžiagų ar įrenginių? Pristatykite mums savo turimus komponentus, visa kita – atliksime mes! Didžiulėse ir moderniose mūsų gamybos patalpose, kurių lubų aukštis siekia net šešis metrus, specialūs klientų pageidavimai nesukelia sunkumų dirbant tiek mechaniniu, tiek rankiniu būdu."
+            ],
+            "image": "assets/images/6.png"
+          }
+        ]
+      },
+      {
+        "title": "Transportas",
+        "text": "UAB „Dolinera“ – Jūsų patikimas logistikos partneris gabenant prekes tarp Vokietijos, Lietuvos, Švedijos ir Ukrainos.",
+        "location": "Europa",
+        "rowCardsImage": [
+          {
+            "texts": [
+              "Visos mūsų gamybos įmonės turi puikų susisiekimą su ES rinka tiek sausumos keliais, tiek jūra. Mūsų nuosava logistikos įmonė UAB „Dolinera“ kiekvieną savaitę nuosavais sunkvežimiais pristato produktus užsakovams. Lietuvoje pagaminta produkcija Vokietijoje dirbantį klientą net žiemą pasiekia vidutiniškai per 22 valandas (pvz., Baltijos jūra per Kylį)!"
+            ],
+            "image": "assets/images/truck1.png"
+          }
+        ]
+      }
+    ]
+  },
+  "site": {
+    "rowInfo": {
+      "title": "PIT Deutschland GmbH & Co. KG",
+      "subtitle": "Jūsų konsultantai",
+      "location": {
+        "coordinateN": "52°52'41.5' N",
+        "coordinateE": "8°13'00.3' E",
+        "name": "Großenkneten, Vokietija",
+        "link": "https://www.google.com/maps/place/PIT+Deutschland+Verwaltungsgesellschaft+mbH/@52.878223,8.2161838,272m/data=!3m1!1e3!4m8!1m2!3m1!2sPIT+Deutschland+Verwaltungsgesellschaft+mbH!3m4!1s0x0:0x925245eddab67bb0!8m2!3d52.8781801!4d8.2166999"
+      },
+      "text": "Bei uns erhalten Sie professionelle Montagen und Produktionen nach dem Null-Fehler-Prinzip. Wir begleiten Ihre Projekte von der Anforderungsanalyse, über den Prototypenbau bis zur individuellen Konfektionierung und Serienproduktion. Profitieren Sie außerdem von deutschen Ansprechpartnern – im Büro genauso wie in den Produktionsstätten vor Ort."
+    },
+    "cardsLocation": [
+      {
+        "title": "UAB Lithutec",
+        "text": "Specialistas, atsakingai surenkantis kabelius pagal klientų pageidavimus",
+        "location": {
+          "coordinateN": "55°41'39.7'N",
+          "coordinateE": "21°11'40.6' E",
+          "name": "Klaipėda, Lietuva",
+          "link": "https://www.google.de/maps/place/55%C2%B041'40.5%22N+21%C2%B011'46.4%22E/@55.6945833,21.1940282,507m/data=!3m1!1e3!4m14!1m7!3m6!1s0x46e4dc30bf12b2c1:0xd0bd92253730ae7e!2sPramon%C4%97s+g.+8,+Klaip%C4%97da+94102,+Lithuania!3b1!8m2!3d55.6935672!4d21.194587!3m5!1s0x0:0x0!7e2!8m2!3d55.694583!4d21.1962072"
+        },
+        "rowImage": {
+          "texts": [
+            "Lietuvos uostamiestis Klaipėda apjungia dinamišką ekonominę ir technologinę aplinką su ekonomiškai palankia gamyba už ES ribų. Mūsų UAB „Lithutec“ gamybos  objektas, įsikūręs moderniame Klaipėdos verslo parke (KVP), Jūsų projektams realizuoti siūlo optimalias technines ir logistines sąlygas.",
+            "Mūsų gamybiniai procesai nuolat kontroliuojami ir yra sertifikuoti pagal ISO 9001:2015. Savo šviesiuose ir moderniuose gamybos cechuose, užimančiuose didesnį kaip 3000 m² plotą, surenkame, montuojame, pakuojame ir sandėliuojame Jūsų produktus iki išsiuntimo numatytu laiku."
+          ],
+          "image": "assets/images/lithutec.jpg"
+        }
+      },
+      {
+        "title": "OOO Lithutec- Ukraine",
+        "text": "Partneris, užtikrinantis patikimą ir nebrangų kabelių surinkimą už ES ribų",
+        "location": {
+          "coordinateN": "49°26'14.0' N",
+          "coordinateE": "27°01'06.1' E",
+          "name": "Ukraina",
+          "link": "https://www.google.com/maps/place/49%C2%B026'13.7%22N+27%C2%B001'04.8%22E/@49.437142,27.015806,585m/data=!3m2!1e3!4b1!4m14!1m7!3m6!1s0x473207a57b3f172f:0x5ee68325a1631321!2sStarokonstantinovskoye+shosse,+Khmel'nyts'ka+oblast,+Ukraina!3b1!8m2!3d49.4360394!4d27.018236!3m5!1s0x0:0x0!7e2!8m2!3d49.4371417!4d27.018"
+        },
+        "rowImage": {
+          "texts": [
+            "Nuo 2019 metų pradžios mes siūlome paslaugas taip pat ir savo naujoje gamybos vietoje – OOO „LITHUTEC-UKRAINE“, Chmelnyckyje, Ukrainoje. Šis apie 180 000 gyventojų turintis miestas yra tik apie 300 km nutolęs nuo Lenkijos sienos, tad užtikrina puikų logistikos ryšį su ES rinka. Be to, Vokietijos įmonėms Ukraina kaip konkurencingas gamybos objektas tampa vis patrauklesnė dėl mažų vieneto sąnaudų ir kvalifikuotos darbo jėgos."
+          ],
+          "image": "assets/images/ukraine.jpg"
+        }
+      },
+      {
+        "title": "UAB Litfabric",
+        "text": "Konsultantas individualaus surinkimo, montavimo, pakavimo ir sandėliavimo klausimais",
+        "location": {
+          "coordinateN": "55°41'39.0' N",
+          "coordinateE": "21°11'40.0' E",
+          "name": "Klaipėda, Lietuva",
+          "link": "https://www.google.de/maps/place/55%C2%B041'39.2%22N+21%C2%B011'39.5%22E/@55.6942222,21.1921169,507m/data=!3m1!1e3!4m6!3m5!1s0x0:0x0!7e2!8m2!3d55.6942185!4d21.1942929"
+        },
+        "rowImage": {
+          "texts": [
+            "UAB „Litfabric“ – tai Jūsų dar vienas „darbastalis“ Lietuvoje: mes atliekame tiek mechaninius, tiek rankinius darbus – montavimą, komplektavimą, rūšiavimą, ženklinimą ir pakavimą. Dėl savo aukštos specializacijos galime atlikti sutartinius darbus ir visą montavimą per optimalų laiką, o svarbiausia – mažiausiomis sąnaudomis.",
+            "Bet kurią užduotį mes įvykdome itin lanksčiai: Jūsų produktams montuoti reikia specialių medžiagų ar įrenginių? Pristatykite mums savo turimus komponentus, visa kita – atliksime mes!"
+          ],
+          "image": "assets/images/lithutec.png"
+        }
+      },
+      {
+        "title": "UAB Dolinera",
+        "text": "Logistikos tarp Vokietijos, Lietuvos, Švedijos ir Ukrainos ekspertai",
+        "location": {
+          "coordinateN": "55°53'26.6' N",
+          "coordinateE": "21°15'33.4' E",
+          "name": "Klaipėda, Lietuva",
+          "link": "https://www.google.de/maps/place/55%C2%B041'40.5%22N+21%C2%B011'46.4%22E/@55.6945833,21.1940282,507m/data=!3m1!1e3!4m14!1m7!3m6!1s0x46e4dc30bf12b2c1:0xd0bd92253730ae7e!2sPramon%C4%97s+g.+8,+Klaip%C4%97da+94102,+Lithuania!3b1!8m2!3d55.6935672!4d21.194587!3m5!1s0x0:0x0!7e2!8m2!3d55.694583!4d21.1962072"
+        },
+        "rowImage": {
+          "texts": [
+            "UAB „Dolinera“ – patikimas Jūsų partneris gabenant produktus tarp Vokietijos, Lietuvos, Švedijos ir Ukrainos.",
+            "Visos mūsų gamybos vietos turi puikų logistinį susisiekimą su ES rinka – tiek sausumos keliais, tiek jūra. Mūsų nuosava logistikos įmonė UAB „Dolinera“ kiekvieną savaitę nuosavais sunkvežimiais pristato produktus mūsų užsakovams. Lietuvoje pagaminta produkcija net žiemos metu Vokietijoje esantį klientą pasiekia vidutiniškai per 22 valandas (pvz., Baltijos jūra per Kylį)!"
+          ],
+          "image": "assets/images/truck1.png"
+        }
+      }
+    ]
+  },
+  "companies": {
+    "rowImage": {
+      "texts": [
+        "PIT Group“ – tai vidutinė šeimos verslo įmonė, turinti daugiau kaip 140 darbuotojų Vokietijoje, Lietuvoje ir Ukrainoje. 2009 m., savo veiklos pradžioje, mes vadinomės „Gumotrade Limited & Co. KG“ ir pirmiausia dirbome kaip automobilių pramonės tiekėjai.",
+        "Jau tada mus lydėjo įmonės vizija – tarptautinės įmonės, tarpusavyje siejančios palankias darbo sąnaudas ir aukštus kokybės standartus:",
+        "Nuo 2011 metų mes žingsnis po žingsnio perkėlėme kabelių surinkimą iš Vokietijoje esančios gamybos vietos, Metropolpark–Hansalinie Ahlhorne, į  specialiai įkurtą UAB „Lithutec“, Lietuvoje. Įsikūrę būtent čia, praėjusiais metais užsitarnavome patikimo, lankstaus, o pirmiausia – ekonomiškai veikiančio partnerio vardą kabelių surinkimo srityje."
+      ],
+      "image": "assets/images/lithutec.png"
+    },
+    "rowTexts": {
+      "columnSpecial": {
+        "boldText": "",
+        "texts": [
+          "Didelis mūsų klientų Vokietijoje ir ES pasitikėjimas paskatino mus priimti sprendimą – savo veiklai atverti kitą rinką, įkuriant naują UAB „Litfabric“: jos kertinis akmuo – mechaninė ir rankinė gamyba pagal rangos sutartis, įskaitant montavimą, pakavimą ir sandėliavimą.",
+          "2013 metais įkurta „PIT Deutschland GmbH & Co. KG“. Mūsų filosofija: Jums viskas iš vienų rankų – aplenkiant brangius subrangovus!",
+          "Vadovaudamiesi šiuo principu mes išplėtėme „PIT“ šeimą dar vienu pagrindiniu paslaugų sektoriumi: įkurdami savo nuosavą logistikos įmonę UAB „Dolinera“, 2018 metų pabaigoje užpildėme spragą, buvusią tarp užsakymo, gamybos ir klientų grandžių, ir dabar tiekiame produkciją savo užsakovams kiekvieną savaitę nuosavais sunkvežimiais."
+        ]
+      },
+      "columnContact": {
+        "texts": [
+          "Nuo 2019 metų sausio mėnesio, įkūrę UAB „Lithutec Ukraine“, savo klientams ir interesantams siūlome itin perspektyvią ir ekonomiškai palankią gamybos vietą už ES ribų. Pagrindinė jos veikla – kokybiškas visų tipų kabelių surinkimas.",
+          "Mūsų stiprybė – lankstumas, įvairiapusiškumas, efektyvus laiko valdymas ir lengvas klientų užsakymų įgyvendinimas. Mes esame atvirti išskirtiniams poreikiams.",
+          "Susisiekite su mumis ir įsitikinkite patys!"
+        ],
+        "contactButton": true
+      }
+    }
+  },
+  "contact": {
+    "address": {
+      "title": "PIT Deutschland GmbH & Co. KG",
+      "subtitle": "Jūsų pagalbininkas",
+      "locations": [
+        "Vechtaer Straße 35",
+        "D-26197 Großenkneten"
+      ]
+    },
+    "contactBy": [
+      {
+        "name": "Telefonas",
+        "value": "+49 44 35-9 73 64 03"
+      },
+      {
+        "name": "Faksas",
+        "value": "+49 32 12-1 48 52 23"
+      },
+      {
+        "name": "Mobilusis",
+        "value": "+49 176-10305752"
+      }
+    ],
+    "form": {
+      "name": "Vardas",
+      "email": "El. paštas",
+      "message": "Jūsų pranešimas",
+      "texts": [
+        "Pateikdami šią formą sutinkate su mūsų ",
+        ""
+      ],
+      "textLink": "Privatumo Politika",
+      "send": "SIŲSTI"
+    }
+  },
+  "footer": {
+    "footerInfo": {
+      "number": "+49 (0) 4435 9736403",
+      "infoLinks": [
+        {
+          "text": "UAB Lithutec",
+          "link": "https://#"
+        },
+        {
+          "text": "OOO Lithutec-Ukraine",
+          "link": "https://#"
+        },
+        {
+          "text": "Uab Litfabric",
+          "link": "https://#"
+        },
+        {
+          "text": "UAB Dolinera",
+          "link": "https://#"
+        }
+      ]
+    },
+    "address": {
+      "title": "PIT Deutschland GmbH & Co. KG",
+      "subtitle": "Jūsų pagalbininkas",
+      "locations": [
+        "Vechtaer Straße 35",
+        "D-26197 Großenkneten"
+      ]
+    },
+    "socialLinks": {
+      "facebook": "https://#",
+      "linkedin": "https://#"
+    }
+  },
+  "footerAbsolute": {
+    "copyright": "© 2019 PIT Deutschland GmbH & Co. KG. Visos teisės saugomos.",
+    "infoLinks": [
+      {
+        "text": "Privatumo Politika",
+        "link": "policy"
+      },
+      {
+        "text": "Kontaktai",
+        "link": "impress"
+      },
+      {
+        "text": "Administratorius",
+        "link": "webmaster"
+      }
+    ]
+  }
+}

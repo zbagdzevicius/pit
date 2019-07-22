@@ -17,7 +17,7 @@ export class PolicyService {
       .subscribe((policyRoot: PolicyRoot) => {
         this.store.dispatch(new SetPolicy(policyRoot));
       },
-        error => console.log('there is no file with this name')
+        error => console.log('there is no file with this name', error)
       );
   }
 }

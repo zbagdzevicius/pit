@@ -34,7 +34,7 @@ export class ImpressComponent implements OnInit {
           this.pageTitle = impressRoot.pageTitle;
           this.columnLeft = impressRoot.impress.columnLeft;
           this.columnRight = impressRoot.impress.columnRight;
-          if (impressRoot.impress.columnRight.image === ''){
+          if (impressRoot.impress.columnRight.image === '') {
             this.image = 'http://bertsrentals.com/wp-content/uploads/2017/08/300x300-placeholder.jpg';
           } else {
             this.image = impressRoot.impress.columnRight.image;

@@ -1,4 +1,4 @@
-<app-animation (animationShow)="animationEnded()"></app-animation>
+<app-animation (animationShow)="animationEnded()" *ngIf="!isMobile"></app-animation>
 <a
   [routerLink]="['/']"
   routerLinkActive="router-link-active"

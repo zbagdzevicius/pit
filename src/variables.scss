@@ -100,21 +100,14 @@ $logo-width: 155px;
 ) {
   left: $left;
   top: $top;
-  -moz-transform: perspective(2000px) translate(-$left, -$top) scale($scale);
-  -o-transform: perspective(2000px) translate(-$left, -$top) scale($scale);
-  -webkit-transform: perspective(2000px) translate(-$left, -$top) scale($scale);
   transform: perspective(2000px) translate(-$left, -$top) scale($scale);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 @mixin transform-position-center($left: 50%, $top: 50%) {
   left: $left;
   top: $top;
-  -moz-transform: perspective(2000px) translate(-$left, -$top);
-  -o-transform: perspective(2000px) translate(-$left, -$top);
-  -webkit-transform: perspective(2000px) translate(-$left, -$top);
   transform: perspective(2000px) translate(-$left, -$top);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -131,10 +124,14 @@ $logo-width: 155px;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position-x: 50%;
+  background-position-y: 50%;
 }
 @mixin background-position-mobile {
   background-position: right 45% top;
   background-repeat: no-repeat;
+  background-position-x: 45%;
+  background-position-y: 0%;
 }
 @mixin background-map-image {
   background-image: url(assets/images/map-flag-min.png);
