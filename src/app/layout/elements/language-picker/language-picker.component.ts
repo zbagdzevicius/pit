@@ -25,6 +25,7 @@ export class LanguagePickerComponent implements OnInit {
     { 'source': null, 'name': 'ru' },
     { 'source': null, 'name': 'ua' }
   ];
+  hidden = true;
 
   constructor(private store: Store) {
     this.language$
@@ -53,8 +54,8 @@ export class LanguagePickerComponent implements OnInit {
       impressRoot: new ImpressRoot(),
       webmasterRoot: null,
       activeCard: null,
-      device: {isMobile: false},
-      animation: {animationShowed: true}
+      device: { isMobile: false },
+      animation: { animationShowed: true }
     }));
   }
 

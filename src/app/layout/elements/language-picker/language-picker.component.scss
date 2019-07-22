@@ -1,19 +1,14 @@
 @import "../../../../variables.scss";
 
-.hidden {
-  display: none;
-  position: absolute;
-  z-index:  5;
-}
 .flag {
   display: inline-block;
   height: $language-picker-mobile-height;
-  &:hover {
-    .hidden {
-      display: list-item;
-    }
+  .hidden {
+    display: list-item;
+    position: absolute;
+    z-index: 5;
   }
-  ul:hover {
+  ul {
     display: list-item;
   }
   img {
