@@ -1,10 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { LangState } from 'src/app/core/state/lang.state';
-import { Select } from '@ngxs/store';
+import { Select, Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { PolicyService } from 'src/app/core/services/policy.service';
 import { PolicyRoot } from 'src/app/core/models/policy/policy-root.model';
 import { Policy } from 'src/app/core/models/policy/policy.model';
+import { ActivatedRoute } from '@angular/router';
+import { SetLanguage } from 'src/app/core/actions/lang.actions';
+import { ContentModel } from 'src/app/core/models/translate/content.model';
+import { ImpressRoot } from 'src/app/core/models/impress/impress-root.model';
 
 @Component({
   selector: 'app-policy',
@@ -17,7 +21,9 @@ export class PolicyComponent implements OnInit {
   pageTitle: string;
   content: Policy[];
 
-  constructor(private policyService: PolicyService) {
+  constructor(private policyService: PolicyService,private route: ActivatedRoute,
+    private store: Store
+    ){
     this.language$
       .subscribe(language => {
         if (language) {
@@ -34,7 +40,28 @@ export class PolicyComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      if (params) {
+        this.checkRouteParams();
+      }
+    });
+  }
 
+  checkRouteParams() {
+    const language = this.route.snapshot.params['language'];
+    console.log(language);
+    if (language) {
+      this.store.dispatch(new SetLanguage({
+        language,
+        content: new ContentModel(),
+        policyRoot: new PolicyRoot(),
+        impressRoot: new ImpressRoot(),
+        webmasterRoot: null,
+        activeCard: null,
+        device: { isMobile: false },
+        animation: { animationShowed: true }
+      }));
+    }
   }
 
 }

@@ -7,6 +7,7 @@ import { LayoutModule } from './layout/layout.module';
 import { NgxsModule } from '@ngxs/store';
 import { LangState } from './core/state/lang.state';
 import { AppRoutingModule } from './app-routing.module';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [

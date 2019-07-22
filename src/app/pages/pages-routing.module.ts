@@ -6,10 +6,15 @@ import { ImpressComponent } from './impress/impress.component';
 import { WebmasterComponent } from './webmaster/webmaster.component';
 
 const routes: Routes = [
-  { path: '', component: LandingComponent },
+
   { path: 'policy', component: PolicyComponent },
   { path: 'impress', component: ImpressComponent },
   { path: 'webmaster', component: WebmasterComponent },
+  { path: ':language/policy', component: WebmasterComponent },
+  { path: ':language/impress', component: WebmasterComponent },
+  { path: ':language/webmaster', component: WebmasterComponent },
+  { path: '', component: LandingComponent },
+  { path: ':language', component: LandingComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

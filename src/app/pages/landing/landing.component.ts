@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Select } from '@ngxs/store';
+import { Select, Store } from '@ngxs/store';
 import { LangState } from 'src/app/core/state/lang.state';
 import { Observable } from 'rxjs';
 import { Device } from 'src/app/core/models/etc/device.model';
@@ -9,6 +9,10 @@ import { Services } from '@angular/core/src/view';
 import { Site } from 'src/app/core/models/translate/site.model';
 import { Companies } from 'src/app/core/models/translate/companies.model';
 import { Heading } from 'src/app/core/models/translate/heading.model';
+import { ActivatedRoute, Router } from '@angular/router';
+import { SetLanguage } from 'src/app/core/actions/lang.actions';
+import { PolicyRoot } from 'src/app/core/models/policy/policy-root.model';
+import { ImpressRoot } from 'src/app/core/models/impress/impress-root.model';
 
 @Component({
   selector: 'app-landing',
@@ -25,9 +29,9 @@ export class LandingComponent implements OnInit {
   site: Site;
   companies: Companies;
   heading: Heading;
-
-  constructor() {
-
+  constructor(private route: ActivatedRoute,
+    private store: Store, private router: Router
+  ) {
     this.content$
       .subscribe((content: ContentModel) => {
         if (content) {
@@ -45,6 +49,28 @@ export class LandingComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      if (params) {
+        this.checkRouteParams();
+      }
+    });
+  }
+
+  checkRouteParams() {
+    const language = this.route.snapshot.params['language'];
+    console.log(language);
+    if (language) {
+      this.store.dispatch(new SetLanguage({
+        language,
+        content: new ContentModel(),
+        policyRoot: new PolicyRoot(),
+        impressRoot: new ImpressRoot(),
+        webmasterRoot: null,
+        activeCard: null,
+        device: { isMobile: false },
+        animation: { animationShowed: true }
+      }));
+    }
   }
 
   setContent(content: ContentModel) {
