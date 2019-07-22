@@ -128,10 +128,9 @@ $logo-width: 155px;
   background-position-y: 50%;
 }
 @mixin background-position-mobile {
-  background-position: right 45% top;
   background-repeat: no-repeat;
-  background-position-x: 45%;
-  background-position-y: 0%;
+  background-position-x: 55%;
+  background-position-y: -50px;
 }
 @mixin background-map-image {
   background-image: url(assets/images/map-flag-min.png);

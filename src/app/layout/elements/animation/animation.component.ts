@@ -24,6 +24,7 @@ export class AnimationComponent implements OnInit {
       .subscribe((animation: Animation) => {
         if (animation.animationShowed) {
           this.animationShowing = false;
+          this.animationDuration = 0;
         }
       });
     this.executeAnimation();
